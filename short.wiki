@@ -1,7 +1,7 @@
 * action act
 * address addr
 * authorization auth
-* backen bnd
+* backend bnd
 * buffer buf
 * client cli
 * command cmd
@@ -16,7 +16,9 @@
 * handler hdl
 * header hdr
 * implementation impl
+* instance inst
 * length len
+* manager mgr
 * memory mem
 * message msg
 * option opt
@@ -24,6 +26,7 @@
 * register regs
 * request req
 * response rsp
+* status sta
 * second sec
 * sequence seq
 * server svr
