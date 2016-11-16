@@ -1,3 +1,7 @@
 = name =
-    * [[short]]
     * [[define]]
+    * [[game]]
+    * [[short]]
+
+= read =
+    * [[gpp]]

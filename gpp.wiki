@@ -1,0 +1,19 @@
+* command
+* flyweight
+* observer
+* prototype
+* singleton
+* state
+* double buffer
+* game loop
+* update method
+* bytecode
+* subclass sandbox
+* type object
+* component
+* event queue
+* service locator
+* data locality
+* dirty flag
+* object pool
+* spatial partition
