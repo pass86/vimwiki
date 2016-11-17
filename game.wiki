@@ -1,0 +1,107 @@
+= biz =
+* achievement
+* actor
+    * boss
+    * hero
+    * mob
+    * npc(non-player character)
+    * class
+        * barbarian
+        * crusader
+        * demon hunter
+        * monk
+        * witch doctor
+        * wizard
+    * part
+        * head
+        * neck
+        * wrists
+        * offhand
+        * ring
+        * feet
+        * legs
+        * belt
+        * mainhand
+        * hand
+        * shoulders
+        * chest
+* aoe(area of effect)
+* attribute
+    * primary
+        * strength(str)
+        * dexterity(dex)
+        * intelligence(int)
+        * vitality(vit)
+        * damage
+        * toughness
+        * recovery
+    * offense
+        * attack per second
+        * attack speed increase
+        * critical hit chance
+        * critical hit damage
+        * area damage
+        * cooldown reduction
+    * defense
+        * armor
+        * resistance
+            * physical
+            * cold
+            * fire
+            * lightning
+            * posion
+            * arcane/holy
+        * reduction
+            * crowd control
+            * missile damage
+            * melee damage
+    * life
+        * maximum life
+        * total life bonus
+        * life per second
+        * life per hit
+        * life per kill
+        * health globe healing bonus
+    * bonus
+        * bonus experience
+        * bonus experience per kill
+        * bonus to gold/globe radius
+    * movement speed
+    * durability
+    * dps(damage per second)
+    * evolve
+    * upgrade
+    * star
+* battle
+    * pve(player versus environment)
+    * pvp(player versus player)
+* buff
+    * debuff
+    * dot(damage over time)
+    * hot(heal over time)
+* chat
+* dungeon
+* guild
+* item
+    * equip
+        * weapon
+    * material
+    * prop
+* quest
+* stash
+* skill
+    * cooldown
+
+= devel =
+* bullet time
+* fog of war
+* fx
+* lag
+
+= view =
+* actionbar
+* navbar
+
+= misc =
+* afk(away from keyboard)
+* kitting
