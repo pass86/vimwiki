@@ -1,0 +1,36 @@
+= generic =
+* aot(ahead of time)
+* jit(just in time)
+* iap(in app purchases)
+* unc(universal naming convention)
+* dr(dead reckoning)
+* dht(distributed hash table)
+* pex(peer exchange)
+* ntsc(national television standards committee) 29.97/s
+* smtp(simple mail transfer protocol)
+* pop3(post office protocol version 3)
+* imap(internet message access protocol)
+* mime(multipurpose internet mail extensions)
+* vpn(virtual private network)
+* ipsec(internet protocol security)
+* pptp(point to point tunneling protocol)
+* l2tp(layer 2 tunneling protocol)
+* upnp(universal plug and play)
+* ldap(lightweight directory access protocol)
+* pam(pluggable authentication module)
+
+= graphic =
+* ssao(screen space ambient occlusion)
+* sss(subsurface scattering)
+* aa(anti-aliasing)
+* npr(non-photorealistic rendering)
+* skinning
+
+= web =
+* ajax(asynchronous javascript and xml)
+* seo(search engine optimization)
+* webdav(web distributed authoring and versioning)
+
+= database =
+* odbc(open database connectivity)
+* dsn(data source name)
