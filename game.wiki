@@ -1,12 +1,12 @@
 = biz =
 * achievement
 * actor
-    - boss
+    * boss
     * hero
     * mob
     * npc(non-player character)
     * class
-        - barbarian
+        * barbarian
         * crusader
         * demon hunter
         * monk
