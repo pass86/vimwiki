@@ -97,6 +97,7 @@
 * fog of war
 * fx
 * lag
+* sfx
 
 = view =
 * actionbar
