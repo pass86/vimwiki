@@ -7,17 +7,7 @@
 * dht(distributed hash table)
 * pex(peer exchange)
 * ntsc(national television standards committee) 29.97/s
-* smtp(simple mail transfer protocol)
-* pop3(post office protocol version 3)
-* imap(internet message access protocol)
-* mime(multipurpose internet mail extensions)
-* vpn(virtual private network)
-* ipsec(internet protocol security)
-* pptp(point to point tunneling protocol)
-* l2tp(layer 2 tunneling protocol)
 * upnp(universal plug and play)
-* ldap(lightweight directory access protocol)
-* pam(pluggable authentication module)
 
 = graphic =
 * ssao(screen space ambient occlusion)
@@ -25,6 +15,15 @@
 * aa(anti-aliasing)
 * npr(non-photorealistic rendering)
 * skinning
+
+= network =
+* vpn(virtual private network)
+* pptp(point to point tunneling protocol)
+* l2tp(layer 2 tunneling protocol)
+* smtp(simple mail transfer protocol)
+* pop3(post office protocol version 3)
+* imap(internet message access protocol)
+* mime(multipurpose internet mail extensions)
 
 = web =
 * ajax(asynchronous javascript and xml)
@@ -34,3 +33,9 @@
 = database =
 * odbc(open database connectivity)
 * dsn(data source name)
+ 
+= security =
+* aes(advanced encryption standard)
+* ipsec(internet protocol security)
+* ldap(lightweight directory access protocol)
+* pam(pluggable authentication module)
