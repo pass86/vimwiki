@@ -91,6 +91,7 @@
 * stash
 * skill
     * cooldown
+* team
 
 = devel =
 * bullet time
