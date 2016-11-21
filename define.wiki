@@ -8,6 +8,7 @@
 * pex(peer exchange)
 * ntsc(national television standards committee) 29.97/s
 * upnp(universal plug and play)
+* tty(teletype)
 
 = graphic =
 * ssao(screen space ambient occlusion)
