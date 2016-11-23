@@ -1,4 +1,4 @@
 = generating ec keys =
-openssl ecparam -list_curves
-openssl ecparam -name secp128r1 -genkey -noout -out pri.pem
-openssl ec -in pri.pem -pubout -out pub.pem
+* openssl ecparam -list_curves
+* openssl ecparam -name secp128r1 -genkey -noout -out pri.pem
+* openssl ec -in pri.pem -pubout -out pub.pem
