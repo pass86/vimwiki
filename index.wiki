@@ -5,3 +5,7 @@
 
 = read =
 * [[gpp]]
+
+= tool =
+* [[openssl]]
+* [[vim]]
