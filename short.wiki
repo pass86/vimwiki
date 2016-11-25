@@ -23,6 +23,7 @@
 * message msg
 * option opt
 * password pwd
+* rand rnd
 * register regs
 * request req
 * response rsp
@@ -34,5 +35,6 @@
 * socket sock
 * system sys
 * target tar
+* test tst
 * token tok
 * user usr
