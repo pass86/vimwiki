@@ -3,6 +3,9 @@
 * [[game]]
 * [[short]]
 
+= os =
+* [[centos]]
+ 
 = read =
 * [[gpp]]
 
@@ -10,6 +13,3 @@
 * [[mysql]]
 * [[openssl]]
 * [[vim]]
- 
-= linus =
-* [[centos]]
