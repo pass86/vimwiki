@@ -7,5 +7,6 @@
 * [[gpp]]
 
 = tool =
+* [[mysql]]
 * [[openssl]]
 * [[vim]]
