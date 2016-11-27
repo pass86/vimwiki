@@ -1,0 +1,6 @@
+= firewalld =
+* systemctl start firewalld
+* systemctl enable firewalld
+* systemctl stop firewalld
+* systemctl disable firewalld
+* firewall-cmd --state
