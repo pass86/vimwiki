@@ -12,5 +12,7 @@
 = tool =
 * [[mysql]]
 * [[openssl]]
-* [[snippet]]
 * [[vim]]
+
+= util =
+* [[shell]]
