@@ -9,7 +9,7 @@
 * connection conn
 * context ctx
 * control ctl
-* controler ctler
+* controler cntl
 * database db
 * email eml
 * error err
