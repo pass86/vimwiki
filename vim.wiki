@@ -1,2 +1,5 @@
 = sudo write =
 * :w !sudo tee %
+
+= display unprintable characters =
+* :set list

@@ -5,11 +5,12 @@
 
 = os =
 * [[centos]]
- 
+
 = read =
 * [[gpp]]
 
 = tool =
 * [[mysql]]
 * [[openssl]]
+* [[snippet]]
 * [[vim]]

@@ -1,0 +1,11 @@
+= find text =
+* grep -rl foo .
+* ag -il --cpp foo
+
+= find file =
+* find . -name foo
+* ag -ig foo
+
+= replace text =
+* sed -i "" "s/foo/bar/g" `grep foo -rl .`
+* sed -i "" "s/foo/bar/g" `ag -il --cpp foo`
