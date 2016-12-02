@@ -5,6 +5,7 @@
 
 = os =
 * [[centos]]
+* [[macos]]
 
 = read =
 * [[gpp]]

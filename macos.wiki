@@ -1,0 +1,5 @@
+= shared libraries uses =
+* otool -L foo
+
+= interprocess status =
+* ipcs
