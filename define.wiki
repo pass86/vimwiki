@@ -25,6 +25,7 @@
 * pop3(post office protocol version 3)
 * imap(internet message access protocol)
 * mime(multipurpose internet mail extensions)
+* irc(internet relay chat)
 
 = web =
 * ajax(asynchronous javascript and xml)
