@@ -35,7 +35,7 @@
 = database =
 * odbc(open database connectivity)
 * dsn(data source name)
- 
+
 = security =
 * aes(advanced encryption standard)
 * ipsec(internet protocol security)

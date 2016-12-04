@@ -2,9 +2,9 @@
 * openssl ecparam -list_curves
 * openssl ecparam -name prime256v1 -param_enc named_curve -genkey -noout -out pri.pem
 * openssl ec -in pri.pem -pubout -out pub.pem
- 
+
 = linux=
-* build 
+* build
     * wget https://www.openssl.org/source/openssl-1.1.0c.tar.gz
     * tar zxvf openssl-1.1.0c.tar.gz
     * cd openssl-1.1.0c
