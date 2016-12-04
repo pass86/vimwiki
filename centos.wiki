@@ -4,3 +4,17 @@
 * systemctl stop firewalld
 * systemctl disable firewalld
 * firewall-cmd --state
+
+= mount new 4tb drive =
+* yum install parted
+* sudo fdisk -l
+* sudo parted /dev/sdd
+    * mklabel gpt
+    * unit GB
+    * mkpart primary 0.0GB 4000.8GB
+    * print
+    * quit
+* sudo mkfs.xfs -f /dev/sdd
+* sudo vim /etc/fstab
+    * /dev/sdd /mnt/hdd3                      xfs     defaults        0 0
+* sudo reboot
