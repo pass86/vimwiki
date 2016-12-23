@@ -9,3 +9,6 @@
 = replace text =
 * sed -i "" "s/foo/bar/g" `grep foo -rl .`
 * sed -i "" "s/foo/bar/g" `ag -il --cpp foo`
+
+= current working directory =
+* lsof -p pid | grep cwd
