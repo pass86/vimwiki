@@ -18,3 +18,12 @@
 * sudo vim /etc/fstab
     * /dev/sdd /mnt/hdd3                      xfs     defaults        0 0
 * sudo reboot
+
+= add sudo user =
+* usermod -aG wheel foo
+
+= group =
+* /etc/group
+
+= passwd =
+* /etc/passwd
