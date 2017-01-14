@@ -9,6 +9,7 @@
 * ntsc(national television standards committee) 29.97/s
 * upnp(universal plug and play)
 * tty(teletype)
+* oa(office automation)
 
 = graphic =
 * ssao(screen space ambient occlusion)
