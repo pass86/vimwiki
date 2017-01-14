@@ -26,6 +26,7 @@
 * imap(internet message access protocol)
 * mime(multipurpose internet mail extensions)
 * irc(internet relay chat)
+* nat(network address translation)
 
 = web =
 * ajax(asynchronous javascript and xml)
