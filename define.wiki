@@ -17,6 +17,12 @@
 * npr(non-photorealistic rendering)
 * skinning
 
+= memory =
+* uss(unique set size)
+* pss(proportional set size)
+* rss(resident set size)
+* vss(virtual set size)
+
 = network =
 * vpn(virtual private network)
 * pptp(point to point tunneling protocol)
