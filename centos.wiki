@@ -27,3 +27,9 @@
 
 = passwd =
 * /etc/passwd
+
+= delete old linux kernel =
+* sudo yum install yum-utils
+* sudo package-cleanup --oldkernels --count=2
+* sudo vim /etc/yum.conf
+    * installonly_limit=2
