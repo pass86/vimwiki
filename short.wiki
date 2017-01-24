@@ -43,8 +43,8 @@
 * user usr
 
 = phrase =
-* battle id bid
-* role id rid
-* session id sid
-* user id uid
-* zone id zid
+* battle-id bid
+* role-id rid
+* session-id sid
+* user-id uid
+* zone-id zid
