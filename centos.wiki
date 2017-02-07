@@ -5,6 +5,11 @@
 * systemctl disable firewalld
 * firewall-cmd --state
 
+= disable selinux =
+* sudo vim /etc/sysconfig/selinux
+    * SELINUX=disabled
+* sestatus
+
 = mount new 4tb drive =
 * yum install parted
 * sudo fdisk -l
