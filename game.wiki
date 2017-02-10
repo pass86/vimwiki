@@ -80,6 +80,7 @@
     * dot(damage over time)
     * hot(heal over time)
 * chat
+* dizzy
 * dungeon
 * guild
 * item
