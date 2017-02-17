@@ -38,3 +38,6 @@
 * sudo package-cleanup --oldkernels --count=2
 * sudo vim /etc/yum.conf
     * installonly_limit=2
+
+= kernel version =
+* uname -a
