@@ -10,19 +10,80 @@
     * SELINUX=disabled
 * sestatus
 
-= mount new 4tb drive =
-* yum install parted
-* sudo fdisk -l
-* sudo parted /dev/sdd
-    * mklabel gpt
-    * unit GB
-    * mkpart primary 0.0GB 4000.8GB
-    * print
-    * quit
-* sudo mkfs.xfs -f /dev/sdd
+= mount new drive =
+* parted
+    * sudo parted -l
+    * sudo parted /dev/sdb
+        * mklabel gpt
+        * mkpart primary 2048s 100%
+        * print
+        * quit
+    * sudo mkfs.xfs -f /dev/sdb
+    * sudo vim /etc/fstab
+        * /dev/sdb /mnt/hdd3 xfs defaults 0 0
+    * sudo reboot
+* fdisk
+    * sudo fdisk -l
+    * sudo fdisk /dev/sdb
+        * press n<enter>
+        * press p<enter>
+        * press <enter>
+        * press <enter>
+        * press <enter>
+        * press t<enter>
+        * press 8e<enter>
+        * press w<enter>
+
+= lvm create =
+* sudo parted /dev/sdb
+    * ...
+    * toggle 1 lvm
+    * ...
+* sudo parted /dev/sdc
+    * ...
+    * toggle 1 lvm
+    * ...
+* sudo parted -l
+* sudo pvcreate /dev/sdb1 /dev/sdc1
+* sudo pvs
+* sudo pvscan
+* sudo pvdisplay
+* sudo vgcreate -s 1024M volume /dev/sdb1 /dev/sdc1
+* sudo vgs
+* sudo vgscan
+* sudo vgdisplay
+* sudo lvcreate --name share --size 7T volume
+* sudo lvs
+* sudo lvscan
+* sudo lvdisplay
+* sudo mkfs.xfs /dev/volume/share
+* sudo mkdir /mnt/share
+* sudo chmod 777 /mnt/share
+* sudo mount /dev/volume/share /mnt/share
+* df -h
 * sudo vim /etc/fstab
-    * /dev/sdd /mnt/hdd3 xfs defaults 0 0
+    * /dev/mapper/volume-share /mnt/share xfs defaults 0 0
 * sudo reboot
+
+= volume group extend =
+* sudo parted /dev/sdd
+    * ...
+    * toggle 1 lvm
+    * ...
+* sudo parted -l
+* sudo pvcreate /dev/sdd1
+* sudo pvs
+* sudo pvscan
+* sudo pvdisplay
+* sudo vgextend volume /dev/sdd1
+* sudo vgs
+* sudo vgscan
+* sudo vgdisplay
+
+= logical volume extend =
+* sudo lvextend -L10T /dev/volume/share
+* sudo xfs_growfs /dev/volume/share
+* df -h
 
 = add sudo user =
 * usermod -aG wheel foo
@@ -34,7 +95,6 @@
 * /etc/passwd
 
 = delete old linux kernel =
-* sudo yum install yum-utils
 * sudo package-cleanup --oldkernels --count=2
 * sudo vim /etc/yum.conf
     * installonly_limit=2
