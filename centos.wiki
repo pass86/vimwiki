@@ -95,9 +95,36 @@
 * /etc/passwd
 
 = delete old linux kernel =
+* sudo yum install yum-utils
 * sudo package-cleanup --oldkernels --count=2
 * sudo vim /etc/yum.conf
     * installonly_limit=2
 
 = kernel version =
 * uname -a
+
+= centos version =
+* cat /etc/redhat-release
+
+= samba =
+* sudo yum install samba
+* sudo vim /etc/samba/smb.conf
+    * [global]
+    *   workgroup = WORKGROUP
+    *   log level = 2
+    *   security =  user
+    *   load printers = no
+    *   printing = bsd
+    *   printcap name = /dev/null
+    * [share]
+    *   comment = nas share
+    *   browseable = yes
+    *   writable = yes
+    *   path = /home/share
+* sudo useradd samba
+* sudo pdbedit -L
+* sudo pdbedit -a samba
+* sudo systemctl enable smb.service
+* sudo systemctl enable nmb.service
+* sudo systemctl restart smb.service
+* sudo systemctl restart nmb.service
