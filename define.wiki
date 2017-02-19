@@ -55,6 +55,7 @@
 
 = storage =
 * lvm(logical volume manager)
+* pe(physical extend)
 * pv(physical volume)
-* lv(logical volume)
 * vg(volume group)
+* lv(logical volume)
