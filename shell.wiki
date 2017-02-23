@@ -13,3 +13,6 @@
 
 = current working directory =
 * lsof -p pid | grep cwd
+
+= counting files =
+ls -l | wc -l

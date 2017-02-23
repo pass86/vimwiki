@@ -81,7 +81,7 @@
 * sudo vgdisplay
 
 = logical volume extend =
-* sudo lvextend -L10T /dev/volume/share
+* sudo lvextend -l +100%FREE /dev/volume/share
 * sudo xfs_growfs /dev/volume/share
 * df -h
 
