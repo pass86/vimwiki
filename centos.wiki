@@ -111,19 +111,26 @@
 * sudo vim /etc/samba/smb.conf
     * [global]
     *   workgroup = WORKGROUP
-    *   log level = 2
     *   security =  user
     *   load printers = no
     *   printing = bsd
     *   printcap name = /dev/null
     * [share]
     *   comment = nas share
-    *   browseable = yes
-    *   writable = yes
-    *   path = /home/share
-* sudo useradd samba
+    *   browseable = Yes
+    *   writable = Yes
+    *   path = /mnt/share
+    *   vfs objects = full_audit
+    *   full_audit:prefix = %u|%I|%m|%S
+    *   full_audit:success = mkdir rename unlink rmdir pwrite
+    *   full_audit:failure = none
+    *   full_audit:facility = local6
+    *   full_audit:priority = NOTICE
+* sudo vim /etc/rsyslog.conf
+    * local6.* /var/log/samba/log.audit
+* sudo systemctl restart rsyslog.service
 * sudo pdbedit -L
-* sudo pdbedit -a samba
+* sudo pdbedit -a -u foo
 * sudo systemctl enable smb.service
 * sudo systemctl enable nmb.service
 * sudo systemctl restart smb.service
