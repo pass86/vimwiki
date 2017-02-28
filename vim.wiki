@@ -3,3 +3,6 @@
 
 = display unprintable characters =
 * :set list
+
+= cmdline window =
+* :<c+f>

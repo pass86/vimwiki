@@ -142,7 +142,7 @@
 * sudo systemctl start transmission-daemon.service
 * sudo systemctl stop transmission-daemon.service
 * sudo systemctl enable transmission-daemon.service
-* sudo systemctl enable transmission-daemon.service
 * sudo vim /var/lib/transmission/.config/transmission-daemon/settings.json
     * "rpc-whitelist-enabled": false,
     * "umask": 0,
+* sudo systemctl start transmission-daemon.service
