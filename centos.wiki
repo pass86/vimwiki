@@ -146,6 +146,8 @@
 * sudo systemctl stop transmission-daemon.service
 * sudo systemctl enable transmission-daemon.service
 * sudo vim /var/lib/transmission/.config/transmission-daemon/settings.json
+    * "download-dir": "/mnt/share/moive"
+    * "incomplete-dir": "/mnt/share/moive",
     * "rpc-whitelist-enabled": false,
     * "umask": 0,
 * sudo systemctl start transmission-daemon.service
