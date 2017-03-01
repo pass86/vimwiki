@@ -120,12 +120,15 @@
     *   browseable = yes
     *   writable = yes
     *   path = /mnt/share
-    *   vfs objects = full_audit
+    *   vfs objects = full_audit recycle
     *   full_audit:prefix = %u|%I|%m|%S
     *   full_audit:success = mkdir rename unlink rmdir pwrite
     *   full_audit:failure = none
     *   full_audit:facility = local6
     *   full_audit:priority = NOTICE
+    *   recycle:repository = .recycle
+    *   recycle:keeptree = yes
+    *   recycle:versions = yes
 * sudo vim /etc/rsyslog.conf
     * local6.* /var/log/samba/log.audit
 * sudo systemctl restart rsyslog.service
