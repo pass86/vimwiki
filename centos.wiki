@@ -117,8 +117,8 @@
     *   printcap name = /dev/null
     * [share]
     *   comment = nas share
-    *   browseable = Yes
-    *   writable = Yes
+    *   browseable = yes
+    *   writable = yes
     *   path = /mnt/share
     *   vfs objects = full_audit
     *   full_audit:prefix = %u|%I|%m|%S
