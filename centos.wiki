@@ -122,7 +122,7 @@
     *   path = /mnt/share
     *   vfs objects = full_audit recycle
     *   full_audit:prefix = %u|%I|%m|%S
-    *   full_audit:success = mkdir rename unlink rmdir pwrite
+    *   full_audit:success = mkdir rename unlink rmdir pwrite open
     *   full_audit:failure = none
     *   full_audit:facility = local6
     *   full_audit:priority = NOTICE
