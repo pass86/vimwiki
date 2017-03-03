@@ -1,3 +1,6 @@
+= virtual console =
+* ctrl + alt + f1
+
 = firewalld =
 * systemctl start firewalld
 * systemctl stop firewalld
@@ -9,7 +12,7 @@
 * sudo vim /etc/sysconfig/selinux
     * SELINUX=disabled
 * sestatus
-
+ 
 = mount new drive =
 * parted
     * sudo parted -l
@@ -151,3 +154,4 @@
     * "rpc-whitelist-enabled": false,
     * "umask": 0,
 * sudo systemctl start transmission-daemon.service
+
