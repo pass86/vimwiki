@@ -16,7 +16,7 @@
 * SSS(Subsurface Scattering)
 * AA(Anti-Aliasing)
 * NPR(Non-Photorealistic Rendering)
-* skinning
+* SDF(Signed Distance Field)
 
 = memory =
 * USS(Unique Set Size)
