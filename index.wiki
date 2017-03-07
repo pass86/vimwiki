@@ -6,6 +6,7 @@
 = os =
 * [[centos]]
 * [[macos]]
+* [[openwrt]]
 
 = read =
 * [[gpp]]
