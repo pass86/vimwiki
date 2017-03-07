@@ -1,4 +1,5 @@
 = pppoe =
+* opkg install ppp kmod-pppoe ppp-mod-pppoe
 * uci set network.wan.proto=pppoe
 * uci set network.wan.username='yougotthisfromyour@isp.su'
 * uci set network.wan.password='yourpassword'
