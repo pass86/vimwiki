@@ -34,6 +34,7 @@
 * MIME(Multipurpose Internet Mail Extensions)
 * IRC(Internet Relay Chat)
 * NAT(Network Address Translation)
+* PPPoE(Point-to-Point Protocol over Ethernet)
 
 = web =
 * AJAX(Asynchronous Javascript and Xml)
