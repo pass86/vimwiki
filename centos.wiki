@@ -1,5 +1,5 @@
 = virtual console =
-* ctrl + alt + f1
+* ctrl + alt + f2
 
 = firewalld =
 * systemctl start firewalld
