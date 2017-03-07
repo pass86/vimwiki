@@ -109,6 +109,9 @@
 = centos version =
 * cat /etc/redhat-release
 
+= md5 =
+* md5sum foo
+ 
 = samba =
 * sudo yum install samba
 * sudo vim /etc/samba/smb.conf
