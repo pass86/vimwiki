@@ -157,4 +157,3 @@
     * "rpc-whitelist-enabled": false,
     * "umask": 0,
 * sudo systemctl start transmission-daemon.service
-

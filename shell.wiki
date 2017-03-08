@@ -15,4 +15,4 @@
 * lsof -p pid | grep cwd
 
 = counting files =
-ls -l | wc -l
+* ls -l | wc -l
