@@ -35,6 +35,10 @@
 * IRC(Internet Relay Chat)
 * NAT(Network Address Translation)
 * PPPoE(Point-to-Point Protocol over Ethernet)
+* DNS(Domain Name System)
+* DHCP(Dynamic Host Configuration Protocol)
+* PXE(Preboot Execution Environment)
+* TFTP(Trivial File Transfer Protocol)
 
 = web =
 * AJAX(Asynchronous Javascript and Xml)
