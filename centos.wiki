@@ -9,7 +9,7 @@
 * firewall-cmd --state
 
 = disable selinux =
-* sudo vim /etc/sysconfig/selinux
+* sudo vi /etc/sysconfig/selinux
     * SELINUX=disabled
 * sestatus
 
@@ -22,7 +22,7 @@
         * print
         * quit
     * sudo mkfs.xfs -f /dev/sdb
-    * sudo vim /etc/fstab
+    * sudo vi /etc/fstab
         * /dev/sdb /mnt/hdd3 xfs defaults 0 0
     * sudo reboot
 * fdisk
@@ -64,7 +64,7 @@
 * sudo chmod 777 /mnt/share
 * sudo mount /dev/volume/share /mnt/share
 * df -h
-* sudo vim /etc/fstab
+* sudo vi /etc/fstab
     * /dev/mapper/volume-share /mnt/share xfs defaults 0 0
 * sudo reboot
 
@@ -100,7 +100,7 @@
 = delete old linux kernel =
 * sudo yum install yum-utils
 * sudo package-cleanup --oldkernels --count=2
-* sudo vim /etc/yum.conf
+* sudo vi /etc/yum.conf
     * installonly_limit=2
 
 = kernel version =
@@ -114,7 +114,7 @@
 
 = samba =
 * sudo yum install samba
-* sudo vim /etc/samba/smb.conf
+* sudo vi /etc/samba/smb.conf
     * [global]
     *   workgroup = WORKGROUP
     *   security =  user
@@ -135,7 +135,7 @@
     *   recycle:repository = .recycle
     *   recycle:keeptree = yes
     *   recycle:versions = yes
-* sudo vim /etc/rsyslog.conf
+* sudo vi /etc/rsyslog.conf
     * local6.* /var/log/samba/log.audit
 * sudo systemctl restart rsyslog.service
 * sudo pdbedit -L
@@ -151,7 +151,7 @@
 * sudo systemctl start transmission-daemon.service
 * sudo systemctl stop transmission-daemon.service
 * sudo systemctl enable transmission-daemon.service
-* sudo vim /var/lib/transmission/.config/transmission-daemon/settings.json
+* sudo vi /var/lib/transmission/.config/transmission-daemon/settings.json
     * "download-dir": "/mnt/share/moive"
     * "incomplete-dir": "/mnt/share/moive",
     * "rpc-whitelist-enabled": false,
