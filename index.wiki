@@ -16,6 +16,9 @@
 * [[openssl]]
 * [[vim]]
 * [[tmux]]
+* [[samba]]
+* [[nginx]]
+* [[transmission]] 
 
 = util =
 * [[shell]]
