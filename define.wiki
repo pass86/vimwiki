@@ -18,6 +18,9 @@
 * NPR(Non-Photorealistic Rendering)
 * SDF(Signed Distance Field)
 
+= physics =
+* AABB(Axis Aligned Bounding Box)
+
 = memory =
 * USS(Unique Set Size)
 * PSS(Proportional Set Size)
