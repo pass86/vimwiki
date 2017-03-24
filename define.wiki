@@ -18,6 +18,11 @@
 * NPR(Non-Photorealistic Rendering)
 * SDF(Signed Distance Field)
 
+= opengl =
+* VBO(vertex buffer object)
+* VAO(vertex array object)
+* GLSL(OpenGL Shading Language)
+
 = physics =
 * AABB(Axis Aligned Bounding Box)
 
