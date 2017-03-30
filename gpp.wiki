@@ -4,7 +4,13 @@
 * prototype
 * singleton
 * state
+    * enter, exit, update, input
+    * hero sta†e, weapon state
+    * state stack, current is at top
+    * 目标是通过改变主对象代理的对象来改变主对象的行为
 * double buffer
+    * read buffer a, write buffer b, swap
+    * 解决的核心问题是对状态同时进行修改与访问的冲突
 * game loop
 * update method
 * bytecode
