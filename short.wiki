@@ -47,5 +47,6 @@
 * config-id cid
 * role-id rid
 * session-id sid
+* team-id tid
 * user-id uid
 * zone-id zid
