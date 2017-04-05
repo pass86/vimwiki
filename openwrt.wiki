@@ -32,21 +32,21 @@
     * }
 * vi /etc/init.d/shadowsocks
     * #!/bin/sh /etc/rc.common
-    * 
+    *
     * START=95
-    * 
+    *
     * SERVICE_DAEMONIZE=1
     * CONFIG=/etc/shadowsocks.json
     * DNS=8.8.8.8:53
     * TUNNEL_PORT=5353
-    * 
+    *
     * start() {
     *     ipset -N gfwlist iphash
     *     iptables -t nat -A PREROUTING -p tcp -m set --match-set gfwlist dst -j REDIRECT --to-port 1080
     *     service_start /usr/bin/ss-redir -c $CONFIG -b 0.0.0.0
     *     service_start /usr/bin/ss-tunnel -c $CONFIG -b 0.0.0.0 -u -l $TUNNEL_PORT -L $DNS
     * }
-    * 
+    *
     * stop() {
     *     service_stop /usr/bin/ss-redir
     *     service_stop /usr/bin/ss-tunnel
@@ -60,3 +60,7 @@
 * wget https://github.com/cokebar/gfwlist2dnsmasq/releases/download/v0.3_20170222/dnsmasq_gfwlist_ipset.conf
 * scp dnsmasq_gfwlist_ipset.conf root@openwrt.lan:/etc/dnsmasq.d
 * reboot
+
+= scheduled =
+* crontab -e
+    * 30 4 * * * sleep 70 && touch /etc/banner && reboot
