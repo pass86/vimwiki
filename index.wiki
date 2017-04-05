@@ -18,10 +18,10 @@
 * [[tmux]]
 * [[samba]]
 * [[nginx]]
-* [[transmission]] 
+* [[transmission]]
 
 = util =
 * [[shell]]
- 
+
 = devel =
 * [[unity]]
