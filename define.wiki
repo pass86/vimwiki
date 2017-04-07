@@ -10,6 +10,8 @@
 * UPnP(Universal Plug and Play)
 * TTY(teletype)
 * OA(Office Automation)
+* OLE(Object Linking and Embedding)
+* COM(Component Object Model)
 
 = graphic =
 * SSAO(Screen Space Ambient Occlusion)
