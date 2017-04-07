@@ -1,0 +1,3 @@
+= fix error =
+* compinit
+* cp .zcompdump .zcompdump-$HOSTNAME-$ZSH_VERSION

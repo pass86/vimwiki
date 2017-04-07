@@ -19,6 +19,7 @@
 * [[samba]]
 * [[nginx]]
 * [[transmission]]
+* [[babun]]
 
 = util =
 * [[shell]]
