@@ -97,6 +97,9 @@
 = passwd =
 * /etc/passwd
 
+= change ownership =
+* sudo chown -R foo:foo path
+
 = delete old linux kernel =
 * sudo yum install yum-utils
 * sudo package-cleanup --oldkernels --count=2
