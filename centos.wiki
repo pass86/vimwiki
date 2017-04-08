@@ -114,3 +114,9 @@
 
 = md5 =
 * md5sum foo
+
+= smartctl =
+* sudo yum install smartmontools
+* sudo smartctl -i /dev/sda
+* sudo smartctl -s on /dev/sda
+* sudo smartctl -a /dev/sda
