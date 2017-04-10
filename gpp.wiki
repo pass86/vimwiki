@@ -2,6 +2,8 @@
 * flyweight
 * observer
 * prototype
+    * clone, spawner
+    * 核心思想是一个对象可以生成与自身相似的其他对象
 * singleton
     * 不推荐使用
     * 直接用静态类
