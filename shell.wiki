@@ -16,3 +16,6 @@
 
 = counting files =
 * ls -l | wc -l
+
+= begin with =
+* cat foo | awk '$1 ~ /^ *bar/'
