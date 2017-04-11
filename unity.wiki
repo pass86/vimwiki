@@ -1,2 +1,5 @@
 = disable logging =
 * Debug.logger.logEnabled = false;
+
+= pause editor =
+* UnityEditor.EditorApplication.isPaused = true;
