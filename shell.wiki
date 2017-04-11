@@ -18,4 +18,4 @@
 * ls -l | wc -l
 
 = begin with =
-* cat foo | awk '$1 ~ /^ *bar/'
+* cat foo | awk '$1 ~ /^ *\bar/'
