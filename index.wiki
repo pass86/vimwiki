@@ -13,6 +13,7 @@
 
 = tools =
 * [[vim]]
+* [[git]]
 * [[svn]]
 * [[tmux]]
 * [[nginx]]
