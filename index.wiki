@@ -11,15 +11,15 @@
 = read =
 * [[gpp]]
 
-= tool =
+= tools =
+* [[vim]]
+* [[svn]]
+* [[tmux]]
+* [[nginx]]
+* [[babun]]
 * [[mysql]]
 * [[openssl]]
-* [[vim]]
-* [[tmux]]
-* [[samba]]
-* [[nginx]]
 * [[transmission]]
-* [[babun]]
 
 = util =
 * [[shell]]

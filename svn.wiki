@@ -1,0 +1,12 @@
+= undo last checkin =
+* svn merge -r head:prev foo
+
+= up to revision =
+* svn up -r xxx foo
+
+= show log =
+* svn log -l10 -v
+* svn log -rbase -v
+ 
+= show diff =
+* svn log -rbase --diff
