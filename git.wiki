@@ -1,2 +1,9 @@
 = archive latest =
 * git archive -o latest.zip HEAD
+
+= server repo =
+* sudo mkdir /repo
+* sudo git init --bare /repo/foo
+* sudo chown -R user:user /repo/foo
+* git clone user@server:/repo/foo
+* git push --set-upstream origin master
