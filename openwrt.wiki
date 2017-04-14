@@ -64,3 +64,18 @@
 = scheduled =
 * crontab -e
     * 30 4 * * * sleep 70 && touch /etc/banner && reboot
+
+= ddns =
+* opkg update
+* opkg install ddns-scripts ddns-scripts_no-ip_com luci-app-ddns
+* cp /usr/lib/ddns/dynamic_dns_functions.sh /usr/lib/ddns/dynamic_dns_functions.sh.bak
+* vi /usr/lib/ddns/dynamic_dns_functions.sh
+    * modify line 464
+    * __ERR=0
+* cp /usr/lib/ddns/update_No-IP.com.sh /usr/lib/ddns/update_No-IP.com.sh.bak
+* vi /usr/lib/ddns/update_No-IP.com.sh
+    * remove line 21-23
+    * remove line 7-15
+    * do_transfer "$__URL"
+    * return 0
+* reboot
