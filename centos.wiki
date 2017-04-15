@@ -55,17 +55,17 @@
 * sudo vgs
 * sudo vgscan
 * sudo vgdisplay
-* sudo lvcreate --name share --size 7T volume
+* sudo lvcreate --name data --size 7T volume
 * sudo lvs
 * sudo lvscan
 * sudo lvdisplay
-* sudo mkfs.xfs /dev/volume/share
-* sudo mkdir /mnt/share
-* sudo chmod 777 /mnt/share
-* sudo mount /dev/volume/share /mnt/share
+* sudo mkfs.xfs /dev/volume/data
+* sudo mkdir /data
+* sudo chmod 777 /data
+* sudo mount /dev/volume/data /data
 * df -h
 * sudo vi /etc/fstab
-    * /dev/mapper/volume-share /mnt/share xfs defaults 0 0
+    * /dev/mapper/volume-data /data xfs defaults 0 0
 * sudo reboot
 
 = volume group extend =
@@ -84,8 +84,8 @@
 * sudo vgdisplay
 
 = logical volume extend =
-* sudo lvextend -l +100%FREE /dev/volume/share
-* sudo xfs_growfs /dev/volume/share
+* sudo lvextend -l +100%FREE /dev/volume/data
+* sudo xfs_growfs /dev/volume/data
 * df -h
 
 = add sudo user =

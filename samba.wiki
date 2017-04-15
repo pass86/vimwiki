@@ -11,7 +11,7 @@
     *   comment = nas share
     *   browseable = yes
     *   writable = yes
-    *   path = /mnt/share
+    *   path = /data/share
     *   vfs objects = full_audit recycle
     *   full_audit:prefix = %u|%I|%m|%S
     *   full_audit:success = mkdir rename unlink rmdir pwrite open
