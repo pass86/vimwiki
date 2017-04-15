@@ -79,3 +79,14 @@
     * do_transfer "$__URL"
     * return 0
 * reboot
+
+= ssh key =
+* local
+    * scp ~/.ssh/id_rsa.pub root@wrt.lan:/tmp
+    * vim ~/.ssh/config
+        * Host wrt
+        *     HostName wrt.lan
+        *     User root
+* remote
+    * cat /tmp/id_rsa.pub >> /etc/dropbear/authorized_keys
+    * rm /tmp/id_rsa.pub
