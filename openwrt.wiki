@@ -83,7 +83,7 @@
 = ssh key =
 * local
     * scp ~/.ssh/id_rsa.pub root@wrt.lan:/tmp
-    * vim ~/.ssh/config
+    * vi ~/.ssh/config
         * Host wrt
         *     HostName wrt.lan
         *     User root
