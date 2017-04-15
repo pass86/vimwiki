@@ -1,5 +1,25 @@
-= virtual console =
-* ctrl + alt + f2
+= ssh key =
+* local
+    * cd ~
+    * mkdir .ssh
+    * cd .ssh
+    * ssh-keygen -t rsa -b 4096 -C "foo@gmail.com"
+    * scp id_rsa.pub foo@nas.lan:/home/foo
+    * vi config
+        * Host nas
+        *     HostName nas.lan
+        *     User foo
+    * chmod 600 config
+* remote
+    * cd ~
+    * mkdir .ssh
+    * cat id_rsa.pub >> .ssh/authorized_keys
+    * rm id_rsa.pub
+    * sudo vi /etc/ssh/sshd_config
+        * StrictModes no
+        * RSAAuthentication yes
+        * PubkeyAuthentication yes
+    * sudo systemctl restart sshd
 
 = firewalld =
 * systemctl start firewalld
@@ -121,25 +141,5 @@
 * sudo smartctl -s on /dev/sda
 * sudo smartctl -a /dev/sda
 
-= ssh key =
-* local
-    * cd ~
-    * mkdir .ssh
-    * cd .ssh
-    * ssh-keygen -t rsa -b 4096 -C "foo@gmail.com"
-    * scp id_rsa.pub foo@nas.lan:/home/foo
-    * vi config
-        * Host nas
-        *     HostName nas.lan
-        *     User foo
-    * chmod 600 config
-* remote
-    * cd ~
-    * mkdir .ssh
-    * cat id_rsa.pub >> .ssh/authorized_keys
-    * rm id_rsa.pub
-    * sudo vi /etc/ssh/sshd_config
-        * StrictModes no
-        * RSAAuthentication yes
-        * PubkeyAuthentication yes
-    * sudo systemctl restart sshd
+= virtual console =
+* ctrl + alt + f2
