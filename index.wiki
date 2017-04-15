@@ -17,6 +17,7 @@
 * [[svn]]
 * [[tmux]]
 * [[nginx]]
+* [[redis]]
 * [[babun]]
 * [[mysql]]
 * [[openssl]]

@@ -1,3 +1,6 @@
+= devel =
+* sudo yum install mysql-community-devel
+
 = password =
 * use mysql;
 * alter user 'root'@'localhost' identified by 'foo';

@@ -1,5 +1,4 @@
 = install =
-* sudo yum install epel-release
 * sudo yum install nginx
 
 = reverse proxy =

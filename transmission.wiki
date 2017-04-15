@@ -1,5 +1,4 @@
 = install =
-* sudo yum install epel-release
 * sudo yum install transmission-daemon
 * sudo systemctl start transmission-daemon
 * sudo systemctl stop transmission-daemon
