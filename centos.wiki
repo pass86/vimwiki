@@ -81,7 +81,6 @@
 * sudo lvdisplay
 * sudo mkfs.xfs /dev/volume/data
 * sudo mkdir /data
-* sudo chmod 777 /data
 * sudo mount /dev/volume/data /data
 * df -h
 * sudo vi /etc/fstab
