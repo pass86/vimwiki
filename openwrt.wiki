@@ -64,6 +64,7 @@
 = scheduled =
 * crontab -e
     * 30 4 * * * sleep 70 && touch /etc/banner && reboot
+    * 40 4 * * * sleep 70 && /etc/init.d/dnsmasq restart && /etc/init.d/shadowsocks restart
 
 = ddns =
 * opkg update
