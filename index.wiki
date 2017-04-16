@@ -28,3 +28,6 @@
 
 = devel =
 * [[unity]]
+
+= game =
+* [[diablo3]]

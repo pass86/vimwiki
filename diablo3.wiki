@@ -1,0 +1,5 @@
+= 铁匠(Artisan)-海德格·埃蒙(Haedrig Eamon) =
+* 锻造(Forge)
+    * 武器(Weapons)
+    * 护甲(Armor)
+* 拆解(Salvage)
