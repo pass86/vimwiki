@@ -1,6 +1,11 @@
 * command
 * flyweight
 * observer
+    * observer, subject, notify
+    * 非常适合于一些不相关的模块之间的通信问题
+    * 不适合于单个紧凑的模块内部的通信
+    * 为了接收一个通知而去实现整个接口并不符合现在的编程美学
+    * 更现代的方法倾向于函数式而不是基于类的
 * prototype
     * clone, spawner
     * 核心思想是一个对象可以生成与自身相似的其他对象
