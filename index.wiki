@@ -22,7 +22,7 @@
 * [[mysql]]
 * [[openssl]]
 * [[transmission]]
-* [[[gimp]]]
+* [[gimp]]
 
 = util =
 * [[shell]]
