@@ -9,6 +9,7 @@
 * prototype
     * clone, spawner
     * 核心思想是一个对象可以生成与自身相似的其他对象
+    * 适合于游戏里面的数据建模, 重用数据, goblin grunt, goblin wizard, goblin archer
 * singleton
     * 不推荐使用
     * 直接用静态类
