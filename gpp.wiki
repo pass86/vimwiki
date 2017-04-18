@@ -22,7 +22,7 @@
 
 = state =
 * enter, exit, update, input
-* hero sta†e, weapon state
+* hero state, weapon state
 * state stack, current is at top
 * 目标是通过改变主对象代理的对象来改变主对象的行为
 
