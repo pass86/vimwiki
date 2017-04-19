@@ -1,4 +1,6 @@
 = command =
+* request, param, log, queue, undo, redo
+* 一个对象化的方法调用
 
 = flyweight =
 * 使用共享以高效地支持大量的细粒度对象
