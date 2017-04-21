@@ -33,6 +33,8 @@
 * 解决的核心问题是对状态同时进行修改与访问的冲突
 
 = game loop =
+* render(lag / MS_PER_UPDATE)
+* 两个关键部分：非阻塞的用户输入和帧时间适配
 
 = update method =
 
