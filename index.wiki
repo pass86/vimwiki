@@ -28,8 +28,8 @@
 * [[shell]]
 
 = devel =
+* [[devel]]
 * [[unity]]
-* [[library]]
 
 = game =
 * [[diablo3]]
