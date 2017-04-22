@@ -20,8 +20,11 @@
     * set(inc_list ${Boost_INCLUDE_DIRS})
     * if(${CMAKE_CXX_COMPILER_ID} STREQUAL "GNU")
     *     set(lib_list ${Boost_LIBRARIES} pthread rt)
-    * else()
+    * elseif(${CMAKE_CXX_COMPILER_ID} STREQUAL "Clang")
     *     set(lib_list ${Boost_LIBRARIES})
+    * elseif(MSVC)
+    *     set(lib_list ${Boost_LIBRARIES})
+    *     set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /SAFESEH:NO Psapi.lib")
     * endif()
 
 = protobuf =
@@ -75,14 +78,22 @@
 * fix linux issue
     * sudo ln -s /usr/local/lib64/libssl.so.1.1 /usr/lib64/libssl.so.1.1
     * sudo ln -s /usr/local/lib64/libcrypto.so.1.1 /usr/lib64/libcrypto.so.1.1
+* fix windows issue
+    * no OPENSSL_Applink...
+        * add include path for applink.c
+        * #ifdef _WIN32
+        * #include <ms/applink.c>
+        * #endif
 * cmake recipe
     * if(${CMAKE_CXX_COMPILER_ID} STREQUAL "GNU")
+    *     set(lib_list crypto)
     *     link_directories("/usr/local/lib64")
     * elseif(${CMAKE_CXX_COMPILER_ID} STREQUAL "Clang")
     *     find_package(OpenSSL REQUIRED)
     *     set(inc_list ${OPENSSL_INCLUDE_DIR})
     *     set(lib_list ${OPENSSL_CRYPTO_LIBRARY})
     * elseif(MSVC)
+    *     set(lib_list libcrypto)
     *     include_directories($ENV{OPENSSL_ROOT})
     *     include_directories($ENV{OPENSSL_ROOT}/include)
     *     link_directories($ENV{OPENSSL_ROOT}/lib)

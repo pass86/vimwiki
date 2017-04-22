@@ -1,11 +1,11 @@
 = name =
-* [[define]]
 * [[game]]
 * [[short]]
+* [[define]]
 
 = os =
-* [[centos]]
 * [[macos]]
+* [[centos]]
 * [[openwrt]]
 
 = read =
@@ -16,13 +16,8 @@
 * [[git]]
 * [[svn]]
 * [[tmux]]
-* [[nginx]]
-* [[redis]]
-* [[babun]]
-* [[mysql]]
-* [[openssl]]
-* [[transmission]]
 * [[gimp]]
+* [[babun]]
 
 = script =
 * [[shell]]
@@ -30,6 +25,12 @@
 = devel =
 * [[devel]]
 * [[unity]]
+
+= service =
+* [[nginx]]
+* [[redis]]
+* [[mysql]]
+* [[transmission]]
 
 = game =
 * [[diablo3]]
