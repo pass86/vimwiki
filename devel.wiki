@@ -1,3 +1,29 @@
+= boost =
+* build on windows
+    * open Developer Command Prompt for VS2015
+    * cd %USERPROFILE%\code\boost_1_64_0
+    * .\bootstrap.bat
+    * .\b2.exe
+    * setx BOOST_ROOT %USERPROFILE%\code\boost_1_64_0
+* build on macos & linux
+    * cd ~/code/boost_1_64_0
+    * ./bootstrap.sh
+    * ./b2
+    * sudo ./b2 install
+* install linux dependency
+    * sudo yum install -y zlib-devel bzip2-devel libquadmath-devel
+* cmake recipe
+    * set(Boost_USE_STATIC_LIBS ON)
+    * set(Boost_USE_MULTITHREADED ON)
+    * set(Boost_USE_STATIC_RUNTIME OFF)
+    * find_package(Boost REQUIRED COMPONENTS unit_test_framework log_setup log filesystem program_options random system)
+    * set(inc_list ${Boost_INCLUDE_DIRS})
+    * if(${CMAKE_CXX_COMPILER_ID} STREQUAL "GNU")
+    *     set(lib_list ${Boost_LIBRARIES} pthread rt)
+    * else()
+    *     set(lib_list ${Boost_LIBRARIES})
+    * endif()
+
 = protobuf =
 * build on windows
     * open Developer Command Prompt for VS2015
@@ -16,7 +42,7 @@
     * cd build
     * cmake -Dprotobuf_BUILD_TESTS=OFF ..
     * make
-    * make install
+    * sudo make install
 * build on linux
     * sudo yum install -y autoconf automake libtool curl make g++ unzip
     * cd ~/code/protobuf-3.2.0
@@ -26,6 +52,10 @@
     * make check
     * sudo make install
     * sudo ldconfig
+* cmake recipe
+    * find_package(Protobuf REQUIRED)
+    * set(inc_list ${Protobuf_INCLUDE_DIRS})
+    * set(lib_list ${Protobuf_LIBRARIES})
 
 = openssl =
 * build on windows
@@ -45,6 +75,19 @@
 * fix linux issue
     * sudo ln -s /usr/local/lib64/libssl.so.1.1 /usr/lib64/libssl.so.1.1
     * sudo ln -s /usr/local/lib64/libcrypto.so.1.1 /usr/lib64/libcrypto.so.1.1
+* cmake recipe
+    * if(${CMAKE_CXX_COMPILER_ID} STREQUAL "GNU")
+    *     link_directories("/usr/local/lib64")
+    * elseif(${CMAKE_CXX_COMPILER_ID} STREQUAL "Clang")
+    *     find_package(OpenSSL REQUIRED)
+    *     set(inc_list ${OPENSSL_INCLUDE_DIR})
+    *     set(lib_list ${OPENSSL_CRYPTO_LIBRARY})
+    * elseif(MSVC)
+    *     include_directories($ENV{OPENSSL_ROOT})
+    *     include_directories($ENV{OPENSSL_ROOT}/include)
+    *     link_directories($ENV{OPENSSL_ROOT}/lib)
+    *     link_directories($ENV{OPENSSL_ROOT})
+    * endif()
 * generating ec keys
     * openssl ecparam -list_curves
     * openssl ecparam -name prime256v1 -param_enc named_curve -genkey -noout -out pri.pem
