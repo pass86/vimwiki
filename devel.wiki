@@ -11,7 +11,7 @@
     * setx CMAKE_INCLUDE_PATH %USERPROFILE%\code\protobuf-3.2.0\src
     * setx CMAKE_LIBRARY_PATH %USERPROFILE%\code\protobuf-3.2.0\cmake\build\debug
 * build on macos
-    * cd protobuf-3.2.0\cmake
+    * cd ~/code/protobuf-3.2.0/cmake
     * mkdir build
     * cd build
     * cmake -Dprotobuf_BUILD_TESTS=OFF ..
@@ -19,9 +19,33 @@
     * make install
 * build on linux
     * sudo yum install -y autoconf automake libtool curl make g++ unzip
+    * cd ~/code/protobuf-3.2.0
     * ./autogen.sh
     * ./configure
     * make
     * make check
     * sudo make install
     * sudo ldconfig
+
+= openssl =
+* build on windows
+    * install nasm http://www.nasm.us
+    * install perl http://strawberryperl.com
+    * open Developer Command Prompt for VS2015
+    * cd %USERPROFILE%\code\openssl-1.1.0e
+    * perl Configure VC-WIN32
+    * nmake
+    * nmake test
+    * setx OPENSSL_ROOT %USERPROFILE%\code\openssl-1.1.0e
+* build on macos & linux
+    * cd ~/code/openssl-1.1.0e
+    * ./config
+    * make
+    * sudo make install
+* fix linux issue
+    * sudo ln -s /usr/local/lib64/libssl.so.1.1 /usr/lib64/libssl.so.1.1
+    * sudo ln -s /usr/local/lib64/libcrypto.so.1.1 /usr/lib64/libcrypto.so.1.1
+* generating ec keys
+    * openssl ecparam -list_curves
+    * openssl ecparam -name prime256v1 -param_enc named_curve -genkey -noout -out pri.pem
+    * openssl ec -in pri.pem -pubout -out pub.pem

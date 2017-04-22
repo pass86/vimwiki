@@ -9,4 +9,4 @@
 * git push --set-upstream origin master
 
 = remove untracked =
-* git clean -f
+* git clean -dfx
