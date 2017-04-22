@@ -10,6 +10,7 @@
         *     HostName nas.lan
         *     User foo
     * chmod 600 config
+    * chmod 600 id_rsa
 * remote
     * cd ~
     * mkdir .ssh
