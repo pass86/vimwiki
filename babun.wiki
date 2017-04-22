@@ -1,3 +1,6 @@
 = fix error =
 * compinit
 * cp .zcompdump .zcompdump-$HOSTNAME-$ZSH_VERSION
+
+= clipboard =
+* cat id_rsa.pub | clip
