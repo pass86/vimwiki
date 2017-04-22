@@ -24,7 +24,7 @@
 * [[transmission]]
 * [[gimp]]
 
-= util =
+= script =
 * [[shell]]
 
 = devel =
