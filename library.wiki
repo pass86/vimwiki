@@ -1,0 +1,27 @@
+= protobuf =
+* build on windows
+    * open Developer Command Prompt for VS2015
+    * cd %USERPROFILE%\code\protobuf-3.2.0\cmake
+    * mkdir build\debug
+    * cd build\debug
+    * cmake -G "NMake Makefiles" -DCMAKE_BUILD_TYPE=Debug -Dprotobuf_BUILD_TESTS=OFF -Dprotobuf_MSVC_STATIC_RUNTIME=OFF ../..
+    * nmake
+    * copy libprotobufd.lib libprotobuf.lib
+    * setx PROTOBUF_ROOT %USERPROFILE%\code\protobuf-3.2.0
+    * setx CMAKE_INCLUDE_PATH %USERPROFILE%\code\protobuf-3.2.0\src
+    * setx CMAKE_LIBRARY_PATH %USERPROFILE%\code\protobuf-3.2.0\cmake\build\debug
+* build on macos
+    * cd protobuf-3.2.0\cmake
+    * mkdir build
+    * cd build
+    * cmake -Dprotobuf_BUILD_TESTS=OFF ..
+    * make
+    * make install
+* build on linux
+    * sudo yum install -y autoconf automake libtool curl make g++ unzip
+    * ./autogen.sh
+    * ./configure
+    * make
+    * make check
+    * sudo make install
+    * sudo ldconfig
