@@ -4,3 +4,7 @@
 
 = clipboard =
 * cat id_rsa.pub | clip
+
+= zsh plugins =
+* vim ~/.oh-my-zsh/plugins/git/git.plugin.zsh
+    * alias gcam='git commit -am'
