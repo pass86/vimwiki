@@ -39,6 +39,7 @@
     * setx PROTOBUF_ROOT %USERPROFILE%\code\protobuf-3.2.0
     * setx CMAKE_INCLUDE_PATH %USERPROFILE%\code\protobuf-3.2.0\src
     * setx CMAKE_LIBRARY_PATH %USERPROFILE%\code\protobuf-3.2.0\cmake\build\debug
+    * add path %USERPROFILE%\code\protobuf-3.2.0\cmake\build\debug
 * build on macos
     * cd ~/code/protobuf-3.2.0/cmake
     * mkdir build
@@ -63,6 +64,7 @@
 = openssl =
 * build on windows
     * install nasm http://www.nasm.us
+    * add path %USERPROFILE%\tools\nasm-2.12.02
     * install perl http://strawberryperl.com
     * open Developer Command Prompt for VS2015
     * cd %USERPROFILE%\code\openssl-1.1.0e
@@ -70,6 +72,7 @@
     * nmake
     * nmake test
     * setx OPENSSL_ROOT %USERPROFILE%\code\openssl-1.1.0e
+    * add path %USERPROFILE%\code\openssl-1.1.0e
 * build on macos & linux
     * cd ~/code/openssl-1.1.0e
     * ./config

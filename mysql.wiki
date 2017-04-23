@@ -1,6 +1,7 @@
 = devel =
 * windows
     * setx MYSQL_ROOT %USERPROFILE%\devel\mysql-connector-c-6.1.9-win32
+    * add path MYSQL_ROOT %USERPROFILE%\devel\mysql-connector-c-6.1.9-win32\lib
 * linux
     * sudo yum install mysql-community-devel
 

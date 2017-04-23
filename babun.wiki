@@ -8,6 +8,6 @@
 = zsh plugins =
 * vim ~/.oh-my-zsh/plugins/git/git.plugin.zsh
     * alias gcam='git commit -am'
- 
+
 = package =
 * pact install the_silver_searcher
