@@ -12,6 +12,7 @@
 * OA(Office Automation)
 * OLE(Object Linking and Embedding)
 * COM(Component Object Model)
+* LLVM(Low Level Virtual Machine)
 
 = graphic =
 * SSAO(Screen Space Ambient Occlusion)
