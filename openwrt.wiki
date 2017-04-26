@@ -6,7 +6,7 @@
 * uci set network.wan.password='yourpassword'
 * uci commit network
 * ifup wan
- 
+
 = shadowsocks =
 * vi /etc/opkg.conf
     * remove option check_signature 0
@@ -16,6 +16,8 @@
 * opkg update
 * opkg install shadowsocks-libev
 * opkg install luci-app-shadowsocks
+* opkg install ChinaDNS
+* opkg install luci-app-chinadns
 * reboot
 
 = guest wifi =
