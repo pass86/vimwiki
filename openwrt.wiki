@@ -7,7 +7,7 @@
 * uci commit network
 * ifup wan
  
-= shadowsocks package =
+= shadowsocks =
 * vi /etc/opkg.conf
     * remove option check_signature 0
 * vi /etc/opkg/customfeeds.conf
@@ -51,60 +51,3 @@
 * remote
     * cat /tmp/id_rsa.pub >> /etc/dropbear/authorized_keys
     * rm /tmp/id_rsa.pub
-
-= dnsmasq =
-* opkg update
-* opkg install iptables-mod-nat-extra ipset
-* reboot
-* opkg remove dnsmasq && opkg install dnsmasq-full
-* vi /etc/dnsmasq.conf
-    * conf-dir=/etc/dnsmasq.d
-* mkdir /etc/dnsmasq.d
-* wget https://github.com/cokebar/gfwlist2dnsmasq/releases/download/v0.3_20170222/dnsmasq_gfwlist_ipset.conf
-* scp dnsmasq_gfwlist_ipset.conf root@openwrt.lan:/etc/dnsmasq.d
-* reboot
-
-= shadowsocks manual =
-* wget https://dl.bintray.com/aa65535/opkg/shadowsocks-libev/3.0.3/OpenWrt/mvebu/libev_4.24-1_mvebu.ipk
-* wget https://dl.bintray.com/aa65535/opkg/shadowsocks-libev/3.0.3/OpenWrt/mvebu/libudns_0.4-1_mvebu.ipk
-* wget https://dl.bintray.com/aa65535/opkg/shadowsocks-libev/3.0.3/OpenWrt/mvebu/libpcre_8.40-1_mvebu.ipk
-* wget https://dl.bintray.com/aa65535/opkg/shadowsocks-libev/3.0.3/OpenWrt/mvebu/libmbedtls_2.4.0-3_mvebu.ipk
-* wget https://dl.bintray.com/aa65535/opkg/shadowsocks-libev/3.0.3/OpenWrt/mvebu/libsodium_1.0.11-2_mvebu.ipk
-* wget https://dl.bintray.com/aa65535/opkg/shadowsocks-libev/3.0.3/OpenWrt/mvebu/shadowsocks-libev_3.0.3-1_mvebu.ipk
-* wget https://dl.bintray.com/aa65535/opkg/shadowsocks-libev/3.0.3/OpenWrt/mvebu/shadowsocks-libev-server_3.0.3-1_mvebu.ipk
-* scp libev*.ipk libudns*.ipk libpcre*.ipk libsodium*.ipk libmbedtls*.ipk shadowsocks-libev*.ipk root@openwrt.lan:/tmp
-* opkg install libev*.ipk libudns*.ipk libpcre*.ipk libsodium*.ipk libmbedtls*.ipk
-* opkg install shadowsocks-libev*.ipk
-* vi /etc/shadowsocks.json
-    * {
-    *    "server": "xxx.xxx.xxx.xxx",
-    *    "server_port": 8388,
-    *    "local_port": 1080,
-    *    "password": "xxxxxxxx",
-    *    "method": "aes-256-cfb"
-    * }
-* vi /etc/init.d/shadowsocks
-    * #!/bin/sh /etc/rc.common
-    *
-    * START=95
-    *
-    * SERVICE_DAEMONIZE=1
-    * CONFIG=/etc/shadowsocks.json
-    * DNS=8.8.8.8:53
-    * TUNNEL_PORT=5353
-    *
-    * start() {
-    *     ipset -N gfwlist iphash
-    *     iptables -t nat -A PREROUTING -p tcp -m set --match-set gfwlist dst -j REDIRECT --to-port 1080
-    *     service_start /usr/bin/ss-redir -c $CONFIG -b 0.0.0.0
-    *     service_start /usr/bin/ss-tunnel -c $CONFIG -b 0.0.0.0 -u -l $TUNNEL_PORT -L $DNS
-    * }
-    *
-    * stop() {
-    *     service_stop /usr/bin/ss-redir
-    *     service_stop /usr/bin/ss-tunnel
-    * }
-* chmod +x /etc/init.d/shadowsocks
-* /etc/init.d/shadowsocks enable
-* /etc/init.d/shadowsocks start
-* reboot
