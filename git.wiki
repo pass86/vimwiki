@@ -10,3 +10,6 @@
 
 = remove untracked =
 * git clean -dfx
+
+= last version =
+* git diff HEAD^ HEAD
