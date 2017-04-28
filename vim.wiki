@@ -5,4 +5,5 @@
 * :set list
 
 = cmdline window =
+* q:
 * :<c+f>
