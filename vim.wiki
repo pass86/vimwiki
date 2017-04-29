@@ -6,4 +6,3 @@
 
 = cmdline window =
 * q:
-* :<c+f>
