@@ -23,6 +23,11 @@
 = guest wifi =
 * https://wiki.openwrt.org/doc/recipes/guest-wlan
 
+= fix linksys wifi stability =
+* opkg list-installed | grep mwlwifi
+* opkg update ; opkg install git-http ; cd /tmp ; git clone --depth 1 https://github.com/NemoAlex/mwlwifi-bin.git ; cd mwlwifi-bin/15.05.1 ; opkg install kmod-mwlwifi_3.18.23\+10.3.0.17-20160531-1_mvebu.ipk ; reboot
+* strings /lib/modules/*.*/mwlwifi.ko | grep "^10.3"
+
 = scheduled =
 * crontab -e
     * 30 4 * * * sleep 70 && touch /etc/banner && reboot
