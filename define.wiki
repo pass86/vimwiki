@@ -51,6 +51,7 @@
 * DHCP(Dynamic Host Configuration Protocol)
 * PXE(Preboot Execution Environment)
 * TFTP(Trivial File Transfer Protocol)
+* POE(Power Over Ethernet)
 
 = web =
 * AJAX(Asynchronous Javascript and Xml)
