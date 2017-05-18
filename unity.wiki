@@ -3,3 +3,6 @@
 
 = pause editor =
 * UnityEditor.EditorApplication.isPaused = true;
+
+= custom property drawer =
+* PropertyDrawer https://docs.unity3d.com/ScriptReference/PropertyDrawer.html
