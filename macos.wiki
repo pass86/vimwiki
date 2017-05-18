@@ -3,3 +3,6 @@
 
 = interprocess status =
 * ipcs
+
+= lock screen shortcut =
+* ctrl + shift + power
