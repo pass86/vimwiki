@@ -70,6 +70,11 @@
 * 相互协作: 修改容器对象的状态; 直接相互引用; 消息传递系统
 
 = event queue =
+* ring buffer, head, tail, threads
+* 对消息或事件的发送与受理进行时间上的解耦
+* 避免在处理事件端代码中发送事件, 可能导致死循环
+* 一个事件(event)或通知(notification)描述已经发生的事情, 比如"怪物死亡"
+* 一个消息(message)或请求(request)描述一种"我们期望"发生在"将来"的行为, 类似于"播放音乐"; 可以认为这是一个异步的API服务
 
 = service locator =
 
