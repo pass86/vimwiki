@@ -11,6 +11,9 @@
 = read =
 * [[gpp]]
 
+= knowledge =
+* [[math]]
+
 = tools =
 * [[vim]]
 * [[git]]
