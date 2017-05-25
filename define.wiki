@@ -13,7 +13,7 @@
 * OLE(Object Linking and Embedding)
 * COM(Component Object Model)
 * LLVM(Low Level Virtual Machine)
-* BOM(Byte Order Mark)
+* BOM(Byte Order Mark) U+FEFF
 
 = graphic =
 * SSAO(Screen Space Ambient Occlusion)
