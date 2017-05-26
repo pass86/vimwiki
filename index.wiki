@@ -8,12 +8,6 @@
 * [[centos]]
 * [[openwrt]]
 
-= read =
-* [[gpp]]
-
-= knowledge =
-* [[math]]
-
 = tools =
 * [[vim]]
 * [[git]]
@@ -38,3 +32,9 @@
 
 = game =
 * [[diablo3]]
+
+= read =
+* [[gpp]]
+
+= knowledge =
+* [[math]]
