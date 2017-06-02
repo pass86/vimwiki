@@ -21,6 +21,7 @@
 * AA(Anti-Aliasing)
 * NPR(Non-Photorealistic Rendering)
 * SDF(Signed Distance Field)
+* HLSL(High-Level Shading Language)
 
 = opengl =
 * VBO(vertex buffer object)
