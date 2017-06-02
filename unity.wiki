@@ -6,3 +6,9 @@
 
 = custom property drawer =
 * PropertyDrawer https://docs.unity3d.com/ScriptReference/PropertyDrawer.html
+
+= shader =
+* types
+    * float 32
+    * half 16 (-60000, +60000)
+    * fixed 11 (-2.0, +2.0) 1/256th
