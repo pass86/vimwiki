@@ -22,6 +22,10 @@
         * PubkeyAuthentication yes
     * sudo systemctl restart sshd
 
+= root login =
+* sudo vi /etc/ssh/sshd_config
+* PermitRootLogin no
+
 = firewalld =
 * systemctl start firewalld
 * systemctl stop firewalld
@@ -33,6 +37,9 @@
 * sudo vi /etc/sysconfig/selinux
     * SELINUX=disabled
 * sestatus
+
+= hostname =
+* sudo hostnamectl set-hostname vps
 
 = mount new drive =
 * parted
