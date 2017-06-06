@@ -12,3 +12,6 @@
     * float 32
     * half 16 (-60000, +60000)
     * fixed 11 (-2.0, +2.0) 1/256th
+
+= winding order =
+* clockwise front visible
