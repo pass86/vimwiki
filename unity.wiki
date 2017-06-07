@@ -17,4 +17,4 @@
 * clockwise front visible
 
 = texture =
-* (0, 0) is lower left corner
+* (0, 0) at lower left corner
