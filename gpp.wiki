@@ -7,7 +7,7 @@
 * Direct3D和OpenGL都能够实现实例绘制
 
 = observer =
-* observer, subject, notify
+* subject, notify
 * 非常适合于一些不相关的模块之间的通信问题
 * 不适合于单个紧凑的模块内部的通信
 * 为了接收一个通知而去实现整个接口并不符合现在的编程美学
