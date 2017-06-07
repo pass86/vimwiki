@@ -15,3 +15,6 @@
 
 = winding order =
 * clockwise front visible
+
+= texture =
+* (0, 0) is lower left corner
