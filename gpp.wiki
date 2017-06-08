@@ -100,5 +100,9 @@
 * 在后台处理数据可以让玩家同时做其他事情
 
 = object pool =
+* soak tests, in use, alive, not in use, free list, first, next
+* 使用固定的对象池重用对象, 取代单独地分配和释放对象, 以此来达到提升性能和优化内存使用的目的
+* 一个魔棒就数以百计的粒子: 需要非常快速的生成它们; 需要创建和销毁它们时不会产生内存碎片
+* 推荐清空后将其内存值置为0x1deadb0b
 
 = spatial partition =
