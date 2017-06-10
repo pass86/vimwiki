@@ -13,3 +13,7 @@
 
 = last version =
 * git diff HEAD^ HEAD
+
+= change most recent commit message after push =
+* git commit --amend
+* git push --force
