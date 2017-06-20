@@ -11,17 +11,11 @@
 * 编写整洁代码的程序员就像是艺术家, 他能用一系列变换把一块白板变作由优雅代码构成的系统
 
 = 什么是整洁代码 =
-* Bjarne Stroustrup(C++ Programming Language)
     * 我喜欢优雅和高效地代码
-* Grady Booch(Object Oriented Analysis And Design with Applications)
     * 整洁的代码简单直接
-* Dave Thomas(OTI, Eclipse)
     * 整洁的代码应该可由作者之外的开发者阅读和增补
-* Michael Feathers(Working Effectively with Legacy Code)
     * 整洁的代码总是看起来像是某位特别在意它的人写的, 几乎没有改进的余地, 如果你企图改进它, 总会回到原点
-* Ron Jeffries(Extreme Programming Installed, Extreme Programming Adventures in C#)
     * 减少重复代码, 提高表达力, 提早构建简单抽象
-* Ward Cunningham(Wiki, Extreme Programming, Smalltalk)
     * 如果每个例程都让你深合己意, 那就是整洁的代码
 
 = 我们是作者 =
