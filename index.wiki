@@ -23,6 +23,7 @@
 = devel =
 * [[devel]]
 * [[unity]]
+* [[3dsmax]]
 
 = service =
 * [[nginx]]
