@@ -9,3 +9,6 @@
  
 = swap window left =
 * swap-window -t -1
+
+= build =
+* brew install automake libevent reattach-to-user-namespace
