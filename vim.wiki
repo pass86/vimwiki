@@ -6,3 +6,9 @@
 
 = cmdline window =
 * q:
+
+= build =
+* ./configure --enable-pythoninterp
+
+= ycm =
+* ./install.py --clang-completer --system-libclang --omnisharp-completer
