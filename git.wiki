@@ -17,3 +17,7 @@
 = change most recent commit message after push =
 * git commit --amend
 * git push --force
+
+= remove submodule =
+* git submodule deinit foo
+* git rm foo
