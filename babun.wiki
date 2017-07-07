@@ -11,3 +11,9 @@
 
 = package =
 * pact install the_silver_searcher
+
+= fix prompt slow =
+* set theme newly
+    * ZSH_THEME="agnoster"
+* set theme back
+    * ZSH_THEME="robbyrussell"
