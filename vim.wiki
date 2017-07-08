@@ -11,4 +11,8 @@
 * ./configure --enable-pythoninterp
 
 = ycm =
-* ./install.py --clang-completer --system-libclang --omnisharp-completer
+* macos
+    * ./install.py --clang-completer --system-libclang --omnisharp-completer
+* linux
+    * require gcc 4.9
+    * ./install.py --clang-completer
