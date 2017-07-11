@@ -109,3 +109,4 @@
 = misc =
 * afk(away from keyboard)
 * kitting
+* hostile
