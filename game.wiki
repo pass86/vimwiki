@@ -1,80 +1,18 @@
-= biz =
-* achievement
-* actor
-    * boss
-    * hero
-    * mob
-    * npc(non-player character)
-    * class
-        * barbarian
-        * crusader
-        * demon hunter
-        * monk
-        * witch doctor
-        * wizard
-    * part
-        * head
-        * neck
-        * wrists
-        * offhand
-        * ring
-        * feet
-        * legs
-        * belt
-        * mainhand
-        * hand
-        * shoulders
-        * chest
-* aoe(area of effect)
-* attribute
-    * primary
-        * strength(str)
-        * dexterity(dex)
-        * intelligence(int)
-        * vitality(vit)
-        * damage
-        * toughness
-        * recovery
-    * offense
-        * attack per second
-        * attack speed increase
-        * critical hit chance
-        * critical hit damage
-        * area damage
-        * cooldown reduction
-    * defense
-        * armor
-        * resistance
-            * physical
-            * cold
-            * fire
-            * lightning
-            * posion
-            * arcane/holy
-        * reduction
-            * crowd control
-            * missile damage
-            * melee damage
-    * life
-        * maximum life
-        * total life bonus
-        * life per second
-        * life per hit
-        * life per kill
-        * health globe healing bonus
-    * bonus
-        * bonus experience
-        * bonus experience per kill
-        * bonus to gold/globe radius
-    * movement speed
-    * durability
-* 每秒伤害 DPS(Damage Per Second)
+* 成就 achievement
+* 角色 actor, character
+* 主宰 boss
+* 英雄 hero
+* 杂兵 mob
+* 非玩家角色 NPC(Non-Player Character)
+* 范围伤害 AOE(Area of Effect)
+* 耐久 durability
+* 每秒伤害 DPS(Damage per Second)
 * 进化 evolve
 * 升级 upgrade
 * 星 star
 * 战斗 battle
-* PvE(Player versus Environment)
-* PvP(Player versus Player)
+* 人机 PvE(Player versus Environment)
+* 竞技 PvP(Player versus Player)
 * 增益 BUFF
 * 减益 DEBUFF
 * 持续伤害 DOT(Damage Over Time)
@@ -101,6 +39,7 @@
 * 抛射物 projectile
 * 动作条 actionbar
 * 导航条 navbar
+* 业务 biz
 * 暂离 AFK(Away From Keyboard)
 * 放风筝 kitting
 * 敌对 hostile
