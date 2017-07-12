@@ -68,45 +68,39 @@
         * bonus to gold/globe radius
     * movement speed
     * durability
-    * dps(damage per second)
-    * evolve
-    * upgrade
-    * star
-* battle
-    * pve(player versus environment)
-    * pvp(player versus player)
-* buff
-    * debuff
-    * dot(damage over time)
-    * hot(heal over time)
-* chat
-* dizzy
-* dungeon
-* guild
-* item
-    * equip
-        * weapon
-    * material
-    * prop
-* quest
-* stash
-* skill
-    * cooldown
-* team
-
-= devel =
-* bullet time
-* fog of war
-* fx
-* lag
-* sfx
-* projectile
-
-= view =
-* actionbar
-* navbar
-
-= misc =
-* afk(away from keyboard)
-* kitting
-* hostile
+* 每秒伤害 DPS(Damage Per Second)
+* 进化 evolve
+* 升级 upgrade
+* 星 star
+* 战斗 battle
+* PvE(Player versus Environment)
+* PvP(Player versus Player)
+* 增益 BUFF
+* 减益 DEBUFF
+* 持续伤害 DOT(Damage Over Time)
+* 持续治疗 HOT(Heal Over Time)
+* 聊天 chat
+* 眩晕 dizzy
+* 副本 dungeon
+* 工会 guild
+* 物品 item
+* 装备 equip
+* 武器 weapon
+* 材料 material
+* 道具 props
+* 任务 quest
+* 仓库 stash
+* 技能 skill
+* 冷却 cooldown
+* 队伍 team
+* 子弹时间 bullet time
+* 战争迷雾 FOW(Fog of War)
+* 特效 fx
+* 音效 sfx
+* 延迟 lag
+* 抛射物 projectile
+* 动作条 actionbar
+* 导航条 navbar
+* 暂离 AFK(Away From Keyboard)
+* 放风筝 kitting
+* 敌对 hostile
