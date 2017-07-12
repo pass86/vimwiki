@@ -31,7 +31,7 @@
 * build on windows
     * open Developer Command Prompt for VS2015
     * cd %USERPROFILE%/code/protobuf-3.2.0/cmake
-    * mkdir build/debug
+    * mkdir build\debug
     * cd build/debug
     * cmake -G "NMake Makefiles" -DCMAKE_BUILD_TYPE=Debug -Dprotobuf_BUILD_TESTS=OFF -Dprotobuf_MSVC_STATIC_RUNTIME=OFF ../..
     * nmake
