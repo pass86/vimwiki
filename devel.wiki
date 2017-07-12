@@ -1,9 +1,9 @@
 = boost =
 * build on windows
     * open Developer Command Prompt for VS2015
-    * cd %USERPROFILE%\code\boost_1_64_0
-    * .\bootstrap.bat
-    * .\b2.exe
+    * cd %USERPROFILE%/code/boost_1_64_0
+    * ./bootstrap.bat
+    * ./b2.exe
     * setx BOOST_ROOT %USERPROFILE%\code\boost_1_64_0
 * build on macos & linux
     * cd ~/code/boost_1_64_0
@@ -30,9 +30,9 @@
 = protobuf =
 * build on windows
     * open Developer Command Prompt for VS2015
-    * cd %USERPROFILE%\code\protobuf-3.2.0\cmake
-    * mkdir build\debug
-    * cd build\debug
+    * cd %USERPROFILE%/code/protobuf-3.2.0/cmake
+    * mkdir build/debug
+    * cd build/debug
     * cmake -G "NMake Makefiles" -DCMAKE_BUILD_TYPE=Debug -Dprotobuf_BUILD_TESTS=OFF -Dprotobuf_MSVC_STATIC_RUNTIME=OFF ../..
     * nmake
     * copy libprotobufd.lib libprotobuf.lib
@@ -67,7 +67,7 @@
     * add path %USERPROFILE%\tools\nasm-2.12.02
     * install perl http://strawberryperl.com
     * open Developer Command Prompt for VS2015
-    * cd %USERPROFILE%\code\openssl-1.1.0e
+    * cd %USERPROFILE%/code/openssl-1.1.0e
     * perl Configure VC-WIN32
     * nmake
     * nmake test
