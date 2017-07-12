@@ -12,7 +12,7 @@
     * sudo ./b2 install
 * install linux dependency
     * sudo yum install -y zlib-devel bzip2-devel libquadmath-devel
-* cmake recipe
+* using by cmake
     * set(Boost_USE_STATIC_LIBS ON)
     * set(Boost_USE_MULTITHREADED ON)
     * set(Boost_USE_STATIC_RUNTIME OFF)
@@ -56,10 +56,12 @@
     * make check
     * sudo make install
     * sudo ldconfig
-* cmake recipe
+* using by cmake
     * find_package(Protobuf REQUIRED)
     * set(inc_list ${Protobuf_INCLUDE_DIRS})
     * set(lib_list ${Protobuf_LIBRARIES})
+* build csharp's Google.Protobuf.dll
+    * need .NET Core
 
 = openssl =
 * build on windows
@@ -87,7 +89,7 @@
         * #ifdef _WIN32
         * #include <ms/applink.c>
         * #endif
-* cmake recipe
+* using by cmake
     * if(${CMAKE_CXX_COMPILER_ID} STREQUAL "GNU")
     *     set(lib_list crypto)
     *     link_directories("/usr/local/lib64")
