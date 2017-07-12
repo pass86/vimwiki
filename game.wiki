@@ -1,6 +1,6 @@
 * 成就 achievement
 * 角色 actor, character
-* 主宰 boss
+* 首领 boss
 * 英雄 hero
 * 杂兵 mob
 * 非玩家角色 NPC(Non-Player Character)
