@@ -21,3 +21,6 @@
 = remove submodule =
 * git submodule deinit foo
 * git rm foo
+
+= color diff =
+* git config color.ui true
