@@ -23,3 +23,7 @@
 * GUILayout.Button
 * EditorGUILayout.ObjectField
 * EditorWindow.GetWindow(typeof(Foo), true, "Foo");
+
+= native =
+* http://www.mono-project.com/docs/advanced/pinvoke/
+* never pass classes or structures containing members of reference type (classes) to unmanaged code
