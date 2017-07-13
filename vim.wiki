@@ -7,6 +7,9 @@
 = cmdline window =
 * q:
 
+= tab to spaces =
+* :retab
+
 = build =
 * ./configure --enable-pythoninterp
 
