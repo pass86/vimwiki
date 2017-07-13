@@ -24,3 +24,6 @@
 
 = color diff =
 * git config color.ui true
+
+= fix old mode 100755 =
+* git config core.filemode false
