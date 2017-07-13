@@ -14,6 +14,7 @@
 * COM(Component Object Model)
 * LLVM(Low Level Virtual Machine)
 * BOM(Byte Order Mark) U+FEFF
+* ABI(Application Binary Interface)
 
 = graphic =
 * SSAO(Screen Space Ambient Occlusion)
