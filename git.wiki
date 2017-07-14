@@ -24,3 +24,6 @@
 
 = color diff =
 * git config color.ui true
+
+= undo add before commit =
+* git reset
