@@ -27,3 +27,6 @@
 = native =
 * http://www.mono-project.com/docs/advanced/pinvoke/
 * never pass classes or structures containing members of reference type (classes) to unmanaged code
+
+= apk size =
+* FAT(ARMv7+x86) - ARMv7 = 9.9M
