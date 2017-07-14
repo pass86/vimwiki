@@ -27,3 +27,6 @@
 
 = undo add before commit =
 * git reset
+
+= fix old mode 100755 =
+* git config core.filemode false
