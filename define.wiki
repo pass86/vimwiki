@@ -15,6 +15,7 @@
 * LLVM(Low Level Virtual Machine)
 * BOM(Byte Order Mark) U+FEFF
 * ABI(Application Binary Interface)
+* DSL(Domain-Specific Language)
 
 = graphic =
 * SSAO(Screen Space Ambient Occlusion)
