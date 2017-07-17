@@ -41,12 +41,14 @@
     * setx CMAKE_LIBRARY_PATH %USERPROFILE%\code\protobuf-3.3.0\cmake\build\debug
     * add path %USERPROFILE%\code\protobuf-3.3.0\cmake\build\debug
 * build on macos
-    * cd ~/code/protobuf-3.3.0/cmake
-    * mkdir build
-    * cd build
-    * cmake -Dprotobuf_BUILD_TESTS=OFF ..
-    * make
-    * sudo make install
+    ```shell
+    cd ~/code/protobuf-3.3.0/cmake
+    mkdir build
+    cd build
+    cmake -Dprotobuf_BUILD_TESTS=OFF ..
+    make
+    sudo make install
+    ```
 * build on linux
     * sudo yum install -y autoconf automake libtool curl make g++ unzip
     * cd ~/code/protobuf-3.3.0
