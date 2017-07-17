@@ -8,14 +8,14 @@
     setx BOOST_ROOT %USERPROFILE%\code\boost_1_64_0
     ```
 * build on macos & linux
-    ```bash
+    ```sh
     cd ~/code/boost_1_64_0
     ./bootstrap.sh
     ./b2
     sudo ./b2 install
     ```
 * install linux dependency
-    ```bash
+    ```sh
     sudo yum install -y zlib-devel bzip2-devel libquadmath-devel
     ```
 * using by cmake
@@ -51,7 +51,7 @@
     ```
     * add path %USERPROFILE%\code\protobuf-3.3.0\cmake\build\debug
 * build on macos
-    ```bash
+    ```sh
     cd ~/code/protobuf-3.3.0/cmake
     mkdir build
     cd build
@@ -60,7 +60,7 @@
     sudo make install
     ```
 * build on linux
-    ```bash
+    ```sh
     sudo yum install -y autoconf automake libtool curl make g++ unzip
     cd ~/code/protobuf-3.3.0
     ./autogen.sh
@@ -94,14 +94,14 @@
     ```
     add path %USERPROFILE%\code\openssl-1.1.0e
 * build on macos & linux
-    ```bash
+    ```sh
     cd ~/code/openssl-1.1.0e
     ./config
     make
     sudo make install
     ```
 * fix linux issue
-    ```bash
+    ```sh
     sudo ln -s /usr/local/lib64/libssl.so.1.1 /usr/lib64/libssl.so.1.1
     sudo ln -s /usr/local/lib64/libcrypto.so.1.1 /usr/lib64/libcrypto.so.1.1
     ```
@@ -131,7 +131,7 @@
     endif()
     ```
 * generating ec keys
-    ```bash
+    ```sh
     openssl ecparam -list_curves
     openssl ecparam -name prime256v1 -param_enc named_curve -genkey -noout -out pri.pem
     openssl ec -in pri.pem -pubout -out pub.pem
