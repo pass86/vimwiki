@@ -1,7 +1,7 @@
 # boost
 * build on windows
     * open Developer Command Prompt for VS2015
-    ```dos
+    ```bat
     cd %USERPROFILE%/code/boost_1_64_0
     ./bootstrap.bat
     ./b2.exe
@@ -38,7 +38,7 @@
 # protobuf
 * build on windows
     * open Developer Command Prompt for VS2015
-    ```dos
+    ```bat
     cd %USERPROFILE%/code/protobuf-3.3.0/cmake
     mkdir build\debug
     cd build/debug
@@ -85,7 +85,7 @@
     * add path %USERPROFILE%\tools\nasm-2.12.02
     * install perl http://strawberryperl.com
     * open Developer Command Prompt for VS2015
-    ```dos
+    ```bat
     cd %USERPROFILE%/code/openssl-1.1.0e
     perl Configure VC-WIN32
     nmake
