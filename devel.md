@@ -1,4 +1,4 @@
-= boost =
+# boost
 * build on windows
     * open Developer Command Prompt for VS2015
     * cd %USERPROFILE%/code/boost_1_64_0
@@ -27,7 +27,7 @@
     *     set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /SAFESEH:NO Psapi.lib")
     * endif()
 
-= protobuf =
+# protobuf
 * build on windows
     * open Developer Command Prompt for VS2015
     * cd %USERPROFILE%/code/protobuf-3.3.0/cmake
@@ -63,7 +63,7 @@
 * build csharp's Google.Protobuf.dll
     * need .NET Core
 
-= openssl =
+# openssl
 * build on windows
     * install nasm http://www.nasm.us
     * add path %USERPROFILE%\tools\nasm-2.12.02

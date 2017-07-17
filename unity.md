@@ -1,32 +1,32 @@
-= disable logging =
+# disable logging
 * Debug.logger.logEnabled = false;
 
-= pause editor =
+# pause editor
 * UnityEditor.EditorApplication.isPaused = true;
 
-= custom property drawer =
+# custom property drawer
 * PropertyDrawer https://docs.unity3d.com/ScriptReference/PropertyDrawer.html
 
-= shader =
+# shader
 * types
     * float 32
     * half 16 (-60000, +60000)
     * fixed 11 (-2.0, +2.0) 1/256th
 
-= winding order =
+# winding order
 * clockwise front visible
 
-= texture =
+# texture
 * (0, 0) at lower left corner
 
-= editor useful =
+# editor useful
 * GUILayout.Button
 * EditorGUILayout.ObjectField
 * EditorWindow.GetWindow(typeof(Foo), true, "Foo");
 
-= native =
+# native
 * http://www.mono-project.com/docs/advanced/pinvoke/
 * never pass classes or structures containing members of reference type (classes) to unmanaged code
 
-= apk size =
+# apk size
 * FAT(ARMv7+x86) - ARMv7 = 9.9M

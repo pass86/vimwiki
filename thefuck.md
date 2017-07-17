@@ -1,4 +1,4 @@
-= install =
+# install
 * centos
     * sudo yum install python34-pip python34-devel
     * sudo pip3 install --upgrade pip

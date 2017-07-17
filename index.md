@@ -1,14 +1,14 @@
-= name =
+# name 
 * [[game]]
 * [[short]]
 * [[define]]
 
-= os =
+# os
 * [[macos]]
 * [[centos]]
 * [[openwrt]]
 
-= tools =
+# tools
 * [[vim]]
 * [[git]]
 * [[svn]]
@@ -17,26 +17,27 @@
 * [[babun]]
 * [[thefuck]]
 
-= script =
+# script
 * [[shell]]
 
-= devel =
+# devel
 * [[devel]]
 * [[unity]]
 * [[3dsmax]]
 
-= service =
+# service
 * [[nginx]]
 * [[redis]]
 * [[mysql]]
+* [[samba]]
 * [[transmission]]
 
-= game =
+# game
 * [[diablo3]]
 
-= read =
+# read
 * [[gpp]]
 * [[cc]]
 
-= knowledge =
+# knowledge
 * [[math]]

@@ -1,4 +1,4 @@
-= word =
+# word
 * action act
 * address addr
 * authorization auth
@@ -42,7 +42,7 @@
 * token tok
 * user usr
 
-= phrase =
+# phrase
 * battle-id bid
 * config-id cid
 * role-id rid

@@ -1,4 +1,4 @@
-= ssh key =
+# ssh key
 * local
     * cd ~
     * mkdir .ssh
@@ -22,26 +22,26 @@
         * PubkeyAuthentication yes
     * sudo systemctl restart sshd
 
-= root login =
+# root login
 * sudo vi /etc/ssh/sshd_config
 * PermitRootLogin no
 
-= firewalld =
+# firewalld
 * systemctl start firewalld
 * systemctl stop firewalld
 * systemctl enable firewalld
 * systemctl disable firewalld
 * firewall-cmd --state
 
-= disable selinux =
+# disable selinux
 * sudo vi /etc/sysconfig/selinux
     * SELINUX=disabled
 * sestatus
 
-= hostname =
+# hostname
 * sudo hostnamectl set-hostname vps
 
-= mount new drive =
+# mount new drive
 * parted
     * sudo parted -l
     * sudo parted /dev/sdb
@@ -65,7 +65,7 @@
         * press 8e<enter>
         * press w<enter>
 
-= lvm create =
+# lvm create
 * sudo parted /dev/sdb
     * ...
     * toggle 1 lvm
@@ -95,7 +95,7 @@
     * /dev/mapper/volume-data /data xfs defaults 0 0
 * sudo reboot
 
-= volume group extend =
+# volume group extend
 * sudo parted /dev/sdd
     * ...
     * toggle 1 lvm
@@ -110,43 +110,43 @@
 * sudo vgscan
 * sudo vgdisplay
 
-= logical volume extend =
+# logical volume extend
 * sudo lvextend -l +100%FREE /dev/volume/data
 * sudo xfs_growfs /dev/volume/data
 * df -h
 
-= add sudo user =
+# add sudo user
 * usermod -aG wheel foo
 
-= group =
+# group
 * /etc/group
 
-= passwd =
+# passwd
 * /etc/passwd
 
-= change ownership =
+# change ownership
 * sudo chown -R foo:foo path
 
-= delete old linux kernel =
+# delete old linux kernel
 * sudo yum install yum-utils
 * sudo package-cleanup --oldkernels --count=2
 * sudo vi /etc/yum.conf
     * installonly_limit=2
 
-= kernel version =
+# kernel version
 * uname -a
 
-= centos version =
+# centos version
 * cat /etc/redhat-release
 
-= md5 =
+# md5
 * md5sum foo
 
-= smartctl =
+# smartctl
 * sudo yum install smartmontools
 * sudo smartctl -i /dev/sda
 * sudo smartctl -s on /dev/sda
 * sudo smartctl -a /dev/sda
 
-= virtual console =
+# virtual console
 * ctrl + alt + f2

@@ -1,4 +1,4 @@
-= generic =
+# generic
 * AOT(Ahead Of Time)
 * JIT(Just In Time)
 * IAP(In App Purchases)
@@ -17,7 +17,7 @@
 * ABI(Application Binary Interface)
 * DSL(Domain-Specific Language)
 
-= graphic =
+# graphic
 * SSAO(Screen Space Ambient Occlusion)
 * SSS(Subsurface Scattering)
 * AA(Anti-Aliasing)
@@ -25,21 +25,21 @@
 * SDF(Signed Distance Field)
 * HLSL(High-Level Shading Language)
 
-= opengl =
+# opengl
 * VBO(vertex buffer object)
 * VAO(vertex array object)
 * GLSL(OpenGL Shading Language)
 
-= physics =
+# physics
 * AABB(Axis Aligned Bounding Box)
 
-= memory =
+# memory
 * USS(Unique Set Size)
 * PSS(Proportional Set Size)
 * RSS(Resident Set Size)
 * VSS(Virtual Set Size)
 
-= network =
+# network
 * VPN(Virtual Private Network)
 * PPTP(Point to Point Tunneling Protocol)
 * L2TP(Layer 2 Tunneling Protocol)
@@ -58,16 +58,16 @@
 * POE(Power Over Ethernet)
 * ICMP(Internet Control Message Protocol)
 
-= web =
+# web
 * AJAX(Asynchronous Javascript and Xml)
 * SEO(Search Engine Optimization)
 * WebDAV(Web Distributed Authoring and Versioning)
 
-= database =
+# database
 * ODBC(Open Database Connectivity)
 * DSN(Data Source Name)
 
-= security =
+# security
 * AES(Advanced Encryption Standard)
 * IPSec(Internet Protocol Security)
 * LDAP(Lightweight Directory Access Protocol)
@@ -76,7 +76,7 @@
 * ECDH(Elliptic Curve Diffie Hellman)
 * PEM(Privacy Enhanced Mail)
 
-= storage =
+# storage
 * LVM(Logical Volume Manager)
 * PE(Physical Extend)
 * PV(Physical Volume)

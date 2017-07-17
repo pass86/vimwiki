@@ -1,4 +1,4 @@
-= install =
+# install
 * sudo yum install transmission-daemon
 * sudo systemctl start transmission-daemon
 * sudo systemctl stop transmission-daemon

@@ -1,5 +1,5 @@
-= install =
+# install
 * sudo yum install redis
 
-= devel =
+# devel
 * sudo yum install hiredis-devel

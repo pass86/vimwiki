@@ -1,67 +1,67 @@
-= command =
+# command
 * request, param, log, queue, undo, redo
 * 一个对象化的方法调用
 
-= flyweight =
+# flyweight
 * 使用共享以高效地支持大量的细粒度对象
 * Direct3D和OpenGL都能够实现实例绘制
 
-= observer =
+# observer
 * subject, notify
 * 非常适合于一些不相关的模块之间的通信问题
 * 不适合于单个紧凑的模块内部的通信
 * 为了接收一个通知而去实现整个接口并不符合现在的编程美学
 * 更现代的方法倾向于函数式而不是基于类的
 
-= prototype =
+# prototype
 * clone, spawner
 * 核心思想是一个对象可以生成与自身相似的其他对象
 * 适合于游戏里面的数据建模, 重用数据, goblin grunt, goblin wizard, goblin archer
 
-= singleton =
+# singleton
 * 不推荐使用
 * 直接用静态类
 
-= state =
+# state
 * enter, exit, update, input
 * hero state, weapon state
 * state stack, current is at top
 * 目标是通过改变主对象代理的对象来改变主对象的行为
 
-= double buffer =
+# double buffer
 * read buffer a, write buffer b, swap
 * 解决的核心问题是对状态同时进行修改与访问的冲突
 
-= game loop =
+# game loop
 * render(lag / MS_PER_UPDATE)
 * 两个关键部分: 非阻塞的用户输入和帧时间适配
 
-= update method =
+# update method
 * elapsed
 * 各个对象之间的行为几乎是相互独立的
 * 对象的行为与时间相关
 * 使用一个单独的集合来维护活跃的对象
 
-= bytecode =
+# bytecode
 * interpreter, VM, push, pop, lua
 * 通过将行为编码成虚拟机指令, 而使其具备数据的灵活性
 * 使用情境: 编程语言太底层了, 编写起来繁琐易错; 编译时间太长, 导致迭代缓慢; 确保定义的行为不会让程序崩溃, 需要安全沙箱
 * 你会想念调试器的, 静态分析器, 反编译工具等
 * 设计有趣的图形化编辑工具, 跨平台的UI框架代价在于亲切感(他们在所有的平台都让人陌生)
 
-= subclass sandbox =
+# subclass sandbox
 * superpower
 * 使用基类提供的操作集合来定义子类中的行为
 * 一个带有大量子类的基类
 * 把耦合聚集到一个地方
 
-= type object =
+# type object
 * breed, parent
 * 通过创建一个类来支持新类型的灵活创建, 其每个实例都代表一个不同的对象类型
 * 你不知道将来会有什么类型
 * 你需要在不重新编译或修改代码的情况下, 修改或添加新的类型
 
-= component =
+# component
 * bjorn, input, physics, graphics
 * 允许一个单一的实体跨越多个不同域二不会导致耦合
 * 软件设计的趋势应该是尽可能地使用组合而不是继承
@@ -69,28 +69,28 @@
 * 使用情境: 涉及多个域的类让这些域互相解耦; 类越来越大, 越来越难以开发; 定义许多共享不同能力的对象, 但继承无法精确的重用代码
 * 相互协作: 修改容器对象的状态; 直接相互引用; 消息传递系统
 
-= event queue =
+# event queue
 * ring buffer, head, tail, threads
 * 对消息或事件的发送与受理进行时间上的解耦
 * 避免在处理事件端代码中发送事件, 可能导致死循环
 * 一个事件(event)或通知(notification)描述已经发生的事情, 比如"怪物死亡"
 * 一个消息(message)或请求(request)描述一种"我们期望"发生在"将来"的行为, 类似于"播放音乐"; 可以认为这是一个异步的API服务
 
-= service locator =
+# service locator
 * provide, wrapped
 * 为某服务提供一个全局访问入口来避免使用者与该服务具体实现类之间产生耦合
 * 服务在任何情况下都必须正确工作
 * 使用空服务来关闭服务或保证始终返回一个有效的服务
 * 如果服务被限制在游戏的一个单独域中, 那么就把服务的作用域限制到类中
 
-= data locality =
+# data locality
 * 通过合理组织数据利用CPU的缓存机制来加快内存访问的速度
 * 不要在那些代码库里非频繁执行的部分浪费时间, 它们不需要本模式
 * 执行if判断将会引发CPU的分支预测失准和流水线停顿
 * 将那些被激活的粒子维持在列表的前端
 * 热数据: 每帧需要用到的数据; 冷数据: 并不会被频繁用到的剩余数据
 
-= dirty flag =
+# dirty flag
 * bit, set, clear, transform, graph, node
 * 将工作推迟到必要时进行以避免不必要的工作
 * 缓存计算结果以备不时之需
@@ -99,13 +99,13 @@
 * 在最初变动的时候启动一个固定的计时器, 并在计时器到达时处理之间的所有变动
 * 在后台处理数据可以让玩家同时做其他事情
 
-= object pool =
+# object pool
 * soak tests, in use, alive, not in use, free list, first, next
 * 使用固定的对象池重用对象, 取代单独地分配和释放对象, 以此来达到提升性能和优化内存使用的目的
 * 一个魔棒就数以百计的粒子: 需要非常快速的生成它们; 需要创建和销毁它们时不会产生内存碎片
 * 推荐清空后将其内存值置为0x1deadb0b
 
-= spatial partition =
+# spatial partition
 * melee, unit, grid, cell, bsp, k-d trees, quadtrees, octree, trie
 * 将对象存储在根据位置组织的数据结构中来高效地定位它们
 * 游戏引擎通常需要解决这个问题: "对象的附近有什么物体?"

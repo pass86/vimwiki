@@ -1,7 +1,7 @@
-= install =
+# install
 * sudo yum install nginx
 
-= reverse proxy =
+# reverse proxy
 * sudo vi /etc/nginx/nginx.conf
     * location /transmission {
     *     proxy_pass http://localhost:9091;

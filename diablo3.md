@@ -1,4 +1,4 @@
-= 职业(Class) =
+# 职业(Class)
 * 野蛮人(Barbarian)
 * 圣教军(Crusader)
 * 猎魔人(Demon Hunter)
@@ -7,7 +7,7 @@
 * 魔法师(Wizard)
 * 死灵法师(Necromancer)
 
-= 部位(Part) =
+# 部位(Part)
 * 头部(Head)
 * 颈部(Neck)
 * 肩部(Shoulders)
@@ -21,7 +21,7 @@
 * 腿部(Legs)
 * 脚部(Feet)
 
-= 属性(Attribute) =
+# 属性(Attribute)
 * 主要(Primary)
     * 力量(Strength)
     * 敏捷(Dexterity)
@@ -60,7 +60,7 @@
 * 冒险(Adventure)
     * 移动速度(Movement Speed)
 
-= 铁匠(Artisan)-海德格·埃蒙(Haedrig Eamon) =
+# 铁匠(Artisan)-海德格·埃蒙(Haedrig Eamon)
 * 锻造(Forge)
     * 武器(Weapons)
     * 护甲(Armor)

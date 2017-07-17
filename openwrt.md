@@ -1,4 +1,4 @@
-= pppoe =
+# pppoe
 * opkg update
 * opkg install ppp kmod-pppoe ppp-mod-pppoe
 * uci set network.wan.proto=pppoe
@@ -7,7 +7,7 @@
 * uci commit network
 * ifup wan
 
-= shadowsocks =
+# shadowsocks
 * vi /etc/opkg.conf
     * remove option check_signature 0
 * vi /etc/opkg/customfeeds.conf
@@ -20,20 +20,20 @@
 * opkg install luci-app-chinadns
 * reboot
 
-= guest wifi =
+# guest wifi
 * https://wiki.openwrt.org/doc/recipes/guest-wlan
 
-= fix linksys wifi stability =
+# fix linksys wifi stability
 * opkg list-installed | grep mwlwifi
 * opkg update ; opkg install git-http ; cd /tmp ; git clone --depth 1 https://github.com/NemoAlex/mwlwifi-bin.git ; cd mwlwifi-bin/15.05.1 ; opkg install kmod-mwlwifi_3.18.23\+10.3.0.17-20160531-1_mvebu.ipk ; reboot
 * strings /lib/modules/*.*/mwlwifi.ko | grep "^10.3"
 
-= scheduled =
+# scheduled
 * crontab -e
     * 30 4 * * * sleep 70 && touch /etc/banner && reboot
     * 40 4 * * * sleep 70 && /etc/init.d/dnsmasq restart && /etc/init.d/shadowsocks restart
 
-= ddns =
+# ddns
 * opkg update
 * opkg install ddns-scripts ddns-scripts_no-ip_com luci-app-ddns
 * cp /usr/lib/ddns/dynamic_dns_functions.sh /usr/lib/ddns/dynamic_dns_functions.sh.bak
@@ -48,7 +48,7 @@
     * return 0
 * reboot
 
-= ssh key =
+# ssh key
 * local
     * scp ~/.ssh/id_rsa.pub root@wrt.lan:/tmp
     * vi ~/.ssh/config

@@ -1,19 +1,19 @@
-= sudo write =
+# sudo write
 * :w !sudo tee %
 
-= display unprintable characters =
+# display unprintable characters
 * :set list
 
-= cmdline window =
+# cmdline window
 * q:
 
-= tab to spaces =
+# tab to spaces
 * :retab
 
-= build =
+# build
 * ./configure --enable-pythoninterp
 
-= ycm =
+# ycm
 * macos
     * ./install.py --clang-completer --system-libclang --omnisharp-completer
 * linux

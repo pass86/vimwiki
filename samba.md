@@ -1,4 +1,4 @@
-= install =
+# install
 * sudo yum install samba
 * sudo vi /etc/samba/smb.conf
     * [global]

@@ -1,18 +1,18 @@
-= undo last checkin =
+# undo last checkin
 * svn merge -r HEAD:PREV path
 
-= revert to revision =
+# revert to revision
 * svn merge -r HEAD:xxxx path
 
-= up to revision =
+# up to revision
 * svn up -r xxxx path
 
-= show log =
+# show log
 * svn log -l10 -v
 * svn log -rBASE -v
 
-= show diff =
+# show diff
 * svn log -rBASE --diff
 
-= switch workingcopy =
+# switch workingcopy
 * svn switch http://server/proj/branches/branch1 --ignore-ancestry --force
