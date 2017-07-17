@@ -1,21 +1,21 @@
 # boost
 * build on windows
     * open Developer Command Prompt for VS2015
-    ```shell
+    ```dos
     cd %USERPROFILE%/code/boost_1_64_0
     ./bootstrap.bat
     ./b2.exe
     setx BOOST_ROOT %USERPROFILE%\code\boost_1_64_0
     ```
 * build on macos & linux
-    ```shell
+    ```bash
     cd ~/code/boost_1_64_0
     ./bootstrap.sh
     ./b2
     sudo ./b2 install
     ```
 * install linux dependency
-    ```shell
+    ```bash
     sudo yum install -y zlib-devel bzip2-devel libquadmath-devel
     ```
 * using by cmake
@@ -38,7 +38,7 @@
 # protobuf
 * build on windows
     * open Developer Command Prompt for VS2015
-    ```shell
+    ```dos
     cd %USERPROFILE%/code/protobuf-3.3.0/cmake
     mkdir build\debug
     cd build/debug
@@ -51,7 +51,7 @@
     ```
     * add path %USERPROFILE%\code\protobuf-3.3.0\cmake\build\debug
 * build on macos
-    ```shell
+    ```bash
     cd ~/code/protobuf-3.3.0/cmake
     mkdir build
     cd build
@@ -60,7 +60,7 @@
     sudo make install
     ```
 * build on linux
-    ```shell
+    ```bash
     sudo yum install -y autoconf automake libtool curl make g++ unzip
     cd ~/code/protobuf-3.3.0
     ./autogen.sh
@@ -85,7 +85,7 @@
     * add path %USERPROFILE%\tools\nasm-2.12.02
     * install perl http://strawberryperl.com
     * open Developer Command Prompt for VS2015
-    ```shell
+    ```dos
     cd %USERPROFILE%/code/openssl-1.1.0e
     perl Configure VC-WIN32
     nmake
@@ -94,21 +94,21 @@
     ```
     add path %USERPROFILE%\code\openssl-1.1.0e
 * build on macos & linux
-    ```shell
+    ```bash
     cd ~/code/openssl-1.1.0e
     ./config
     make
     sudo make install
     ```
 * fix linux issue
-    ```shell
+    ```bash
     sudo ln -s /usr/local/lib64/libssl.so.1.1 /usr/lib64/libssl.so.1.1
     sudo ln -s /usr/local/lib64/libcrypto.so.1.1 /usr/lib64/libcrypto.so.1.1
     ```
 * fix windows issue
     * no OPENSSL_Applink...
         * add include path for applink.c
-        ```c
+        ```cpp
         #ifdef _WIN32
         #include <ms/applink.c>
         #endif
@@ -131,7 +131,7 @@
     endif()
     ```
 * generating ec keys
-    ```shell
+    ```bash
     openssl ecparam -list_curves
     openssl ecparam -name prime256v1 -param_enc named_curve -genkey -noout -out pri.pem
     openssl ec -in pri.pem -pubout -out pub.pem
