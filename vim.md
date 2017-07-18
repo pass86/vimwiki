@@ -20,7 +20,7 @@ q:
 
 # build
 ```sh
-* ./configure --enable-pythoninterp
+./configure --enable-pythoninterp
 ```
 
 # ycm
