@@ -1,32 +1,50 @@
 # archive latest
-* git archive -o latest.zip HEAD
+```sh
+git archive -o latest.zip HEAD
+```
 
 # server repo
-* sudo mkdir /repo
-* sudo git init --bare /repo/foo
-* sudo chown -R user:user /repo/foo
-* git clone user@server:/repo/foo
-* git push --set-upstream origin master
+```sh
+sudo mkdir /repo
+sudo git init --bare /repo/foo
+sudo chown -R user:user /repo/foo
+git clone user@server:/repo/foo
+git push --set-upstream origin master
+```
 
 # remove untracked
-* git clean -dfx
+```sh
+git clean -dfx
+```
 
 # last version
-* git diff HEAD^ HEAD
+```sh
+git diff HEAD^ HEAD
+```
 
 # change most recent commit message after push
-* git commit --amend
-* git push --force
+```sh
+git commit --amend
+git push --force
+```
 
 # remove submodule
-* git submodule deinit foo
-* git rm foo
+```sh
+git submodule deinit foo
+git rm foo
+```
 
 # color diff
-* git config color.ui true
+```sh
+git config color.ui true
+```
 
 # undo add before commit
-* git reset
+```sh
+git reset
+```
 
 # fix old mode 100755
-* git config core.filemode false
+```sh
+git config core.filemode false
+```
