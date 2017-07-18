@@ -1,5 +1,9 @@
 # install
-* sudo yum install redis
+```sh
+sudo yum install redis
+```
 
 # devel
-* sudo yum install hiredis-devel
+```sh
+sudo yum install hiredis-devel
+```
