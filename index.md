@@ -1,5 +1,5 @@
 # name 
-* [game](game)
+* [game](game.md)
 * [short](short)
 * [define](define)
 
