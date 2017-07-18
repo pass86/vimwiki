@@ -1,14 +1,24 @@
 # swap pane up
-* prefix {
+```
+prefix {
+```
 
 # swap pane down
-* prefix }
+```
+prefix }
+```
 
 # swap window to
-* swap-window -t 5
+```
+swap-window -t 5
+```
  
 # swap window left
-* swap-window -t -1
+```
+swap-window -t -1
+```
 
 # build
-* brew install automake libevent reattach-to-user-namespace
+```sh
+brew install automake libevent reattach-to-user-namespace
+```
