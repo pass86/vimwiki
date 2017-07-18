@@ -1,8 +1,14 @@
 # shared libraries uses
-* otool -L foo
+```sh
+otool -L foo
+```
 
 # interprocess status
-* ipcs
+```sh
+ipcs
+```
 
 # lock screen shortcut
-* ctrl + shift + power
+```sh
+ctrl + shift + power
+```
