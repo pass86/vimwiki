@@ -1,42 +1,42 @@
 # name 
 * [game](game.md)
-* [short](short)
-* [define](define)
+* [short](short.md)
+* [define](define.md)
 
 # os
-* [macos](macos)
-* [centos](centos)
-* [openwrt](openwrt)
+* [macos](macos.md)
+* [centos](centos.md)
+* [openwrt](openwrt.md)
 
 # tools
-* [vim](vim)
-* [git](git)
-* [svn](svn)
-* [tmux](tmux)
-* [gimp](gimp)
-* [babun](babun)
+* [vim](vim.md)
+* [git](git.md)
+* [svn](svn.md)
+* [tmux](tmux.md)
+* [gimp](gimp.md)
+* [babun](babun.md)
 
 # script
-* [shell](shell)
+* [shell](shell.md)
 
 # devel
-* [devel](devel)
-* [unity](unity)
-* [3dsmax](3dsmax)
+* [devel](devel.md)
+* [unity](unity.md)
+* [3dsmax](3dsmax.md)
 
 # service
-* [nginx](nginx)
-* [redis](redis)
-* [mysql](mysql)
-* [samba](samba)
-* [transmission](transmission)
+* [nginx](nginx.md)
+* [redis](redis.md)
+* [mysql](mysql.md)
+* [samba](samba.md)
+* [transmission](transmission.md)
 
 # game
-* [diablo3](diablo3)
+* [diablo3](diablo3.md)
 
 # read
-* [gpp](gpp)
-* [cc](cc)
+* [gpp](gpp.md)
+* [cc](cc.md)
 
 # knowledge
-* [math](math)
+* [math](math.md)
