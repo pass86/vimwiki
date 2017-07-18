@@ -151,7 +151,7 @@ sudo reboot
 
 # volume group extend
 ```sh
-* sudo parted /dev/sdd
+sudo parted /dev/sdd
 ```
 ```
 ...
