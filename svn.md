@@ -1,18 +1,30 @@
 # undo last checkin
-* svn merge -r HEAD:PREV path
+```sh
+svn merge -r HEAD:PREV path
+```
 
 # revert to revision
-* svn merge -r HEAD:xxxx path
+```sh
+svn merge -r HEAD:xxxx path
+```
 
 # up to revision
-* svn up -r xxxx path
+```sh
+svn up -r xxxx path
+```
 
 # show log
-* svn log -l10 -v
-* svn log -rBASE -v
+```sh
+svn log -l10 -v
+svn log -rBASE -v
+```
 
 # show diff
-* svn log -rBASE --diff
+```sh
+svn log -rBASE --diff
+```
 
 # switch workingcopy
-* svn switch http://server/proj/branches/branch1 --ignore-ancestry --force
+```sh
+svn switch http://server/proj/branches/branch1 --ignore-ancestry --force
+```
