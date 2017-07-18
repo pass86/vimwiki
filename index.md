@@ -15,7 +15,6 @@
 * [[tmux]]
 * [[gimp]]
 * [[babun]]
-* [[thefuck]]
 
 # script
 * [[shell]]
