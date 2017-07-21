@@ -1,1 +1,2 @@
 # vimwiki
+[index](index.md)
