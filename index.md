@@ -6,8 +6,8 @@
 # os
 * [macos](macos.md)
 * [centos](centos.md)
-* [android](android.md)
 * [openwrt](openwrt.md)
+* [android](android.md)
 
 # tools
 * [vim](vim.md)
