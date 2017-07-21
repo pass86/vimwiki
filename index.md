@@ -6,6 +6,7 @@
 # os
 * [macos](macos.md)
 * [centos](centos.md)
+* [android](android.md)
 * [openwrt](openwrt.md)
 
 # tools
