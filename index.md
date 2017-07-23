@@ -1,4 +1,4 @@
-# name 
+# name
 * [game](game.md)
 * [short](short.md)
 * [define](define.md)
