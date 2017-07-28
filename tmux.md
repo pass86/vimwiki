@@ -12,7 +12,7 @@ prefix }
 ```
 swap-window -t 5
 ```
- 
+
 # swap window left
 ```
 swap-window -t -1
