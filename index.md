@@ -14,6 +14,7 @@
 * [git](git.md)
 * [svn](svn.md)
 * [tmux](tmux.md)
+* [cmake](cmake.md)
 * [gimp](gimp.md)
 * [babun](babun.md)
 
