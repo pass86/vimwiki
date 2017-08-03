@@ -8,7 +8,8 @@ otool -L foo
 ipcs
 ```
 
-# lock screen shortcut
-```sh
-ctrl + shift + power
-```
+# put displays to sleep
+* Control-Shift-Power
+
+# view image group
+* Command-A -> Space
