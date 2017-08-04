@@ -43,3 +43,4 @@
 * 暂离 AFK(Away From Keyboard)
 * 放风筝 kitting
 * 敌对 hostile
+* 天赋 talent
