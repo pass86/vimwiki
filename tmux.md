@@ -22,3 +22,7 @@ swap-window -t -1
 ```sh
 brew install automake libevent reattach-to-user-namespace
 ```
+# kill session
+```sh
+tmux kill-session -t 0
+```
