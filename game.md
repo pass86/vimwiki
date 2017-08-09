@@ -44,3 +44,4 @@
 * 放风筝 kitting
 * 敌对 hostile
 * 天赋 talent
+* 生物 creature
