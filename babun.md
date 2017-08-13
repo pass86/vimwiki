@@ -4,6 +4,13 @@ compinit
 cp .zcompdump .zcompdump-$HOSTNAME-$ZSH_VERSION
 ```
 
+# fix There was an error updating. Try again later?
+```sh
+cd .oh-my-zsh
+git stash
+upgrade_oh_my_zsh
+```
+
 # clipboard
 ```sh
 cat id_rsa.pub | clip
