@@ -36,5 +36,6 @@ use_lvmetad = 0
 ```sh
 grub-install --target=i386-pc /dev/sda
 vim /boot/grub/grub.cfg
+exit
 reboot
 ```
