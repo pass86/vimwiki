@@ -18,6 +18,7 @@
 * [cmake](cmake.md)
 * [gimp](gimp.md)
 * [babun](babun.md)
+* [pandoc](pandoc.md)
 
 # script
 * [shell](shell.md)
