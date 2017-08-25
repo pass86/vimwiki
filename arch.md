@@ -25,7 +25,7 @@ cat /mnt/etc/fstab
 arch-chroot /mnt
 ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 hwclock --systohc
-pacman -S vim os-prober grub
+pacman -S vim os-prober grub dialog wpa_supplicant
 ```
 ```sh
 vim /etc/lvm/lvm.conf
@@ -36,6 +36,17 @@ use_lvmetad = 0
 ```sh
 grub-install --target=i386-pc /dev/sda
 vim /boot/grub/grub.cfg
+passwd
 exit
 reboot
+```
+```sh
+vim /etc/sudoers
+```
+```
+%wheel ALL=(ALL) ALL
+```
+```sh
+useradd -m -G wheel foo
+passwd foo
 ```
