@@ -7,13 +7,13 @@ fdisk -l
 ```sh
 fdisk /dev/sda
 ```
-o<enter>
-n<enter>
-<enter>
-<enter>
-<enter>
-p<enter>
-w<enter>
+> o<enter>
+> n<enter>
+> <enter>
+> <enter>
+> <enter>
+> p<enter>
+> w<enter>
 ```sh
 mkfs.xfs /dev/sda1
 mount /dev/sda1 /mnt
@@ -28,7 +28,7 @@ pacman -S vim os-prober grub
 ```sh
 vim /etc/lvm/lvm.conf
 ```
-use_lvmetad = 0
+> use_lvmetad = 0
 ```sh
 grub-install --target=i386-pc /dev/sda
 vim /boot/grub/grub.cfg
