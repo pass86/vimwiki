@@ -30,7 +30,9 @@ pacman -S vim os-prober grub
 ```sh
 vim /etc/lvm/lvm.conf
 ```
-> use_lvmetad = 0
+```
+use_lvmetad = 0
+```
 ```sh
 grub-install --target=i386-pc /dev/sda
 vim /boot/grub/grub.cfg
