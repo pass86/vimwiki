@@ -7,13 +7,15 @@ fdisk -l
 ```sh
 fdisk /dev/sda
 ```
-> o<enter>
-> n<enter>
-> <enter>
-> <enter>
-> <enter>
-> p<enter>
-> w<enter>
+```
+press o<enter>
+press n<enter>
+press <enter>
+press <enter>
+press <enter>
+press p<enter>
+press w<enter>
+```
 ```sh
 mkfs.xfs /dev/sda1
 mount /dev/sda1 /mnt
