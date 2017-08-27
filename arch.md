@@ -70,10 +70,15 @@ pacman -S virtualbox-guest-utils
 
 > choose virtualbox-guest-modules-arch
 
-
 # awesome
 ```sh
 pacman -S awesome xterm
 mkdir -p ~/.config/awesome/
 cp /etc/xdg/awesome/rc.lua ~/.config/awesome/
 ```
+
+# chromium
+```sh
+pacman -S chromium
+```
+
