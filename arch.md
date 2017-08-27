@@ -19,6 +19,7 @@ press w<enter>
 ```sh
 mkfs.xfs /dev/sda1
 mount /dev/sda1 /mnt
+vim /etc/pacman.d/mirrorlist
 pacstrap /mnt base base-devel
 genfstab -L /mnt >> /mnt/etc/fstab
 cat /mnt/etc/fstab
