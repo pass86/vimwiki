@@ -13,6 +13,7 @@ press n<enter>
 press <enter>
 press <enter>
 press <enter>
+press <enter>
 press p<enter>
 press w<enter>
 ```
@@ -35,7 +36,8 @@ vim /etc/lvm/lvm.conf
 use_lvmetad = 0
 ```
 ```sh
-grub-install --target=i386-pc /dev/sda
+grub-install /dev/sda
+grub-mkconfig -o /boot/grub/grub.cfg
 vim /boot/grub/grub.cfg
 passwd
 exit
@@ -50,4 +52,20 @@ vim /etc/sudoers
 ```sh
 useradd -m -G wheel foo
 passwd foo
+dhcpcd
 ```
+
+# desktop
+```sh
+pacman -S xf86-video-intel xorg plasma kde-applications sddm network-manager-applet
+systemctl enable sddm
+systemctl disable netctl
+systemctl enable NetworkManager
+```
+
+# virtualbox
+```sh
+pacman -S virtualbox-guest-utils
+```
+
+> choose virtualbox-guest-modules-arch
