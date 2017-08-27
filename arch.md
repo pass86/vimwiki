@@ -27,6 +27,18 @@ cat /mnt/etc/fstab
 arch-chroot /mnt
 ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 hwclock --systohc
+```
+```sh
+vim /etc/locale.gen
+```
+```
+en_US.UTF-8 UTF-8
+```
+```sh
+locale-gen
+vim /etc/hostname
+```
+```sh
 pacman -S vim os-prober grub dialog wpa_supplicant
 ```
 ```sh
@@ -67,8 +79,9 @@ systemctl enable NetworkManager
 ```sh
 pacman -S virtualbox-guest-utils
 ```
-
-> choose virtualbox-guest-modules-arch
+```
+choose virtualbox-guest-modules-arch
+```
 
 # awesome
 ```sh
@@ -81,4 +94,3 @@ cp /etc/xdg/awesome/rc.lua ~/.config/awesome/
 ```sh
 pacman -S chromium
 ```
-
