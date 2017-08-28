@@ -1,6 +1,7 @@
 # install
 ```sh
 wifi-menu
+dhcpcd
 timedatectl set-ntp true
 fdisk -l
 ```
@@ -18,7 +19,7 @@ press p<enter>
 press w<enter>
 ```
 ```sh
-mkfs.xfs /dev/sda1
+mkfs.ext4 /dev/sda1
 mount /dev/sda1 /mnt
 vim /etc/pacman.d/mirrorlist
 pacstrap /mnt base base-devel
@@ -29,14 +30,14 @@ ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 hwclock --systohc
 ```
 ```sh
-vim /etc/locale.gen
+vi /etc/locale.gen
 ```
 ```
 en_US.UTF-8 UTF-8
 ```
 ```sh
 locale-gen
-vim /etc/hostname
+vi /etc/hostname
 ```
 ```sh
 pacman -S vim os-prober grub dialog wpa_supplicant
@@ -67,12 +68,40 @@ passwd foo
 dhcpcd
 ```
 
-# desktop
+# network
 ```sh
-pacman -S xf86-video-intel xorg plasma kde-applications sddm network-manager-applet
-systemctl enable sddm
+pacman -S networkmanager
 systemctl disable netctl
 systemctl enable NetworkManager
+nmtui
+```
+
+# desktop
+```sh
+pacman -S xf86-video-intel xorg sddm 
+systemctl enable sddm
+```
+
+# awesome
+```sh
+pacman -S awesome xterm
+mkdir -p ~/.config/awesome
+cp /etc/xdg/awesome/rc.lua ~/.config/awesome
+```
+
+# chromium
+```sh
+pacman -S chromium
+```
+
+# fonts
+```sh
+pacman -S adobe-source-han-sans-cn-fonts adobe-source-code-pro-fonts
+```
+
+# ssh-keygen
+```sh
+pacman -S openssh
 ```
 
 # virtualbox
@@ -81,16 +110,4 @@ pacman -S virtualbox-guest-utils
 ```
 ```
 choose virtualbox-guest-modules-arch
-```
-
-# awesome
-```sh
-pacman -S awesome xterm
-mkdir -p ~/.config/awesome/
-cp /etc/xdg/awesome/rc.lua ~/.config/awesome/
-```
-
-# chromium
-```sh
-pacman -S chromium
 ```
