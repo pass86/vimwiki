@@ -31,3 +31,8 @@ ls -l | wc -l
 ```sh
 cat foo | awk '$1 ~ /^ *\bar/'
 ```
+
+# iso to usb
+```sh
+dd if=foo.iso of=/dev/sdb bs=4M && sync
+```
