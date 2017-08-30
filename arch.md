@@ -78,7 +78,7 @@ nmtui
 
 # desktop
 ```sh
-pacman -S xf86-video-intel xorg sddm 
+pacman -S xf86-video-intel xorg sddm
 systemctl enable sddm
 ```
 
