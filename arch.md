@@ -46,7 +46,7 @@ vi /etc/locale.conf
 LANG=en_US.UTF-8
 ```
 ```sh
-pacman -S vim os-prober grub dialog wpa_supplicant
+pacman -S vim os-prober grub dialog wpa_supplicant intel-ucode
 ```
 ```sh
 vim /etc/lvm/lvm.conf
