@@ -84,7 +84,7 @@ systemctl enable sddm
 
 # awesome
 ```sh
-pacman -S awesome xterm
+pacman -S awesome terminator
 mkdir -p ~/.config/awesome
 cp /etc/xdg/awesome/rc.lua ~/.config/awesome
 ```
