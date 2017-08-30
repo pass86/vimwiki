@@ -40,6 +40,12 @@ locale-gen
 vi /etc/hostname
 ```
 ```sh
+vi /etc/locale.conf
+```
+```
+LANG=en_US.UTF-8
+```
+```sh
 pacman -S vim os-prober grub dialog wpa_supplicant
 ```
 ```sh
