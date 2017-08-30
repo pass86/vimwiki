@@ -40,7 +40,13 @@ locale-gen
 vi /etc/hostname
 ```
 ```sh
-pacman -S vim os-prober grub dialog wpa_supplicant
+vi /etc/locale.conf
+```
+```
+LANG=en_US.UTF-8
+```
+```sh
+pacman -S vim os-prober grub dialog wpa_supplicant intel-ucode
 ```
 ```sh
 vim /etc/lvm/lvm.conf
@@ -78,7 +84,7 @@ nmtui
 
 # desktop
 ```sh
-pacman -S xf86-video-intel xorg sddm 
+pacman -S xf86-video-intel xorg sddm
 systemctl enable sddm
 ```
 
