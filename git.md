@@ -48,3 +48,10 @@ git reset
 ```sh
 git config core.filemode false
 ```
+
+# commit changes to new branch
+```sh
+git checkout -b foo
+git commit -am"foo"
+git push --set-upstream origin foo
+```
