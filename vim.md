@@ -33,6 +33,10 @@ q:
     ```sh
     ./install.py --clang-completer
     ```
+    * fix libtinfo.so.5: cannot open shared object file
+    ```sh
+    pacman -S clang
+    ```
 * windows
     * automatic, but maybe "The C compiler identification is unknown"
         ```bat
