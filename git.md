@@ -55,3 +55,8 @@ git checkout -b foo
 git commit -am"foo"
 git push --set-upstream origin foo
 ```
+
+# switch back to master
+```sh
+git checkout master
+```
