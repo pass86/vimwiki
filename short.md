@@ -12,6 +12,7 @@
 * controler cntl
 * database db
 * email eml
+* entity entt
 * error err
 * framework fmk
 * handler hdl
