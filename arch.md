@@ -127,3 +127,9 @@ pacman -Qqe
 ```sh
 pacman -Ql foo
 ```
+
+# ctrl to caps
+```sh
+vim .bashrc
+setxkbmap -option ctrl:nocaps
+```
