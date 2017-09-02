@@ -128,8 +128,20 @@ pacman -Qqe
 pacman -Ql foo
 ```
 
-# ctrl to caps
+# aur package
+* Dowload snapshot
+```sh
+makepkg -si
+```
+
+# caps to ctrl
 ```sh
 vim .bashrc
 setxkbmap -option ctrl:nocaps
 ```
+
+# input method
+```sh
+pacman -S fcitx fcitx-im
+```
+* fcitx-sogoupinyin
