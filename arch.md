@@ -117,3 +117,13 @@ pacman -S virtualbox-guest-utils
 ```
 choose virtualbox-guest-modules-arch
 ```
+
+# installed package
+```sh
+pacman -Qqe
+```
+
+# package files
+```sh
+pacman -Ql foo
+```
