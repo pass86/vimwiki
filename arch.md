@@ -145,3 +145,16 @@ setxkbmap -option ctrl:nocaps
 pacman -S fcitx fcitx-im
 ```
 * fcitx-sogoupinyin
+
+# sound card
+```sh
+/etc/modprobe.d/alsa-base.conf
+```
+```
+options snd_hda_intel index=1,0
+```
+```sh
+pacman -S alsa-utils
+amixer sset Master unmute
+amixer set Master 60%
+```
