@@ -158,3 +158,8 @@ pacman -S alsa-utils
 amixer sset Master unmute
 amixer set Master 60%
 ```
+
+# boot log
+```sh
+dmsg
+```
