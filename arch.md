@@ -76,10 +76,10 @@ dhcpcd
 
 # network
 ```sh
-pacman -S networkmanager
+pacman -S networkmanager network-manager-applet
 systemctl disable netctl
 systemctl enable NetworkManager
-nmtui
+nm-applet
 ```
 
 # desktop
