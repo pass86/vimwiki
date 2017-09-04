@@ -76,10 +76,10 @@ dhcpcd
 
 # network
 ```sh
-pacman -S networkmanager
+pacman -S networkmanager network-manager-applet
 systemctl disable netctl
 systemctl enable NetworkManager
-nmtui
+nm-applet
 ```
 
 # desktop
@@ -116,4 +116,50 @@ pacman -S virtualbox-guest-utils
 ```
 ```
 choose virtualbox-guest-modules-arch
+```
+
+# installed package
+```sh
+pacman -Qqe
+```
+
+# package files
+```sh
+pacman -Ql foo
+```
+
+# aur package
+* Dowload snapshot
+```sh
+makepkg -si
+```
+
+# caps to ctrl
+```sh
+vim .bashrc
+setxkbmap -option ctrl:nocaps
+```
+
+# input method
+```sh
+pacman -S fcitx fcitx-im
+```
+* fcitx-sogoupinyin
+
+# sound card
+```sh
+/etc/modprobe.d/alsa-base.conf
+```
+```
+options snd_hda_intel index=1,0
+```
+```sh
+pacman -S alsa-utils
+amixer sset Master unmute
+amixer set Master 60%
+```
+
+# boot log
+```sh
+dmsg
 ```
