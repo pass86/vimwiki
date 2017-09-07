@@ -45,3 +45,6 @@
 
 # knowledge
 * [math](math.md)
+
+# lang
+* [python](python.md)
