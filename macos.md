@@ -13,3 +13,6 @@ ipcs
 
 # view image group
 * Command-A -> Space
+
+# core dump
+* /cores
