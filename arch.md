@@ -76,7 +76,7 @@ dhcpcd
 
 # network
 ```sh
-pacman -S networkmanager network-manager-applet
+pacman -S networkmanager network-manager-applet iw
 systemctl disable netctl
 systemctl enable NetworkManager
 nm-applet
