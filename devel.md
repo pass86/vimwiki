@@ -3,14 +3,14 @@
     * open Developer Command Prompt for VS2015
     ```bat
     cd %USERPROFILE%/code/boost_1_64_0
-    ./bootstrap.bat
+    ./bootstrap.bat --without-libraries=python
     ./b2.exe
     setx BOOST_ROOT %USERPROFILE%\code\boost_1_64_0
     ```
 * build on macos & linux
     ```sh
     cd ~/code/boost_1_64_0
-    ./bootstrap.sh
+    ./bootstrap.sh --without-libraries=python
     ./b2
     sudo ./b2 install
     ```
