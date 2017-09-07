@@ -163,3 +163,8 @@ amixer set Master 60%
 ```sh
 dmsg
 ```
+
+# core dump
+```
+/var/lib/systemd/coredump
+```
