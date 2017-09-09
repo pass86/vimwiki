@@ -10,8 +10,8 @@
     ```
     ```
     Host nas
-    HostName nas.lan
-    User foo
+        HostName nas.lan
+        User foo
     ```
     ```sh
     chmod 600 config
