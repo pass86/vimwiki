@@ -18,6 +18,11 @@ q:
 :retab
 ```
 
+# swap window
+```
+ctrl+w, x
+```
+
 # build
 ```sh
 ./configure --enable-pythoninterp
