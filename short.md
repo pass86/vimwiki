@@ -19,6 +19,7 @@
 * header hdr
 * implementation impl
 * instance inst
+* inverse inv
 * length len
 * level lvl
 * manager mgr
@@ -31,18 +32,18 @@
 * register regs
 * request req
 * response rsp
-* status sta
 * second sec
 * sequence seq
 * server svr
 * signal sig
 * socket sock
+* status sta
 * system sys
+* table tbl
 * target tar
 * test tst
 * token tok
 * user usr
-* inverse inv
 
 # phrase
 * battle-id bid
