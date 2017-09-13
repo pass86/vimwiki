@@ -16,6 +16,7 @@
 * BOM(Byte Order Mark) U+FEFF
 * ABI(Application Binary Interface)
 * DSL(Domain-Specific Language)
+* CAS(Compare and Swap)
 
 # graphic
 * SSAO(Screen Space Ambient Occlusion)
