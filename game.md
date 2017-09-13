@@ -1,5 +1,5 @@
 * 成就 achievement
-* 角色 actor, character
+* 角色 actor, character, avatar
 * 首领 boss
 * 英雄 hero
 * 杂兵 mob
@@ -45,3 +45,17 @@
 * 敌对 hostile
 * 天赋 talent
 * 生物 creature
+* 玩法 gameplay
+* 法力 manna
+* 钻石 diamonds
+* 向下躲避 duck
+* 疾跑 dash
+* 撤退 retreat
+* 收集 collect
+* 协助进攻或偷袭 gank
+* 连招 combo
+* 升级 levep-up
+* 点击 tap
+* 方向键 d-pad
+* 水平滚动 side scroll
+* 团队的 team-based
