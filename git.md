@@ -1,3 +1,8 @@
+# revert last commit
+```sh
+git revert HEAD
+```
+
 # archive latest
 ```sh
 git archive -o latest.zip HEAD
