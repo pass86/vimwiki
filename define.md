@@ -17,6 +17,7 @@
 * ABI(Application Binary Interface)
 * DSL(Domain-Specific Language)
 * CAS(Compare and Swap)
+* POSIX(Portable Operating System Interface)
 
 # graphic
 * SSAO(Screen Space Ambient Occlusion)
