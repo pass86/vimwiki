@@ -24,10 +24,10 @@
 * [shell](shell.md)
 
 # devel
-* [devel](devel.md)
 * [unity](unity.md)
 * [xcode](xcode.md)
 * [3dsmax](3dsmax.md)
+* [3rdparty](3rdparty.md)
 
 # service
 * [nginx](nginx.md)
