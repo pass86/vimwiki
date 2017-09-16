@@ -168,3 +168,8 @@ dmsg
 ```
 /var/lib/systemd/coredump
 ```
+
+# update package
+```sh
+pacman -Syu
+```
