@@ -34,3 +34,6 @@
 * 1 平行, 同向
 * -1 平行, 背离
 * θ=acos(A·B/(|A||B|))
+
+# floating-point
+* IEEE 754
