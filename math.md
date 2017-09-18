@@ -35,5 +35,5 @@
 * -1 平行, 背离
 * θ=acos(A·B/(|A||B|))
 
-# floating-point
+# 浮点数(floating-point)
 * IEEE 754
