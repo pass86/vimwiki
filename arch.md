@@ -84,7 +84,7 @@ nm-applet
 
 # desktop
 ```sh
-pacman -S xf86-video-intel xorg sddm
+pacman -S xf86-video-intel xorg sddm compton
 systemctl enable sddm
 ```
 
