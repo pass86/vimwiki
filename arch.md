@@ -142,7 +142,7 @@ setxkbmap -option ctrl:nocaps
 
 # input method
 ```sh
-pacman -S fcitx fcitx-im
+pacman -S fcitx fcitx-im fcitx-configtool
 ```
 * fcitx-sogoupinyin
 
