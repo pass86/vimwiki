@@ -26,3 +26,8 @@ install(TARGETS foo RUNTIME DESTINATION bar)
     * marked with the FRAMEWORK property
 * BUNDLE
     * marked with the MACOSX_BUNDLE property
+
+# build release
+```cmake
+* cmake . -DCMAKE_BUILD_TYPE=Release
+```
