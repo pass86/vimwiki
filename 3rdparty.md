@@ -77,7 +77,7 @@
     vim CMakeLists.txt
     ```
     ```cmake
-    #include(libprotobuf-lite.cmake)
+    include(libprotobuf-lite.cmake)
     include(libprotobuf.cmake)
     #include(libprotoc.cmake)
     #include(protoc.cmake)
