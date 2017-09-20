@@ -60,6 +60,7 @@
     sudo make install
     ```
 * build for linux
+    * I got link error when using libprotobuf.a produce by cmake 
     ```sh
     sudo yum install -y autoconf automake libtool curl make g++ unzip
     cd ~/code/protobuf-3.3.0
