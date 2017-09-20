@@ -81,16 +81,16 @@
     #include(libprotoc.cmake)
     #include(protoc.cmake)
 
-    if (protobuf_BUILD_TESTS)
-      include(tests.cmake)
-    endif (protobuf_BUILD_TESTS)
+    #if (protobuf_BUILD_TESTS)
+      #include(tests.cmake)
+    #endif (protobuf_BUILD_TESTS)
 
     #include(install.cmake)
     ```
     ```sh
     mkdir android
     cd android
-    cmake .. -DCMAKE_BUILD_TYPE=Release -Dprotobuf_BUILD_TESTS=OFF -DCMAKE_SYSTEM_NAME=Android -DCMAKE_ANDROID_ARCH_ABI=armeabi-v7a -DCMAKE_ANDROID_STL_TYPE=gnustl_static -DCMAKE_ANDROID_NDK=$HOME/Library/Android/android-ndk-r14b/
+    cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_SYSTEM_NAME=Android -DCMAKE_ANDROID_ARCH_ABI=armeabi-v7a -DCMAKE_ANDROID_STL_TYPE=gnustl_static -DCMAKE_ANDROID_NDK=$HOME/Library/Android/android-ndk-r14b/
     make
     sudo make install
     ```
