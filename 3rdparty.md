@@ -72,7 +72,7 @@
     sudo ldconfig
     ```
 * build for android
-    * I got link error when using libprotobuf.a build by this way
+    * I got link error when using libprotobuf.a build by cmake
     ```sh
     cd ~/code/protobuf-3.4.1/cmake
     vim CMakeLists.txt
