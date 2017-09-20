@@ -84,7 +84,7 @@ nm-applet
 
 # desktop
 ```sh
-pacman -S xf86-video-intel xorg sddm
+pacman -S xf86-video-intel xorg sddm compton
 systemctl enable sddm
 ```
 
@@ -142,7 +142,7 @@ setxkbmap -option ctrl:nocaps
 
 # input method
 ```sh
-pacman -S fcitx fcitx-im
+pacman -S fcitx fcitx-im fcitx-configtool
 ```
 * fcitx-sogoupinyin
 
