@@ -1,5 +1,5 @@
 # boost
-* build on windows
+* build for windows
     * open Developer Command Prompt for VS2015
     ```bat
     cd %USERPROFILE%/code/boost_1_64_0
@@ -7,7 +7,7 @@
     ./b2.exe
     setx BOOST_ROOT %USERPROFILE%\code\boost_1_64_0
     ```
-* build on macos & linux
+* build for macos & linux
     ```sh
     cd ~/code/boost_1_64_0
     ./bootstrap.sh --without-libraries=python
@@ -36,7 +36,7 @@
     ```
 
 # protobuf
-* build on windows
+* build for windows
     * open Developer Command Prompt for VS2015
     ```bat
     cd %USERPROFILE%/code/protobuf-3.3.0/cmake
@@ -50,7 +50,7 @@
     setx CMAKE_LIBRARY_PATH %USERPROFILE%\code\protobuf-3.3.0\cmake\build\debug
     ```
     * add path %USERPROFILE%\code\protobuf-3.3.0\cmake\build\debug
-* build on macos
+* build for macos
     ```sh
     cd ~/code/protobuf-3.3.0/cmake
     mkdir build
@@ -59,7 +59,7 @@
     make
     sudo make install
     ```
-* build on linux
+* build for linux
     ```sh
     sudo yum install -y autoconf automake libtool curl make g++ unzip
     cd ~/code/protobuf-3.3.0
@@ -69,6 +69,30 @@
     make check
     sudo make install
     sudo ldconfig
+    ```
+* build for android
+    ```sh
+    cd ~/code/protobuf-3.4.1/cmake
+    vim CMakeLists.txt
+    ```
+    ```
+    #include(libprotobuf-lite.cmake)
+    include(libprotobuf.cmake)
+    #include(libprotoc.cmake)
+    #include(protoc.cmake)
+
+    if (protobuf_BUILD_TESTS)
+      include(tests.cmake)
+    endif (protobuf_BUILD_TESTS)
+
+    #include(install.cmake)
+    ```
+    ```sh
+    mkdir android
+    cd android
+    cmake .. -DCMAKE_BUILD_TYPE=Release -Dprotobuf_BUILD_TESTS=OFF -DCMAKE_SYSTEM_NAME=Android -DCMAKE_ANDROID_ARCH_ABI=armeabi-v7a -DCMAKE_ANDROID_STL_TYPE=gnustl_static -DCMAKE_ANDROID_NDK=$HOME/Library/Android/android-ndk-r14b/
+    make
+    sudo make install
     ```
 * using by cmake
     ```cmake
@@ -80,7 +104,7 @@
     * need .NET Core
 
 # openssl
-* build on windows
+* build for windows
     * install nasm http://www.nasm.us
     * add path %USERPROFILE%\tools\nasm-2.12.02
     * install perl http://strawberryperl.com
@@ -93,7 +117,7 @@
     setx OPENSSL_ROOT %USERPROFILE%\code\openssl-1.1.0e
     ```
     add path %USERPROFILE%\code\openssl-1.1.0e
-* build on macos & linux
+* build for macos & linux
     ```sh
     cd ~/code/openssl-1.1.0e
     ./config
