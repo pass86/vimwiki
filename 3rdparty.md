@@ -60,6 +60,7 @@
     sudo make install
     ```
 * build for linux
+    * I got link error when using libprotobuf.a build by cmake
     ```sh
     sudo yum install -y autoconf automake libtool curl make g++ unzip
     cd ~/code/protobuf-3.3.0
@@ -71,12 +72,13 @@
     sudo ldconfig
     ```
 * build for android
+    * I got link error when using libprotobuf.a build by cmake
     ```sh
     cd ~/code/protobuf-3.4.1/cmake
     vim CMakeLists.txt
     ```
     ```cmake
-    #include(libprotobuf-lite.cmake)
+    include(libprotobuf-lite.cmake)
     include(libprotobuf.cmake)
     #include(libprotoc.cmake)
     #include(protoc.cmake)

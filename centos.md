@@ -222,6 +222,11 @@ cat /etc/redhat-release
 md5sum foo
 ```
 
+# so dependencies
+```sh
+ldd foo
+```
+
 # smartctl
 ```sh
 sudo yum install smartmontools
