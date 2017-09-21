@@ -3,6 +3,11 @@
 git revert HEAD
 ```
 
+# delete the most recent commit
+```sh
+git reset --hard HEAD~1
+```
+
 # archive latest
 ```sh
 git archive -o latest.zip HEAD
