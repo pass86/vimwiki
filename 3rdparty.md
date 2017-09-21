@@ -39,20 +39,20 @@
 * build for windows
     * open Developer Command Prompt for VS2015
     ```bat
-    cd %USERPROFILE%/code/protobuf-3.3.0/cmake
+    cd %USERPROFILE%/code/protobuf-3.4.1/cmake
     mkdir build\debug
     cd build/debug
     cmake -G "NMake Makefiles" -DCMAKE_BUILD_TYPE=Debug -Dprotobuf_BUILD_TESTS=OFF -Dprotobuf_MSVC_STATIC_RUNTIME=OFF ../..
     nmake
     copy libprotobufd.lib libprotobuf.lib
-    setx PROTOBUF_ROOT %USERPROFILE%\code\protobuf-3.3.0
-    setx CMAKE_INCLUDE_PATH %USERPROFILE%\code\protobuf-3.3.0\src
-    setx CMAKE_LIBRARY_PATH %USERPROFILE%\code\protobuf-3.3.0\cmake\build\debug
+    setx PROTOBUF_ROOT %USERPROFILE%\code\protobuf-3.4.1
+    setx CMAKE_INCLUDE_PATH %USERPROFILE%\code\protobuf-3.4.1\src
+    setx CMAKE_LIBRARY_PATH %USERPROFILE%\code\protobuf-3.4.1\cmake\build\debug
     ```
-    * add path %USERPROFILE%\code\protobuf-3.3.0\cmake\build\debug
+    * add path %USERPROFILE%\code\protobuf-3.4.1\cmake\build\debug
 * build for macos
     ```sh
-    cd ~/code/protobuf-3.3.0/cmake
+    cd ~/code/protobuf-3.4.1/cmake
     mkdir build
     cd build
     cmake -Dprotobuf_BUILD_TESTS=OFF ..
@@ -63,7 +63,7 @@
     * I got link error when using libprotobuf.a build by cmake
     ```sh
     sudo yum install -y autoconf automake libtool curl make g++ unzip
-    cd ~/code/protobuf-3.3.0
+    cd ~/code/protobuf-3.4.1
     ./autogen.sh
     ./configure
     make
