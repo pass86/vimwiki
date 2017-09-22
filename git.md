@@ -66,6 +66,12 @@ git commit -am"foo"
 git push --set-upstream origin foo
 ```
 
+# create branch
+```sh
+git checkout -b foo
+git push origin foo
+```
+
 # switch back to master
 ```sh
 git checkout master
