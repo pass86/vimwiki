@@ -107,9 +107,9 @@
     * fix The reference assemblies for framework ".NETFramework,Version=v3.5" were not found.
     * add this to Google.Protobuf.csproj
     ```
-<PropertyGroup>
-  <FrameworkPathOverride Condition="'$(TargetFramework)' == 'net35'">C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v3.5\Profile\Client</FrameworkPathOverride>
-</PropertyGroup>
+    <PropertyGroup>
+      <FrameworkPathOverride Condition="'$(TargetFramework)' == 'net35'">C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v3.5\Profile\Client</FrameworkPathOverride>
+    </PropertyGroup>
     ```
 
 # openssl
