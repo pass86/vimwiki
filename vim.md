@@ -1,3 +1,6 @@
+# esc
+* ctrl+[
+
 # sudo write
 ```
 :w !sudo tee %
