@@ -30,3 +30,6 @@
 
 # apk size
 * FAT(ARMv7+x86) - ARMv7 = 9.9M
+
+# enable unsafe in MonoDevelop
+* Project>Assembly-CSharp Options>General>Allow 'unsafe' code
