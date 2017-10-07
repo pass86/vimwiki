@@ -43,6 +43,7 @@
 # read
 * [gpp](gpp.md)
 * [cc](cc.md)
+* [refactoring](refactoring.md)
 
 # knowledge
 * [math](math.md)
