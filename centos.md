@@ -80,11 +80,11 @@ sudo hostnamectl set-hostname vps
     quit
     ```
     ```sh
-    sudo mkfs.xfs -f /dev/sdb
+    sudo mkfs.btrf -f /dev/sdb
     sudo vi /etc/fstab
     ```
     ```
-    /dev/sdb /mnt/hdd3 xfs defaults 0 0
+    /dev/sdb /mnt/hdd3 btrfs defaults 0 0
     ```
     ```sh
     sudo reboot
@@ -136,14 +136,14 @@ sudo lvcreate --name data --size 7T volume
 sudo lvs
 sudo lvscan
 sudo lvdisplay
-sudo mkfs.xfs /dev/volume/data
+sudo mkfs.btrfs /dev/volume/data
 sudo mkdir /data
 sudo mount /dev/volume/data /data
 df -h
 sudo vi /etc/fstab
 ```
 ```
-/dev/mapper/volume-data /data xfs defaults 0 0
+/dev/mapper/volume-data /data btrfs defaults 0 0
 ```
 ```sh
 sudo reboot

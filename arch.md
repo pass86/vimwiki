@@ -19,7 +19,7 @@ press p<enter>
 press w<enter>
 ```
 ```sh
-mkfs.ext4 /dev/sda1
+mkfs.btrf /dev/sda1
 mount /dev/sda1 /mnt
 vim /etc/pacman.d/mirrorlist
 pacstrap /mnt base base-devel
@@ -74,12 +74,20 @@ passwd foo
 dhcpcd
 ```
 
+# fix "Re-reading the partition table failed device or resource busy"
+* reboot
+
 # network
 ```sh
 pacman -S networkmanager network-manager-applet iw
 systemctl disable netctl
 systemctl enable NetworkManager
 nm-applet
+```
+
+# btrfs
+```sh
+pacman -S btrfs-progs
 ```
 
 # desktop
