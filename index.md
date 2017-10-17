@@ -16,19 +16,20 @@
 * [svn](svn.md)
 * [tmux](tmux.md)
 * [cmake](cmake.md)
-* [gimp](gimp.md)
 * [babun](babun.md)
 * [pandoc](pandoc.md)
+* [xcode](xcode.md)
+* [unity](unity.md)
+* [3dsmax](3dsmax.md)
+* [photoshop](photoshop.md)
+* [gimp](gimp.md)
 
 # script
 * [shell](shell.md)
 
-# devel
-* [unity](unity.md)
-* [xcode](xcode.md)
-* [3dsmax](3dsmax.md)
-* [3rdparty](3rdparty.md)
+# libs
 * [socket](socket.md)
+* [3rdparty](3rdparty.md)
 
 # service
 * [nginx](nginx.md)
