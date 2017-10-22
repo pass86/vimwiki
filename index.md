@@ -13,6 +13,7 @@
 # tools
 * [vim](vim.md)
 * [git](git.md)
+* [gcc](gcc.md)
 * [svn](svn.md)
 * [tmux](tmux.md)
 * [cmake](cmake.md)
