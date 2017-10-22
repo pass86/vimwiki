@@ -60,12 +60,14 @@
     sudo make install
     ```
 * build for linux
-    * I got link error when using libprotobuf.a build by cmake
+    ```sh
+    cmake -Dprotobuf_BUILD_TESTS=OFF -DCMAKE_POSITION_INDEPENDENT_CODE=ON ..
+    ```
     ```sh
     sudo yum install -y autoconf automake libtool curl make g++ unzip
     cd ~/code/protobuf-3.4.1
     ./autogen.sh
-    ./configure
+    ./configure CXXFLAGS=-fPIC
     make
     make check
     sudo make install
