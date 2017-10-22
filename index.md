@@ -5,8 +5,8 @@
 
 # os
 * [macos](macos.md)
+* [archlinux](archlinux.md)
 * [centos](centos.md)
-* [arch](arch.md)
 * [openwrt](openwrt.md)
 * [android](android.md)
 
