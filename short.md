@@ -3,6 +3,7 @@
 * address addr
 * authorization auth
 * backend bnd
+* body bdy
 * buffer buf
 * client cli
 * command cmd
@@ -10,6 +11,7 @@
 * context ctx
 * control ctl
 * controler cntl
+* current curr
 * database db
 * email eml
 * entity entt
@@ -28,6 +30,7 @@
 * method mtd
 * option opt
 * password pwd
+* previous prev
 * rand rnd
 * register regs
 * request req
