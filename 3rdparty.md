@@ -1,6 +1,6 @@
 # boost
 * build for windows
-    * open Developer Command Prompt for VS2015
+    * open VS2015 x64 Native Tools Command Prompt
     ```bat
     cd %USERPROFILE%/code/boost_1_65_1
     ./bootstrap.bat --without-libraries=python
@@ -37,7 +37,7 @@
 
 # protobuf
 * build for windows
-    * open Developer Command Prompt for VS2015
+    * open VS2015 x64 Native Tools Command Prompt
     ```bat
     cd %USERPROFILE%/code/protobuf-3.4.1/cmake
     mkdir build
@@ -116,21 +116,21 @@
 
 # openssl
 * build for windows
-    * install nasm http://www.nasm.us
-    * add path %USERPROFILE%\tools\nasm-2.12.02
+    * install nasm x64 http://www.nasm.us
+    * add path %USERPROFILE%\tools\nasm-2.13.01
     * install perl http://strawberryperl.com
-    * open Developer Command Prompt for VS2015
+    * open VS2015 x64 Native Tools Command Prompt
     ```bat
-    cd %USERPROFILE%/code/openssl-1.1.0e
-    perl Configure VC-WIN32
+    cd %USERPROFILE%/code/openssl-1.1.0f
+    perl Configure VC-WIN64A
     nmake
     nmake test
-    setx OPENSSL_ROOT %USERPROFILE%\code\openssl-1.1.0e
+    setx OPENSSL_ROOT %USERPROFILE%\code\openssl-1.1.0f
     ```
-    add path %USERPROFILE%\code\openssl-1.1.0e
+    add path %USERPROFILE%\code\openssl-1.1.0f
 * build for macos & linux
     ```sh
-    cd ~/code/openssl-1.1.0e
+    cd ~/code/openssl-1.1.0f
     ./config
     make
     sudo make install
