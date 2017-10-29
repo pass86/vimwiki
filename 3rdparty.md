@@ -73,31 +73,6 @@
     sudo make install
     sudo ldconfig
     ```
-* build for android
-    * I got link error when using libprotobuf.a build by cmake
-    ```sh
-    cd ~/code/protobuf-3.4.1/cmake
-    vim CMakeLists.txt
-    ```
-    ```cmake
-    include(libprotobuf-lite.cmake)
-    include(libprotobuf.cmake)
-    #include(libprotoc.cmake)
-    #include(protoc.cmake)
-
-    #if (protobuf_BUILD_TESTS)
-      #include(tests.cmake)
-    #endif (protobuf_BUILD_TESTS)
-
-    #include(install.cmake)
-    ```
-    ```sh
-    mkdir android
-    cd android
-    cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_SYSTEM_NAME=Android -DCMAKE_ANDROID_ARCH_ABI=armeabi-v7a -DCMAKE_ANDROID_STL_TYPE=gnustl_static -DCMAKE_ANDROID_NDK=$HOME/Library/Android/android-ndk-r14b
-    make
-    sudo make install
-    ```
 * using by cmake
     ```cmake
     find_package(Protobuf REQUIRED)
