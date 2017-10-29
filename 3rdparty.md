@@ -11,7 +11,7 @@
     ```sh
     cd ~/code/boost_1_65_1
     ./bootstrap.sh --without-libraries=python
-    ./b2
+    ./b2 -j7
     sudo ./b2 install
     ```
 * install linux dependency
