@@ -31,6 +31,9 @@ ctrl+w, x
 ./configure --enable-pythoninterp
 ```
 
+# nerdtree
+* press m to manage file
+ 
 # ycm
 * macos
     ```sh
