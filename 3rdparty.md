@@ -64,7 +64,7 @@
     cmake -Dprotobuf_BUILD_TESTS=OFF -DCMAKE_POSITION_INDEPENDENT_CODE=ON ..
     ```
     ```sh
-    sudo yum install -y autoconf automake libtool curl make g++ unzip
+    sudo yum install -y autoconf automake libtool curl make gcc-c++ unzip
     cd ~/code/protobuf-3.4.1
     ./autogen.sh
     ./configure CXXFLAGS=-fPIC
