@@ -34,6 +34,8 @@
         set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /SAFESEH:NO Psapi.lib")
     endif()
     ```
+* macos
+    * /private/tmp/boost_interprocess
 
 # protobuf
 * build for windows
