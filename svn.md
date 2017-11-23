@@ -3,6 +3,11 @@
 svn merge -r HEAD:PREV path
 ```
 
+# undo single revision
+```sh
+svn merge -c -rxxxx path
+```
+
 # revert to revision
 ```sh
 svn merge -r HEAD:xxxx path
