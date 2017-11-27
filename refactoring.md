@@ -129,3 +129,16 @@
 # Replace Data Value with Object（以对象取代数据值）
 * 将数据项变成对象
 * 这些简单数据项不再那么简单了
+
+# Change Value to Reference（将值对象改为引用对象）
+* 你可能会希望给这个对象加入一些可修改数据， 并确保对任何一个对象的修改都能影响到所有引用此一对象的地方
+
+# Change Reference to Value（将引用对象改为值对象）
+* 值对象有一个非常重要的特性：它们应该是不可变的
+
+# Replace Array with Object（以对象取代数组）
+* 一个数组容纳了多种不同对象，这会给用户带来麻烦
+
+# Duplicate Observed Data（复制“被监视数据”）
+* 将该数据复制到一个领域对象中。建立一个Observer模式，用以同步领域对象和GUI对象内的重复数据。
+* 一个分层良好的系统，应该将处理用户界面和处理业务逻辑的代码分开
