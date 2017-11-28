@@ -142,3 +142,12 @@
 # Duplicate Observed Data（复制“被监视数据”）
 * 将该数据复制到一个领域对象中。建立一个Observer模式，用以同步领域对象和GUI对象内的重复数据。
 * 一个分层良好的系统，应该将处理用户界面和处理业务逻辑的代码分开
+
+# Change Unidirectional Association to Bidirectional（将单向关联改为双向关联）
+* 添加一个反向指针，并使修改函数能够同时更新两条连接
+* 如果使用不当，反向指针很容易造成混乱
+* 如果某个对象是组成另一对象的部件，那么由后者负责控制关联关系
+
+# Change Bidirectional Association to Unidirectional（将双向关联改为单向关联）
+* 去除不必要的关联
+* 大量的双向连接也很容易造成“僵尸对象”
