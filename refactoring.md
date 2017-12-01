@@ -151,3 +151,11 @@
 # Change Bidirectional Association to Unidirectional（将双向关联改为单向关联）
 * 去除不必要的关联
 * 大量的双向连接也很容易造成“僵尸对象”
+
+# Replace Magic Number with Symbolic Constant（以字面量取代魔法数）
+* 创造一个常量，根据其意义为它命名，并将上述的字面数值替换为这个常量
+* 常量不会造成任何性能开销，却可以大大提高代码的可读性
+
+# Encapsulate Field（封装字段）
+* 将它声明为private，并提供相应的访问函数
+* 面向对象的首要原则之一就是封装，或者称为“数据隐藏”
