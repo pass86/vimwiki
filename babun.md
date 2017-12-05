@@ -36,3 +36,6 @@ pact install the_silver_searcher
     ```sh
     ZSH_THEME="robbyrussell"
     ```
+
+# fix "__locale_ctype_ptr cygwin1.dll"
+* run %USERPROFILE%\.babun\update.bat
