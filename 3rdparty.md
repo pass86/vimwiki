@@ -2,9 +2,9 @@
 * build for windows
     * open VS2015 x64 Native Tools Command Prompt
     ```bat
-    cd %USERPROFILE%/code/boost_1_65_1
-    ./bootstrap.bat --without-libraries=python
-    ./b2.exe -j7 address-model=64
+    cd %USERPROFILE%\code\boost_1_65_1
+    .\bootstrap.bat --without-libraries=python
+    .\b2.exe -j7 address-model=64
     setx BOOST_ROOT %USERPROFILE%\code\boost_1_65_1
     ```
 * build for macos & linux
@@ -41,7 +41,7 @@
 * build for windows
     * open VS2015 x64 Native Tools Command Prompt
     ```bat
-    cd %USERPROFILE%/code/protobuf-3.4.1/cmake
+    cd %USERPROFILE%\code\protobuf-3.4.1\cmake
     mkdir build
     cd build
     cmake -Dprotobuf_BUILD_TESTS=OFF -Dprotobuf_MSVC_STATIC_RUNTIME=OFF ..
@@ -98,7 +98,7 @@
     * install perl http://strawberryperl.com
     * open VS2015 x64 Native Tools Command Prompt
     ```bat
-    cd %USERPROFILE%/code/openssl-1.1.0f
+    cd %USERPROFILE%\code\openssl-1.1.0f
     perl Configure VC-WIN64A
     nmake
     nmake test
