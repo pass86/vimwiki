@@ -7,3 +7,9 @@ sudo yum install redis
 ```sh
 sudo yum install hiredis-devel
 ```
+
+# config
+* /etc/redis.conf
+
+# db
+* /var/lib/redis/dump.rdb
