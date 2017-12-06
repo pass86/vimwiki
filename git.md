@@ -76,3 +76,9 @@ git push origin foo
 ```sh
 git checkout master
 ```
+
+# remote url
+```sh
+git remote -v
+git remote set-url origin git@github.com:pass86/dotfiles.git
+```
