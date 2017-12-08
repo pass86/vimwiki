@@ -82,3 +82,8 @@ git checkout master
 git remote -v
 git remote set-url origin git@github.com:pass86/dotfiles.git
 ```
+
+# rewriting the most recent commit message
+```sh
+git commit --amend
+```
