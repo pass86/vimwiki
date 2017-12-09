@@ -1,13 +1,23 @@
+# install
+* linux
+    ```sh
+    sudo yum install mysql-community-server
+    ```
+* macos
+    ```sh
+    brew install mysql
+    ```
+
 # devel
+* linux
+    ```sh
+    sudo yum install mysql-community-devel
+    ```
 * windows
     ```bat
     setx MYSQL_ROOT %USERPROFILE%\Library\mysql-connector-c-6.1.9-win32
     ```
     * add path MYSQL_ROOT %USERPROFILE%\Library\mysql-connector-c-6.1.9-win32\lib
-* linux
-    ```sh
-    sudo yum install mysql-community-devel
-    ```
 
 # password
 ```mysql
