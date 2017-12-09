@@ -38,6 +38,7 @@
 * second sec
 * sequence seq
 * server svr
+* session ses
 * signal sig
 * socket sock
 * status sta
