@@ -26,6 +26,11 @@ q:
 ctrl+w, x
 ```
 
+# set syntax
+```
+:set syntax=lua
+```
+
 # build
 ```sh
 ./configure --enable-pythoninterp
