@@ -24,6 +24,11 @@
 alter user 'root'@'localhost' identified by 'foo';
 ```
 
+# turn off password validation
+```mysql
+uninstall plugin validate_password;
+```
+
 # fix 1130
 ```mysql
 update user set host = '%' where user = 'root';
