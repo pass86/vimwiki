@@ -26,6 +26,21 @@ q:
 ctrl+w, x
 ```
 
+# new tab
+```
+:tabnew
+```
+
+# next tab
+```
+g t
+```
+
+# prev tab
+```
+g T
+```
+
 # set syntax
 ```
 :set syntax=lua
