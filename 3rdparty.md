@@ -1,6 +1,6 @@
 # boost
 * build for windows
-    * open VS2015 x64 Native Tools Command Prompt
+    * open VS2017 x64 Native Tools Command Prompt
     ```bat
     cd %USERPROFILE%\code\boost_1_65_1
     .\bootstrap.bat --without-libraries=python
@@ -39,7 +39,7 @@
 
 # protobuf
 * build for windows
-    * open VS2015 x64 Native Tools Command Prompt
+    * open VS2017 x64 Native Tools Command Prompt
     ```bat
     cd %USERPROFILE%\code\protobuf-3.4.1\cmake
     mkdir build
@@ -96,7 +96,7 @@
     * install nasm x64 http://www.nasm.us
     * add path %USERPROFILE%\tools\nasm-2.13.01
     * install perl http://strawberryperl.com
-    * open VS2015 x64 Native Tools Command Prompt
+    * open VS2017 x64 Native Tools Command Prompt
     ```bat
     cd %USERPROFILE%\code\openssl-1.1.0f
     perl Configure VC-WIN64A
