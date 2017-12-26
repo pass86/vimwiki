@@ -29,6 +29,11 @@ svn log -rBASE -v
 svn log -rBASE --diff
 ```
 
+# remove unversioned
+```sh
+svn cleanup . --remove-unversioned
+```
+
 # switch workingcopy
 ```sh
 svn switch http://server/proj/branches/branch1 --ignore-ancestry --force
