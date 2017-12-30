@@ -37,6 +37,12 @@ update user set host = '%' where user = 'root';
 sudo systemctl restart mysqld
 ```
 
+# variables
+```mysql
+show variables;
+```
+wait_timeout
+
 # index
 ```mysql
 show index from foo;
