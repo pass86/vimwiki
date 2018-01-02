@@ -41,6 +41,10 @@ g t
 g T
 ```
 
+# move half-page
+* ctrl+d move half-page down
+* ctrl+u move half-page up
+
 # set syntax
 ```
 :set syntax=lua
@@ -53,7 +57,7 @@ g T
 
 # nerdtree
 * press m to manage file
- 
+
 # ycm
 * macos
     ```sh
