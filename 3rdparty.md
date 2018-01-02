@@ -112,6 +112,15 @@
     make
     sudo make install
     ```
+* build for ios
+    ```sh
+    export CC=clang;
+    export CROSS_TOP=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer
+    export CROSS_SDK=iPhoneOS.sdk
+    export PATH="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:$PATH"
+    ./Configure ios64-cross no-shared no-dso no-hw no-engine --prefix=/usr/local/openssl-ios64
+    make
+    ```
 * fix linux issue
     ```sh
     sudo ln -s /usr/local/lib64/libssl.so.1.1 /usr/lib64/libssl.so.1.1
