@@ -114,7 +114,7 @@
     ```
 * build for ios
     ```sh
-    export CC=clang;
+    export CC="clang -fembed-bitcode"
     export CROSS_TOP=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer
     export CROSS_SDK=iPhoneOS.sdk
     export PATH="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:$PATH"
