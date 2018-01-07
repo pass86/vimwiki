@@ -122,6 +122,16 @@
     make
     sudo make install
     ```
+* build for android
+    ```sh
+    export ANDROID_NDK_ROOT=$HOME/Library/Android/android-ndk-r14b
+    export CROSS_SYSROOT=$ANDROID_NDK_ROOT/platforms/android-14/arch-arm
+    export CROSS_COMPILE=arm-linux-androideabi-
+    export PATH=$ANDROID_NDK_ROOT/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/bin:$PATH
+    ./Configure android-armeabi no-shared no-dso no-hw no-engine no-unit-test --prefix=/usr/local/openssl-android-armeabi
+    make
+    sudo make install
+    ```
 * fix linux issue
     ```sh
     sudo ln -s /usr/local/lib64/libssl.so.1.1 /usr/lib64/libssl.so.1.1
