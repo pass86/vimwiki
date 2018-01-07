@@ -120,6 +120,7 @@
     export PATH="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:$PATH"
     ./Configure ios64-cross no-shared no-dso no-hw no-engine --prefix=/usr/local/openssl-ios64
     make
+    sudo make install
     ```
 * fix linux issue
     ```sh
@@ -151,6 +152,9 @@
         link_directories($ENV{OPENSSL_ROOT})
     endif()
     ```
+* FIPS
+    * Federal Information Processing Standards
+
 * generating ec keys
     ```sh
     openssl ecparam -list_curves
