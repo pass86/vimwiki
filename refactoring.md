@@ -195,3 +195,21 @@
 
 # Replace Subclass with Fields（以字段取代子类）
 * 若子类中只有常量函数，实在没有足够的存在价值
+
+简化条件表达式
+==============
+# Decompose Conditional（分解条件表达式）
+* 复杂的条件逻辑是最常导致复杂度上升的地点之一
+* 提炼出来的函数可读性也更高一些--它看上去就像一段注释那样清楚而明白
+
+# Consolidate Conditional Expression(合并条件表达式)
+* 将检查条件提炼成一个独立的函数对于厘清代码意义非常有用，因为它把描述“做什么”的语句换成了“为什么这样做”
+
+# Consolidate Duplicate Conditional Fragments(合并重复的条件片段)
+* 一组条件表达式的所有分支都执行了相同的代码
+
+# Remove Control Flag(移除控制标记)
+* 以break语句或return语句取代控制标记
+
+# Replace Nested Conditional with Guard Clauses(以卫语句取代嵌套表达式)
+* 给某一条分支以特别的重视
