@@ -9,10 +9,13 @@ ipcs
 ```
 
 # put displays to sleep
-* Control-Shift-Power
+* Control+Shift+Power
 
 # view image group
-* Command-A -> Space
+* Command+A -> Space
 
 # core dump
 * /cores
+
+# show/hide dock
+* Command+Opt+D
