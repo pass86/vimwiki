@@ -36,3 +36,8 @@ cat foo | awk '$1 ~ /^ *\bar/'
 ```sh
 dd if=foo.iso of=/dev/sdb bs=4M && sync
 ```
+
+# diff two directory
+```sh
+diff -arq folder1 folder2
+```
