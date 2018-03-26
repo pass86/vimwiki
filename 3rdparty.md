@@ -7,11 +7,18 @@
     .\b2.exe -j7 address-model=64
     setx BOOST_ROOT %USERPROFILE%\code\boost_1_65_1
     ```
-* build for macos & linux
+* build for macos
     ```sh
     cd ~/code/boost_1_65_1
     ./bootstrap.sh --without-libraries=python
     ./b2 -j7
+    sudo ./b2 install
+    ```
+* build for linux
+    ```sh
+    cd ~/code/boost_1_65_1
+    ./bootstrap.sh --without-libraries=python
+    ./b2 -j7 cxxflags=-fPIC
     sudo ./b2 install
     ```
 * install linux dependency
@@ -62,19 +69,26 @@
     sudo make install
     ```
 * build for linux
-    ```sh
-    cmake -Dprotobuf_BUILD_TESTS=OFF -DCMAKE_POSITION_INDEPENDENT_CODE=ON ..
-    ```
-    ```sh
-    sudo yum install -y autoconf automake libtool curl make gcc-c++ unzip
-    cd ~/code/protobuf-3.4.1
-    ./autogen.sh
-    ./configure CXXFLAGS=-fPIC
-    make
-    make check
-    sudo make install
-    sudo ldconfig
-    ```
+    * cmake
+        ```sh
+        cd ~/code/protobuf-3.4.1/cmake
+        mkdir build
+        cd build
+        cmake -Dprotobuf_BUILD_TESTS=OFF -DCMAKE_POSITION_INDEPENDENT_CODE=ON ..
+        make
+        sudo make install
+        ```
+    * make
+        ```sh
+        sudo yum install -y autoconf automake libtool curl make gcc-c++ unzip
+        cd ~/code/protobuf-3.4.1
+        ./autogen.sh
+        ./configure CXXFLAGS=-fPIC
+        make
+        make check
+        sudo make install
+        sudo ldconfig
+        ```
 * using by cmake
     ```cmake
     find_package(Protobuf REQUIRED)
