@@ -4,21 +4,21 @@
     ```bat
     cd %USERPROFILE%\code\boost_1_65_1
     .\bootstrap.bat --without-libraries=python
-    .\b2.exe -j7 address-model=64
+    .\b2.exe -j8 address-model=64
     setx BOOST_ROOT %USERPROFILE%\code\boost_1_65_1
     ```
 * build for macos
     ```sh
     cd ~/code/boost_1_65_1
     ./bootstrap.sh --without-libraries=python
-    ./b2 -j7
+    ./b2 -j8
     sudo ./b2 install
     ```
 * build for linux
     ```sh
     cd ~/code/boost_1_65_1
     ./bootstrap.sh --without-libraries=python
-    ./b2 -j7 cxxflags=-fPIC
+    ./b2 -j8 cxxflags=-fPIC
     sudo ./b2 install
     ```
 * install linux dependency
