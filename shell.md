@@ -41,3 +41,8 @@ dd if=foo.iso of=/dev/sdb bs=4M && sync
 ```sh
 diff -arq folder1 folder2
 ```
+
+# echo calculation
+```sh
+echo $((1.0 / 3))
+```
