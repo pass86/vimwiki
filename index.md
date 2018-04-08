@@ -4,6 +4,7 @@
 * [define](define.md)
 
 # os
+* [ios](ios)
 * [macos](macos.md)
 * [archlinux](archlinux.md)
 * [centos](centos.md)
