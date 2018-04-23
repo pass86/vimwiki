@@ -23,3 +23,5 @@ adb pull /data/data/foo_
 ```sh
 adb logcat "*:W foo:V"
 ```
+
+# DEX(Dalvik Executable Format)
