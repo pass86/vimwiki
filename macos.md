@@ -25,3 +25,6 @@ ipcs
 
 # hide other window
 * Command-Opt-H
+
+# move file
+* Command-Opt-V
