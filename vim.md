@@ -61,12 +61,12 @@ g T
 # ycm
 * macos
     ```sh
-    ./install.py --clang-completer --system-libclang --omnisharp-completer
+    ./install.py --clang-completer --system-libclang --cs-completer --go-completer
     ```
 * linux
     * require gcc 4.9
     ```sh
-    ./install.py --clang-completer
+    ./install.py --clang-completer --go-completer
     ```
     * fix libtinfo.so.5: cannot open shared object file
     ```sh
@@ -75,27 +75,27 @@ g T
 * windows
     * automatic, but maybe "The C compiler identification is unknown"
         ```bat
-        python install.py --clang-completer --omnisharp-completer
+        python install.py --clang-completer --cs-completer --go-completer
         ```
     * manual
         * remove cygwin bin from path
         * llvm
             * download llvm & clang
-            * move cfe-5.0.1.src llvm-5.0.1.src/tools
+            * move cfe-6.0.0.src llvm-6.0.0.src/tools
             ```bat
             cd %USERPROFILE%
             mkdir llvm_build
             cd llvm_build
-            cmake %USERPROFILE%/code/llvm-5.0.1.src
+            cmake %USERPROFILE%/code/llvm-6.0.0.src
             cmake --build . --config Release
-            cmake -DCMAKE_INSTALL_PREFIX=%USERPROFILE%/libs/llvm -P cmake_install.cmake
+            cmake -DCMAKE_INSTALL_PREFIX=%USERPROFILE%/libs/llvm-6.0.0 -P cmake_install.cmake
             ```
         * cpp
             ```bat
             cd %USERPROFILE%
             mkdir ycm_build
             cd ycm_build
-            cmake -DPATH_TO_LLVM_ROOT=%USERPROFILE%/libs/llvm %USERPROFILE%/dotfiles/vim/bundle/YouCompleteMe/third_party/ycmd/cpp
+            cmake -DPATH_TO_LLVM_ROOT=%USERPROFILE%/libs/llvm-6.0.0 %USERPROFILE%/dotfiles/vim/bundle/YouCompleteMe/third_party/ycmd/cpp
             cmake --build . --target ycm_core --config Release
             ```
         * csharp
