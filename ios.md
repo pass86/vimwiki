@@ -1,4 +1,5 @@
 # review
+* https://developer.apple.com/app-store/ratings-and-reviews/
 * StoreKit.framework
 * [SKStoreReviewController requestReview]
 
