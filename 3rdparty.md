@@ -2,21 +2,21 @@
 * build for windows
     * open VS2017 x64 Native Tools Command Prompt
     ```bat
-    cd %USERPROFILE%\code\boost_1_65_1
+    cd %USERPROFILE%\code\boost_1_67_0
     .\bootstrap.bat --without-libraries=python
     .\b2.exe -j8 address-model=64
-    setx BOOST_ROOT %USERPROFILE%\code\boost_1_65_1
+    setx BOOST_ROOT %USERPROFILE%\code\boost_1_67_0
     ```
 * build for macos
     ```sh
-    cd ~/code/boost_1_65_1
+    cd ~/code/boost_1_67_0
     ./bootstrap.sh --without-libraries=python
     ./b2 -j8
     sudo ./b2 install
     ```
 * build for linux
     ```sh
-    cd ~/code/boost_1_65_1
+    cd ~/code/boost_1_67_0
     ./bootstrap.sh --without-libraries=python
     ./b2 -j8 cxxflags=-fPIC
     sudo ./b2 install
