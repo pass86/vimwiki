@@ -26,7 +26,7 @@ class GameApp {
         m_GameWorld->Shutdown();
     }
 
-  privte:
+  private:
     std::shared_prt<GameWorld> m_GameWorld;
 };
 
