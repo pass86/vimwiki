@@ -87,3 +87,8 @@ git remote set-url origin git@github.com:pass86/dotfiles.git
 ```sh
 git commit --amend
 ```
+
+# lfs test server
+```sh
+git config -f .lfsconfig lfs.url http://localhost:9999
+```
