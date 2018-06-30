@@ -8,6 +8,21 @@ prefix {
 prefix }
 ```
 
+# vertical split pane
+```
+prefix %
+```
+
+# horizontal split pane
+```
+prefix "
+```
+
+# focus pane
+```
+prefix o
+```
+
 # swap window to
 ```
 swap-window -t 5
