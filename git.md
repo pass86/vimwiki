@@ -92,3 +92,10 @@ git commit --amend
 ```sh
 git config -f .lfsconfig lfs.url http://localhost:9999
 ```
+
+# fix SSL certificate problem: self signed certificate
+```sh
+git -c http.sslVerify=false clone https://foo.com/bar.git
+cd bar
+git config http.sslVerify false
+```
