@@ -63,6 +63,10 @@ g T
     ```sh
     ./install.py --clang-completer --system-libclang --cs-completer --go-completer
     ```
+    * fix "the imp module is deprecated in favour of importlib"
+    ```sh
+    brew reinstall --with-python@2
+    ```
 * linux
     * require gcc 4.9
     ```sh
