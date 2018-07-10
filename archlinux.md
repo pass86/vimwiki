@@ -19,7 +19,7 @@ press p<enter>
 press w<enter>
 ```
 ```sh
-mkfs.btrf /dev/sda1
+mkfs.btrfs /dev/sda1
 mount /dev/sda1 /mnt
 vim /etc/pacman.d/mirrorlist
 pacstrap /mnt base base-devel
