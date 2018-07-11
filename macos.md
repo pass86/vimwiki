@@ -28,3 +28,6 @@ ipcs
 
 # move file
 * Command-Opt-V
+
+# Mission Control
+* Control-Up
