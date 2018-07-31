@@ -41,6 +41,11 @@ g t
 g T
 ```
 
+# clear last search highlighting
+```
+:noh
+```
+
 # move half-page
 * ctrl+d move half-page down
 * ctrl+u move half-page up
