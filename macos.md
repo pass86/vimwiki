@@ -31,3 +31,6 @@ ipcs
 
 # Mission Control
 * Control-Up
+
+# move focus to next window
+* Command-`
