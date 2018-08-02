@@ -12,10 +12,11 @@ ag -ig foo
 
 # replace text
 ```sh
-sed -i "" "s/foo/bar/g" `grep foo -rl .`
-sed -i "" "s/foo/bar/g" `ag -il --cpp foo`
-sed -i "" "s|foo|bar|g" `ag -ilQ --cpp foo`
+sed -i"" "s/foo/bar/g" `grep foo -rl .`
+sed -i"" "s/foo/bar/g" `ag -il --cpp foo`
+sed -i"" "s|foo|bar|g" `ag -ilQ --cpp foo`
 ```
+macos is sed -i ""
 
 # current working directory
 ```sh
