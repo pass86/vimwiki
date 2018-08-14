@@ -48,6 +48,7 @@
 * [gpp](gpp.md)
 * [cc](cc.md)
 * [refactoring](refactoring.md)
+* [[coolshell](coolshell.md)]
 
 # knowledge
 * [math](math.md)
