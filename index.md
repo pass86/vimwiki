@@ -43,6 +43,7 @@
 # game
 * [diablo3](diablo3.md)
 * [cr](cr.md)
+* [ggc2](ggc2.md)
 
 # read
 * [gpp](gpp.md)
