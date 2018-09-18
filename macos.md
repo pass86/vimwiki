@@ -34,3 +34,6 @@ ipcs
 
 # move focus to next window
 * Command-`
+
+# Toggle Dock
+* Command-Opt-D
