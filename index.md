@@ -43,11 +43,13 @@
 # game
 * [diablo3](diablo3.md)
 * [cr](cr.md)
+* [ggc2](ggc2.md)
 
 # read
 * [gpp](gpp.md)
 * [cc](cc.md)
 * [refactoring](refactoring.md)
+* [[coolshell](coolshell.md)]
 
 # knowledge
 * [math](math.md)
