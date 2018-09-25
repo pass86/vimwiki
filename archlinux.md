@@ -79,10 +79,10 @@ dhcpcd
 
 # network
 ```sh
-pacman -S networkmanager network-manager-applet iw
+pacman -S networkmanager iw
 systemctl disable netctl
 systemctl enable NetworkManager
-nm-applet
+nmtui
 ```
 
 # btrfs
@@ -92,7 +92,7 @@ pacman -S btrfs-progs
 
 # desktop
 ```sh
-pacman -S xf86-video-intel xorg sddm compton
+pacman -S xf86-video-intel xorg sddm compton network-manager-applet
 systemctl enable sddm
 ```
 
