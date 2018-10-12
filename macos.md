@@ -37,3 +37,8 @@ ipcs
 
 # Toggle Dock
 * Command-Opt-D
+
+# Disable Spotlight
+```sh
+sudo mdutil -a -i off
+```
