@@ -35,11 +35,11 @@
 * [Clean Code](books/clean-code.md)
 * [Refactoring](books/refactoring.md)
 
-# Practice
-* [Principle](practice/principle.md)
-
 # Subject
 * [Math](subject/math.md)
+
+# Practice
+* [Principle](practice/principle.md)
 
 # Term
 * [Game Term](term/game-term.md)
