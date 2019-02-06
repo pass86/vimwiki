@@ -1,59 +1,70 @@
-# name
-* [game](game.md)
-* [short](short.md)
-* [define](define.md)
+# Editor
+* [Vim](editor/vim.md)
 
-# os
-* [ios](ios)
-* [macos](macos.md)
-* [archlinux](archlinux.md)
-* [centos](centos.md)
-* [openwrt](openwrt.md)
-* [android](android.md)
+# Version Control System
+* [Git](version-control-system/git.md)
+* [Subversion](version-control-system/svn.md)
 
-# tools
-* [vim](vim.md)
-* [git](git.md)
-* [gcc](gcc.md)
-* [svn](svn.md)
-* [tmux](tmux.md)
-* [cmake](cmake.md)
-* [babun](babun.md)
-* [pandoc](pandoc.md)
-* [xcode](xcode.md)
-* [unity](unity.md)
-* [3dsmax](3dsmax.md)
-* [photoshop](photoshop.md)
-* [gimp](gimp.md)
+# Terminal Tools
+* [tmux](terminal-tools/tmux.md)
+* [Babun](terminal-tools/babun.md)
 
-# script
-* [shell](shell.md)
+# Programming Language
+* [Python](programming-language/python.md)
 
-# libs
-* [socket](socket.md)
-* [3rdparty](3rdparty.md)
+# Scripts
+* [Shell Scripts](scripts/shell-scripts.md)
 
-# service
-* [nginx](nginx.md)
-* [redis](redis.md)
-* [mysql](mysql.md)
-* [samba](samba.md)
-* [transmission](transmission.md)
+# Daemon
+* [Nginx](daemon/nginx.md)
+* [Redis](daemon/redis.md)
+* [MySQL](daemon/mysql.md)
+* [Samba](daemon/samba.md)
+* [Transmission](daemon/transmission.md)
 
-# game
-* [diablo3](diablo3.md)
-* [cr](cr.md)
-* [ggc2](ggc2.md)
+# Operating System
+* [iOS](operating-system/ios.md)
+* [Android](operating-system/android.md)
+* [macOS](operating-system/macos.md)
+* [Arch Linux](operating-system/archlinux.md)
+* [CentOS](operating-system/centos.md)
+* [OpenWrt](operating-system/openwrt.md)
 
-# read
-* [gpp](gpp.md)
-* [cc](cc.md)
-* [refactoring](refactoring.md)
-* [[coolshell](coolshell.md)]
+# Books
+* [Game Programming Patterns](books/game-programming-patterns.md)
+* [Clean Code](books/clean-code.md)
+* [Refactoring](books/refactoring.md)
 
-# knowledge
-* [math](math.md)
-* [principle](principle.md)
+# Practice
+* [Principle](practice/principle.md)
 
-# lang
-* [python](python.md)
+# Subject
+* [Math](subject/math.md)
+
+# Term
+* [Game Term](term/game-term.md)
+* [Tech Term](term/tech-term.md)
+
+# Build Tools
+* [GCC](build-tools/gcc.md)
+* [CMake](build-tools/cmake.md)
+
+# Libs
+* [C++ Libraries](libs/cpp-libs.md)
+
+# IDE
+* [Xcode](ide/xcode.md)
+* [Unity](ide/unity.md)
+
+# Games
+* [Diablo III](games/d3.md)
+* [Clash Royale](games/clash-royale.md)
+* [Guns, Gore & Cannoli 2](games/guns-gore-cannoli-2.md)
+
+# Document Tools
+* [Pandoc](document-tools/pandoc.md)
+
+# Art Tools
+* [3ds Max](art-tools/3ds-max.md)
+* [Photoshop](art-tools/photoshop.md)
+* [GIMP](art-tools/gimp.md)
