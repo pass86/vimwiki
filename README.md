@@ -1,5 +1,5 @@
-# Editor
-* [Vim](editor/vim.md)
+# Text Editor
+* [Vim](text-editor/vim.md)
 
 # Version Control System
 * [Git](version-control-system/git.md)
