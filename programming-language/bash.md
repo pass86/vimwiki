@@ -1,0 +1,60 @@
+# Pipelines
+* 管道操作符`|&`可以重定向错误输出，功能和`2>&1`一样
+* 命令以`&`结尾可异步执行
+
+# Looping Constructs
+* for in words
+```sh
+for i in Sun Mon Tue Wed Thu Fri Sat; do
+    echo $i
+done
+```
+* for in array
+```sh
+ARRAY=(Sun Mon Tue Wed Thu Fri Sat)
+for i in ${ARRAY[@]}; do
+    echo $i
+done
+```
+* for in count
+```sh
+for ((i = 1; i <= 5; ++i))
+do
+    echo $i
+done
+```
+
+# Conditional Constructs
+```sh
+if [[ -d /tmp ]]; then
+    echo Exist /tmp directory
+else
+    echo Does not exist /tmp directory
+fi
+```
+
+# Shell Functions
+```sh
+func1() {
+    echo func1
+}
+
+func2() {
+    func1
+    echo func2
+    echo $1
+    echo $2
+}
+
+func2 para1 para2
+```
+
+# Special Parameters
+* `$*`参数列表，`"$*" -> "$1c$2c…"`
+* `$@`参数列表，`"$@" -> "$1" "$2" …`
+* `$#`参数个数
+* `$?`最近的退出码
+* `$$`Shell的进程ID
+* `$!`最近的后台进程ID
+* `$0`Shell名或者脚本名
+* `$_`初始化为脚本绝对路径，执行命令后为最近一个命令的最后一个参数

@@ -10,6 +10,7 @@
 * [Babun](terminal-tools/babun.md)
 
 # Programming Language
+* [Bash](programming-language/bash.md)
 * [Python](programming-language/python.md)
 
 # Scripts

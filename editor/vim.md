@@ -1,5 +1,7 @@
 # esc
+```
 * ctrl+[
+```
 
 # sudo write
 ```
