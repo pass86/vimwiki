@@ -58,3 +58,20 @@ func2 para1 para2
 * `$!`最近的后台进程ID
 * `$0`Shell名或者脚本名
 * `$_`初始化为脚本绝对路径，执行命令后为最近一个命令的最后一个参数
+
+# Brace Expansion
+```sh
+echo a{d,c,b}e
+```
+
+# Shell Parameter Expansion
+* String
+```sh
+STRING=01234567890abcdefgh
+echo ${STRING:7:2}
+```
+* Array
+```sh
+ARRAY=(0 1 2 3 4 5 6 7 8 9 0 a b c d e f g h)
+echo ${ARRAY[@]:7:2}
+```
