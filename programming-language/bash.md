@@ -75,3 +75,9 @@ echo ${STRING:7:2}
 ARRAY=(0 1 2 3 4 5 6 7 8 9 0 a b c d e f g h)
 echo ${ARRAY[@]:7:2}
 ```
+
+# The Set Builtin
+* 显示执行的命令
+```sh
+set -x
+```
