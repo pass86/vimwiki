@@ -76,8 +76,21 @@ ARRAY=(0 1 2 3 4 5 6 7 8 9 0 a b c d e f g h)
 echo ${ARRAY[@]:7:2}
 ```
 
+# Bash Builtin Commands
+* 读取输入
+```sh
+read -a INPUT
+echo ${INPUT[0]}
+```
+
 # The Set Builtin
 * 显示执行的命令
 ```sh
 set -x
+```
+
+# Invoking Bash
+* 命令作为参数传入执行
+```sh
+bash -c 'echo Hello World!'
 ```
