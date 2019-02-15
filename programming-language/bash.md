@@ -94,3 +94,17 @@ set -x
 ```sh
 bash -c 'echo Hello World!'
 ```
+
+# Readline Bare Essentials
+* `C-b`向后移动一个字符
+* `C-f`向前移动一个字符
+* `C-u`删除光标所在字符
+
+# Readline Movement Commands
+* `C-a`移动到行首
+* `C-e`移动到行尾
+
+# Readline Killing Commands
+* `C-k`剪切光标至行尾的字符
+* `C-w`剪切光标与前面空白字符之间的字符
+* `C-y`粘贴最近剪切的
