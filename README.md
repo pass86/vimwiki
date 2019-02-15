@@ -35,6 +35,7 @@
 * [Game Programming Patterns](books/game-programming-patterns.md)
 * [Clean Code](books/clean-code.md)
 * [Refactoring](books/refactoring.md)
+* [Agile Principles, Patterns, and Practices in C#](books/agile-principles-patterns-and-uractices-in-csharp.md)
 
 # Subject
 * [Math](subject/math.md)
