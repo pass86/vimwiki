@@ -1,4 +1,4 @@
-# Install MacTex
+# Install MacTeX
 ```sh
 brew cask install mactex
 export PATH=$PATH:/usr/local/texlive/2018/bin/x86_64-darwin
