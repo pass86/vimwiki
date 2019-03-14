@@ -12,6 +12,7 @@
 # Programming Language
 * [Bash](programming-language/bash.md)
 * [Python](programming-language/python.md)
+* [Swift](programming-language/swift.md)
 
 # Scripts
 * [Shell Scripts](scripts/shell-scripts.md)
