@@ -1,3 +1,8 @@
+# Hello World
+```sh
+echo Hello, world!
+```
+
 # Pipelines
 * 管道操作符`|&`可以重定向错误输出，功能和`2>&1`一样
 * 命令以`&`结尾可异步执行

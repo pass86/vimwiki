@@ -1,4 +1,9 @@
+# Hello World
+```py
+print("Hello, world!")
+```
+
 # print bits of numbers
-```python
+```py
 print(bin(1023))
 ```
