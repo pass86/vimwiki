@@ -42,3 +42,29 @@ Second line.
 """
 print(foo)
 ```
+
+# 数组
+```swift
+var intArray = [ 1, 2, 3 ]
+intArray[0] = 0
+intArray.append(4)
+print(intArray)
+var emptyArray = [String]()
+print(emptyArray)
+emptyArray = []
+print(emptyArray)
+```
+
+# 字典
+```swift
+var fooDictionary = [
+    "one": 1,
+    "two": 2,
+    "three": 3,
+]
+print(fooDictionary)
+var emptyDictionary = [String: Float]()
+print(emptyDictionary)
+emptyDictionary = [:]
+print(emptyDictionary)
+```
