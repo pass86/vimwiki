@@ -3,7 +3,10 @@
 2. Options -> Create groups
 
 # Help
-option + click
+Option + Click
 
 # Actions
-command + click
+Command + Click
+
+# Comments
+Command + /
