@@ -102,7 +102,7 @@ g T
             cmake -DCMAKE_INSTALL_PREFIX=%USERPROFILE%/libs/llvm-8.0.0 -P cmake_install.cmake
             ```
         * cpp
-            * Add C:\Python27\libs to PATH
+            * Add C:\Python27\libs to Path
             ```bat
             cd %USERPROFILE%
             mkdir ycm_build
