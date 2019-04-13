@@ -97,7 +97,7 @@ g T
             cd %USERPROFILE%
             mkdir llvm_build
             cd llvm_build
-            cmake %USERPROFILE%/code/llvm-8.0.0.src
+            cmake %USERPROFILE%/code/llvm-8.0.0.src -A Win32
             cmake --build . --config Release
             cmake -DCMAKE_INSTALL_PREFIX=%USERPROFILE%/libs/llvm-8.0.0 -P cmake_install.cmake
             ```
@@ -107,7 +107,7 @@ g T
             cd %USERPROFILE%
             mkdir ycm_build
             cd ycm_build
-            cmake -DPATH_TO_LLVM_ROOT=%USERPROFILE%/libs/llvm-8.0.0 %USERPROFILE%/dotfiles/vim/bundle/YouCompleteMe/third_party/ycmd/cpp
+            cmake -DPATH_TO_LLVM_ROOT=%USERPROFILE%/libs/llvm-8.0.0 -A Win32 %USERPROFILE%/dotfiles/vim/bundle/YouCompleteMe/third_party/ycmd/cpp
             cmake --build . --target ycm_core --config Release
             ```
         * csharp
