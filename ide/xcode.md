@@ -10,3 +10,6 @@ Command + Click
 
 # Comments
 Command + /
+
+# Pin View
+Ctrl + Drag
