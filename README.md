@@ -22,6 +22,7 @@
 * [Redis](daemon/redis.md)
 * [MySQL](daemon/mysql.md)
 * [Samba](daemon/samba.md)
+* [Netatalk](daemon/netatalk.md)
 * [Transmission](daemon/transmission.md)
 
 # Operating System
