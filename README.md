@@ -11,6 +11,7 @@
 
 # Programming Language
 * [Bash](programming-language/bash.md)
+* [Batch](programming-language/batch.md)
 * [Python](programming-language/python.md)
 * [Swift](programming-language/swift.md)
 
