@@ -12,8 +12,9 @@
 # Programming Language
 * [Bash](programming-language/bash.md)
 * [Batch](programming-language/batch.md)
-* [Python](programming-language/python.md)
+* [Objective-C](programming-language/objective-c.md)
 * [Swift](programming-language/swift.md)
+* [Python](programming-language/python.md)
 
 # Scripts
 * [Shell Scripts](scripts/shell-scripts.md)
