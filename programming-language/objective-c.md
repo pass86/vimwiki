@@ -13,7 +13,7 @@ int main(int argc, const char * argv[]) {
 @interface Foo : NSObject {
     int m_var2; // protected
     
-    @public
+  @public
     int var1; // public
 }
 @end
