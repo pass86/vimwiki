@@ -47,3 +47,8 @@ diff -arq folder1 folder2
 ```sh
 echo $((1.0 / 3))
 ```
+
+# socks5
+```sh
+ssh -Nfd 1080 user@vps
+```
