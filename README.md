@@ -10,13 +10,14 @@
 * [Babun](terminal-tools/babun.md)
 
 # Programming Language
+* [Swift](programming-language/swift.md)
+* [Objective-C](programming-language/objective-c.md)
+
+# Script Language
 * [Bash](programming-language/bash.md)
 * [Batch](programming-language/batch.md)
-* [Objective-C](programming-language/objective-c.md)
-* [Swift](programming-language/swift.md)
 * [Python](programming-language/python.md)
 
-# Scripts
 * [Shell Scripts](scripts/shell-scripts.md)
 
 # Daemon
