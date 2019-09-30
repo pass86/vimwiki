@@ -18,6 +18,7 @@
 * DSL(Domain-Specific Language)
 * CAS(Compare and Swap)
 * POSIX(Portable Operating System Interface)
+* LRU(Least-Recently Used)
 
 # graphic
 * SSAO(Screen Space Ambient Occlusion)
@@ -36,10 +37,10 @@
 * AABB(Axis Aligned Bounding Box)
 
 # memory
-* USS(Unique Set Size)
-* PSS(Proportional Set Size)
-* RSS(Resident Set Size)
-* VSS(Virtual Set Size)
+* USS(Unique Set Size) 进程独占物理内存(不包含共享库)
+* PSS(Proportional Set Size) 实际使用物理内存(包含比例分配共享内存占用)
+* RSS(Resident Set Size) 实际使用物理内存(包含共享内存占用)
+* VSS(Virtual Set Size) 虚拟内存(包含共享内存占用)
 
 # network
 * VPN(Virtual Private Network)
