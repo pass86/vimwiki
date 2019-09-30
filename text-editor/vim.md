@@ -91,15 +91,15 @@ g T
     * manual
         * remove cygwin bin from path
         * llvm
-            * download llvm & clang
-            * move cfe-8.0.0.src llvm-8.0.0.src/tools
+            * Download llvm & clang
+            * Move cfe-9.0.0.src llvm-9.0.0.src/tools
             ```bat
             cd %USERPROFILE%
             mkdir llvm_build
             cd llvm_build
-            cmake %USERPROFILE%/code/llvm-8.0.0.src -A Win32
+            cmake %USERPROFILE%/code/llvm-9.0.0.src -A Win32
             cmake --build . --config Release
-            cmake -DCMAKE_INSTALL_PREFIX=%USERPROFILE%/libs/llvm-8.0.0 -P cmake_install.cmake
+            cmake -DCMAKE_INSTALL_PREFIX=%USERPROFILE%/libs/llvm-9.0.0 -P cmake_install.cmake
             ```
         * cpp
             * Add C:\Python27\libs to Path
@@ -107,7 +107,7 @@ g T
             cd %USERPROFILE%
             mkdir ycm_build
             cd ycm_build
-            cmake -DPATH_TO_LLVM_ROOT=%USERPROFILE%/libs/llvm-8.0.0 -A Win32 %USERPROFILE%/dotfiles/vim/bundle/YouCompleteMe/third_party/ycmd/cpp
+            cmake -DPATH_TO_LLVM_ROOT=%USERPROFILE%/libs/llvm-9.0.0 -A Win32 %USERPROFILE%/dotfiles/vim/bundle/YouCompleteMe/third_party/ycmd/cpp
             cmake --build . --target ycm_core --config Release
             ```
         * csharp
