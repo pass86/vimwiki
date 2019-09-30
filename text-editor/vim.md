@@ -68,8 +68,11 @@ g T
 # ycm
 * macos
     ```sh
-    ./install.py --clang-completer --system-libclang --cs-completer --go-completer
+    ./install.py --clang-completer --system-libclang
     ```
+    * csharp
+        * Download [Omnisharp-Roslyn](https://github.com/OmniSharp/omnisharp-roslyn/releases)
+        * Extract the archive to $HOME/dotfiles/vim/bundle/YouCompleteMe/third_party/ycmd/third_party/omnisharp-roslyn
     * fix "the imp module is deprecated in favour of importlib"
     ```sh
     brew reinstall --with-python@2
