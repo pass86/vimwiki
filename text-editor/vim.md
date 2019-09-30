@@ -111,8 +111,6 @@ g T
             cmake --build . --target ycm_core --config Release
             ```
         * csharp
-            ```bat
-            cd %USERPROFILE%/dotfiles/vim/bundle/YouCompleteMe/third_party/ycmd/third_party/OmniSharpServer
-            msbuild /property:Configuration=Release /property:TargetFrameworkVersion=v4.5
-            ```
+            * Download [Omnisharp-Roslyn](https://github.com/OmniSharp/omnisharp-roslyn/releases)
+            * Extract the archive to %USERPROFILE%/dotfiles/vim/bundle/YouCompleteMe/third_party/ycmd/third_party/omnisharp-roslyn
         * revert cygwin bin to path
