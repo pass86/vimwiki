@@ -1,3 +1,6 @@
+# Wiki
+Practice notes
+
 # Text Editor
 * [Vim](text-editor/vim.md)
 
