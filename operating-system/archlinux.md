@@ -19,40 +19,41 @@ press p<enter>
 press w<enter>
 ```
 ```sh
-mkfs.btrfs /dev/sda1
+mkfs.ext4 /dev/sda1
 mount /dev/sda1 /mnt
+# Move up 163
 vim /etc/pacman.d/mirrorlist
-pacstrap /mnt base base-devel
-genfstab -L /mnt >> /mnt/etc/fstab
+pacstrap /mnt base linux linux-firmware base-devel
+genfstab -U /mnt >> /mnt/etc/fstab
 cat /mnt/etc/fstab
 arch-chroot /mnt
 ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 hwclock --systohc
+pacman -S vim
 ```
 ```sh
-vi /etc/locale.gen
-```
-```
-en_US.UTF-8 UTF-8
-```
-```sh
+# Uncomment en_US.UTF-8 UTF-8
+vim /etc/locale.gen
 locale-gen
-vi /etc/hostname
 ```
 ```sh
-vi /etc/locale.conf
-```
-```
-LANG=en_US.UTF-8
+# Add myhostname
+vim /etc/hostname
 ```
 ```sh
-pacman -S vim os-prober grub dialog wpa_supplicant intel-ucode
+# Add LANG=en_US.UTF-8
+vim /etc/locale.conf
 ```
 ```sh
-vim /etc/lvm/lvm.conf
+vim /etc/hosts
 ```
 ```
-use_lvmetad = 0
+127.0.0.1 localhost
+::1   localhost
+127.0.1.1	myhostname.localdomain	myhostname
+```
+```sh
+pacman -S grub intel-ucode networkmanager iw wpa_supplicant
 ```
 ```sh
 grub-install /dev/sda
@@ -63,15 +64,12 @@ exit
 reboot
 ```
 ```sh
+# Uncomment %wheel ALL=(ALL) ALL
 vim /etc/sudoers
 ```
-```
-%wheel ALL=(ALL) ALL
-```
 ```sh
-useradd -m -G wheel foo
-passwd foo
-dhcpcd
+useradd -m -G wheel user00
+passwd user00
 ```
 
 # fix "Re-reading the partition table failed device or resource busy"
