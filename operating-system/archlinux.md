@@ -199,3 +199,9 @@ vim /etc/vconsole.conf
 ```sh
 KEYMAP=/usr/local/share/kbd/keymaps/personal.map
 ```
+
+# lid
+```sh
+# Set HandleLidSwitchExternalPower=ignore
+vim /etc/systemd/logind.conf
+```
