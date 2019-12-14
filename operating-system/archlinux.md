@@ -49,8 +49,8 @@ vim /etc/hosts
 ```
 ```
 127.0.0.1 localhost
-::1   localhost
-127.0.1.1	myhostname.localdomain	myhostname
+::1 localhost
+127.0.1.1 myhostname.localdomain myhostname
 ```
 ```sh
 pacman -S grub intel-ucode networkmanager iw wpa_supplicant
