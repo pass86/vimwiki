@@ -183,7 +183,7 @@ pacman -Syu
 # caps to ctrl
 ```sh
 vim /usr/local/share/kbd/keymaps/personal.map
-'''
+```
 ```sh
 keymaps 0-127
 keycode 58 = Control
