@@ -205,3 +205,8 @@ KEYMAP=/usr/local/share/kbd/keymaps/personal.map
 # Set HandleLidSwitchExternalPower=ignore
 vim /etc/systemd/logind.conf
 ```
+
+# battery
+```sh
+pacman -S acpi
+```
