@@ -13,3 +13,6 @@ Command + /
 
 # Pin View
 Ctrl + Drag
+
+# Open Quickly
+Command + Shift + O
