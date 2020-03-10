@@ -7,7 +7,7 @@ Practice notes
 # IDE
 * [Xcode](archives/ide/xcode.md)
 * [Unity](archives/ide/unity.md)
-* [IntelliJ-based](archives/ide/intellij-based-ides.md)
+* [IntelliJ-based IDEs](archives/ide/intellij-based-ides.md)
 
 # Version Control System
 * [Git](archives/version-control-system/git.md)
