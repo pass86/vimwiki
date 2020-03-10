@@ -1,5 +1,5 @@
 IntelliJ-Based IDEs
-==============
+===================
 Let me love IDE again
 
 # Recent Files
