@@ -1,4 +1,4 @@
-IntelliJ-Based
+IntelliJ-Based IDEs
 ==============
 
 # Recent Files
