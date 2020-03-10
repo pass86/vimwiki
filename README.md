@@ -4,6 +4,11 @@ Practice notes
 # Text Editor
 * [Vim](text-editor/vim.md)
 
+# IDE
+* [Xcode](ide/xcode.md)
+* [Unity](ide/unity.md)
+* [IntelliJ-based](ide/intellij-based.md)
+
 # Version Control System
 * [Git](version-control-system/git.md)
 * [Subversion](version-control-system/svn.md)
@@ -61,10 +66,6 @@ Practice notes
 
 # Libs
 * [C++ Libraries](libs/cpp-libs.md)
-
-# IDE
-* [Xcode](ide/xcode.md)
-* [Unity](ide/unity.md)
 
 # Games
 * [Diablo III](games/d3.md)
