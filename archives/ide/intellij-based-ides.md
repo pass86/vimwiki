@@ -13,3 +13,9 @@ F3
 
 # Show Bookmarks
 Command + F3
+
+# Back
+Command + [
+
+# Forward
+Command + ]
