@@ -7,3 +7,9 @@ Command + E
 
 # Search Everywhere
 Double Shift
+
+# Toggle Bookmark
+F3
+
+# Show Bookmarks
+Command + F3
