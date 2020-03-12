@@ -19,3 +19,6 @@ Command + [
 
 # Forward
 Command + ]
+
+# Find in Path
+Command + Shift + F
