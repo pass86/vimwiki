@@ -22,3 +22,6 @@ Command + ]
 
 # Find in Path
 Command + Shift + F
+
+# Refactor Rename
+Shift + F6
