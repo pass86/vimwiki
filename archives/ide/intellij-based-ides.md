@@ -25,3 +25,9 @@ Command + Shift + F
 
 # Refactor Rename
 Shift + F6
+
+# Git Commit
+Command + K
+
+# Git Push
+Command + Shift + K
