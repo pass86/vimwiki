@@ -31,3 +31,7 @@ Command + K
 
 # Git Push
 Command + Shift + K
+
+# Maximize Tool Window
+Command + Shift + '
+
