@@ -1,7 +1,7 @@
 # Install MacTeX
 ```sh
 brew cask install mactex
-export PATH=$PATH:/usr/local/texlive/2018/bin/x86_64-darwin
+export PATH=$PATH:/usr/local/texlive/2019/bin/x86_64-darwin
 ```
 
 # Output HTML
