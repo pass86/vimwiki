@@ -11,7 +11,7 @@ pandoc foo.md -o foo.html
 
 # Output PDF
 ```sh
-pandoc foo.md -o foo.pdf --pdf-engine=xelatex -V mainfont='Hack' -V CJKmainfont='Source Han Sans SC' -V papersize=A4 -V geometry:margin=1in
+pandoc foo.md -o foo.pdf --pdf-engine=xelatex -V mainfont='Hack' -V CJKmainfont='Source Han Sans SC' -V papersize=A4 -V geometry:margin=1in colorlinks
 ```
 
 # Default Template
