@@ -61,6 +61,16 @@ g T
 :set syntax=lua
 ```
 
+# diff get
+```
+do
+```
+
+# diff put
+```
+dp
+```
+
 # build
 ```sh
 ./configure --enable-pythoninterp
