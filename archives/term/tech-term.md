@@ -89,3 +89,6 @@
 * LV(Logical Volume)
 * JBOD(Just a Bunch Of Disks)
 * NAS(Network Attached Storage)
+
+# hardware
+* XMP(Extreme Memory Profile)
