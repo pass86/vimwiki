@@ -92,3 +92,4 @@
 
 # hardware
 * XMP(Extreme Memory Profile)
+* AHCI(Advanced Host Controller Interface)高级主机控制器接口
