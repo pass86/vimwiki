@@ -10,6 +10,7 @@ ipcs
 
 # put displays to sleep
 * Control-Shift-Power
+* `pmset displaysleepnow`
 
 # view image group
 * Command-A -> Space
