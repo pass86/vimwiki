@@ -43,3 +43,6 @@ ipcs
 ```sh
 sudo mdutil -a -i off
 ```
+
+# Show definition of the word
+* Command-Control-D
