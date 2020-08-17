@@ -52,3 +52,8 @@ echo $((1.0 / 3))
 ```sh
 ssh -Nfd 1080 user@vps
 ```
+
+# Remove repeated lines
+```sh
+sort -n test.txt | uniq > uniq.txt
+```
