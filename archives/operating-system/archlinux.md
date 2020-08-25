@@ -209,4 +209,5 @@ vim /etc/systemd/logind.conf
 # battery
 ```sh
 pacman -S acpi
+acpi
 ```
