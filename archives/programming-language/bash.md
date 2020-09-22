@@ -113,3 +113,6 @@ bash -c 'echo Hello World!'
 * `C-k`剪切光标至行尾的字符
 * `C-w`剪切光标与前面空白字符之间的字符
 * `C-y`粘贴最近剪切的
+
+# Clear Screen
+* `C-l`
