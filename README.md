@@ -18,6 +18,7 @@ Practice notes
 * [Babun](archives/terminal-tools/babun.md)
 
 # Programming Language
+* [Go](archives/programming-language/go.md)
 * [Swift](archives/programming-language/swift.md)
 * [Objective-C](archives/programming-language/objective-c.md)
 
