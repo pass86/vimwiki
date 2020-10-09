@@ -46,3 +46,10 @@ sudo mdutil -a -i off
 
 # Show definition of the word
 * Command-Control-D
+
+# ISO to USB
+```sh
+diskutil list
+diskutil unmountDisk /dev/disk2
+sudo dd if=archlinux-2020.10.01-x86_64.iso of=/dev/disk2
+```
