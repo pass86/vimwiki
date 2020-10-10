@@ -53,7 +53,7 @@ vim /etc/hosts
 127.0.1.1 myhostname.localdomain myhostname
 ```
 ```sh
-pacman -S grub intel-ucode networkmanager iw wpa_supplicant
+pacman -S grub intel-ucode
 ```
 ```sh
 grub-install /dev/sda
@@ -75,9 +75,27 @@ passwd user00
 # fix "Re-reading the partition table failed device or resource busy"
 * reboot
 
-# network
+# network use systemd-networkd
+```
+sudo vim /etc/systemd/network/20-wired.network
+```
+```
+[Match]
+Name=en*
+
+[Network]
+DHCP=yes
+```
+```
+sudo systemctl enable systemd-networkd
+sudo systemctl start systemd-networkd
+sudo networkctl status
+
+```
+
+# network use NetworkManager
 ```sh
-pacman -S networkmanager iw
+pacman -S networkmanager iw wpa_supplicant
 systemctl disable netctl
 systemctl enable NetworkManager
 nmtui
