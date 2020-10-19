@@ -8,6 +8,9 @@ Command + E
 # Search Everywhere
 Double Shift
 
+# Find in Path
+Command + Shift + F
+
 # Toggle Bookmark
 F3
 
@@ -19,9 +22,6 @@ Command + [
 
 # Forward
 Command + ]
-
-# Find in Path
-Command + Shift + F
 
 # Refactor Rename
 Shift + F6
