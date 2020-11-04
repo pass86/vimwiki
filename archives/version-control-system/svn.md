@@ -38,3 +38,8 @@ svn cleanup . --remove-unversioned
 ```sh
 svn switch http://server/proj/branches/branch1 --ignore-ancestry --force
 ```
+
+# edit ignore
+```
+svn propedit svn:ignore .
+```
