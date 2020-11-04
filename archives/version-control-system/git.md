@@ -49,6 +49,16 @@ git submodule deinit foo
 git rm foo
 ```
 
+# create bundle
+```sh
+git bundle create foo.bundle HEAD main
+```
+
+# clone bundle
+```sh
+git clone foo.bundle foo
+```
+
 # color diff
 ```sh
 git config color.ui true
