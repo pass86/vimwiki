@@ -38,6 +38,11 @@ git commit --amend
 git push --force
 ```
 
+# add submodule
+```sh
+git submodule add https://github.com/foo/bar.git external/bar
+```
+
 # remove submodule
 ```sh
 git submodule deinit foo
