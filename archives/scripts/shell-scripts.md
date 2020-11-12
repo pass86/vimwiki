@@ -57,3 +57,8 @@ ssh -Nfd 1080 user@vps
 ```sh
 sort -n test.txt | uniq > uniq.txt
 ```
+
+# Sync directory
+```sh
+rsync -a --delete --exclude=.svn/ foo/ bar
+```
