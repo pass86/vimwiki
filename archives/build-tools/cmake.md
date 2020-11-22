@@ -31,3 +31,8 @@ install(TARGETS foo RUNTIME DESTINATION bar)
 ```cmake
 * cmake . -DCMAKE_BUILD_TYPE=Release
 ```
+
+# Fix "iphoneos is not an iOS SDK"
+```sh
+sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer
+```
