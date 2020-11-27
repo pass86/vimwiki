@@ -28,6 +28,11 @@ lsof -p pid | grep cwd
 ls -l | wc -l
 ```
 
+# counting files include subdirectory
+```sh
+find . -type f -print | wc -l
+```
+
 # begin with
 ```sh
 cat foo | awk '$1 ~ /^ *\bar/'
