@@ -16,3 +16,6 @@ Ctrl + Drag
 
 # Open Quickly
 Command + Shift + O
+
+# Goto Line
+Command + L
