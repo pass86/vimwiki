@@ -229,3 +229,9 @@ vim /etc/systemd/logind.conf
 pacman -S acpi
 acpi
 ```
+
+# memory slot
+```sh
+sudo pacman -S dmidecode
+sudo dmidecode -t memory
+```
