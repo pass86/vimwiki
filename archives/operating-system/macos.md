@@ -51,7 +51,7 @@ sudo mdutil -a -i off
 ```sh
 diskutil list
 diskutil unmountDisk /dev/disk2
-sudo dd if=archlinux-2020.10.01-x86_64.iso of=/dev/rdisk2
+sudo dd if=archlinux-2020.10.01-x86_64.iso of=/dev/rdisk2 bs=4m
 sudo pkill -INFO dd
 diskutil eject /dev/disk2
 ```
