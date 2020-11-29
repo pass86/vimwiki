@@ -45,6 +45,7 @@ Practice notes
 * [CentOS](archives/operating-system/centos.md)
 * [OpenWrt](archives/operating-system/openwrt.md)
 * [Windows](archives/operating-system/windows.md)
+* [Ubuntu](archives/operating-system/ubuntu.md)
 
 # Books
 * [Game Programming Patterns](archives/books/game-programming-patterns.md)
