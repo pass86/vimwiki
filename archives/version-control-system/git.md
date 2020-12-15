@@ -114,3 +114,18 @@ git -c http.sslVerify=false clone https://foo.com/bar.git
 cd bar
 git config http.sslVerify false
 ```
+
+# Fetch all tags
+```sh
+git fetch --all --tags
+```
+
+# List tags
+```sh
+git tag
+```
+
+# Checkout from tags
+```sh
+git checkout tags/foo -b dev-foo
+```
