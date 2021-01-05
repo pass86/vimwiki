@@ -37,3 +37,6 @@
 
 # enable unsafe in MonoDevelop
 * Project>Assembly-CSharp Options>Build->General>Allow 'unsafe' code
+
+# Play Toggle
+* Ctrl/Command + P
