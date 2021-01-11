@@ -35,3 +35,5 @@ Command + Shift + K
 # Maximize Tool Window
 Command + Shift + '
 
+# Reformat Code
+Command + Option + L
