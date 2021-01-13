@@ -49,6 +49,21 @@ git submodule deinit foo
 git rm foo
 ```
 
+# Fix 'Unable to find current origin/master revision in submodule path ...'
+```sh
+git submodule set-branch --branch main foo_path
+```
+
+# Init submodule
+```sh
+git submodule update --init --recursive
+```
+
+# Update submodule
+```sh
+git submodule update --remote --recursive
+```
+
 # create bundle
 ```sh
 git bundle create foo.bundle HEAD main
