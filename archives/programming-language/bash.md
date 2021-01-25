@@ -104,6 +104,8 @@ bash -c 'echo Hello World!'
 * `C-b`向后移动一个字符
 * `C-f`向前移动一个字符
 * `C-u`删除光标所在字符
+* `Option+←`向前移动一个单词
+* `Option+→`向后移动一个单词
 
 # Readline Movement Commands
 * `C-a`移动到行首
