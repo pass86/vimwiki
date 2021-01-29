@@ -144,3 +144,8 @@ git tag
 ```sh
 git checkout tags/foo -b dev-foo
 ```
+
+# Convert large Git objects to LFS pointers
+```sh
+git lfs migrate import --include="foo.bin"
+```
