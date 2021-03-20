@@ -55,3 +55,9 @@ sudo dd if=archlinux-2020.10.01-x86_64.iso of=/dev/rdisk2 bs=4m
 sudo pkill -INFO dd # Ctrl + T
 diskutil eject /dev/disk2
 ```
+
+# Disable Dock badges of Start Using iCloud
+```sh
+defaults write com.apple.systempreferences AttentionPrefBundleIDs 0
+killall Dock
+```
