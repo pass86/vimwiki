@@ -67,3 +67,9 @@ sort -n test.txt | uniq > uniq.txt
 ```sh
 rsync -a --delete --exclude=.svn/ foo/ bar
 ```
+
+# Make "ls" show dotfiles first
+```sh
+# Add to .bashrc
+export LC_ALL="C"
+```
