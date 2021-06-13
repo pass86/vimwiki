@@ -102,3 +102,11 @@ Host wrt
 cat /tmp/id_rsa.pub >> /etc/dropbear/authorized_keys
 rm /tmp/id_rsa.pub
 ```
+
+# mount cifs
+```sh
+opkg install kmod-fs-cifs kmod-nls-base
+mkdir /mnt/backup
+mount -t cifs //192.168.1.100/backup /mnt/backup -o username=foo,password=bar,vers=2.0
+ls /mnt/backup
+```
